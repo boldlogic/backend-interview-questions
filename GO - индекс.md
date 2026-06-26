@@ -89,6 +89,10 @@
 | 3. GO - Редко.md | 39. errors.Is / errors.As / %w? | 3. GO - Редко 1.md | errors.Is / errors.As / %w? | 1/59 | #go/errors |
 | 3. GO - Редко.md | 37. Escape analysis — stack vs heap? | 3. GO - Редко 1.md | Escape analysis — stack vs heap? | 1/59 | #go/memory |
 | 3. GO - Редко.md | 43. go.sum в git? | 3. GO - Редко 1.md | go.sum в git? | 1/59 | #go/tooling |
+| — | go.mod — зачем нужен? | 3. GO - Редко 1.md | go.mod — зачем нужен? | редко | #go/tooling #go/modules |
+| — | GOPRIVATE и GOPROXY? | 3. GO - Редко 1.md | GOPRIVATE и GOPROXY? | редко | #go/tooling #go/modules |
+| — | Системные вызовы (syscall) в Go? | 3. GO - Редко 1.md | Системные вызовы (syscall) в Go? | редко | #go/scheduler #go/runtime |
+| — | Параллельные исходящие HTTP-запросы (fan-out)? | 3. GO - Редко 1.md | Параллельные исходящие HTTP-запросы (fan-out)? | редко | #go/concurrency #go/context |
 | 3. GO - Редко.md | 29. Swiss map (Go 1.24+) | 3. GO - Редко 1.md | Swiss map (Go 1.24+) | 1/59 | #go/map #go/hash #go/runtime |
 | 3. GO - Редко.md | 40. Type assertion и type switch | 4. GO - Редко 2.md | Type assertion и type switch | 1/59 | #go/interfaces #go/types |
 | 3. GO - Редко.md | 38. Write barrier? | 4. GO - Редко 2.md | Write barrier? | 1/59 | #go/gc |
@@ -151,6 +155,8 @@
 | 1. GO - TOP.md | 29. Что такое context switching и как горутины решают эту проблему | 5. GO - Редко 3.md | Что такое context switching и как горутины решают эту проблему | — | #go/scheduler #go/goroutine |
 | 3. GO - Редко.md | 61. Что такое generics? | 5. GO - Редко 3.md | Что такое generics? | редко | #go/generics |
 | 3. GO - Редко.md | 8. Что такое O нотация, какая сложность бывает | 5. GO - Редко 3.md | Что такое O нотация, какая сложность бывает | — | #go/complexity |
+| — | — | 5. GO - Редко 3.md | Бинарный поиск vs дерево поиска (оба O(log n)) | редко | #go/complexity #go/algorithms |
+| — | — | 5. GO - Редко 3.md | Очередь с приоритетом и binary heap | редко | #go/algorithms |
 | 1. GO - TOP.md | 30. Что такое дедлок и рейс кондишион | 5. GO - Редко 3.md | Что такое дедлок и рейс кондишион | — | #go/deadlock #go/data-race |
 | 3. GO - Редко.md | 46. Что такое массив? | 5. GO - Редко 3.md | Что такое массив? | редко | #go/array #go/types |
 | 2. GO - Средне.md | 8. Что такое хеш таблица? | 5. GO - Редко 3.md | Что такое хеш таблица? | — | #go/hash #go/map |

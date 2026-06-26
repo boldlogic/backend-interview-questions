@@ -8,7 +8,7 @@ INDEX = ROOT / "GO - индекс.md"
 TARGETS = [
     ROOT / "Эталоны" / "Скрининг Авито.md",
     ROOT / "Эталоны" / "авито техскрин.md",
-    ROOT / "8. Ops и Linux.md",
+    ROOT / "10. Ops и Linux.md",
 ]
 
 LINK_RE = re.compile(r"\[\[([^\]#|]+)(?:\|([^\]]+))?\#([^\]]+)\]\]")
