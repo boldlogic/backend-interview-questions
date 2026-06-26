@@ -32,7 +32,6 @@ go.work.sum
 # .vscode/
 .cursor
 .obsidian
-/Транскрипты/
 /.obsidian/workspace.json
 workspace.json
 scripts
