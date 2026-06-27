@@ -30,10 +30,22 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
-.cursor
-.obsidian
-/.obsidian/workspace.json
-workspace.json
-scripts
-/AGENTS.md
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+
+# Скрипты — по умолчанию локальные; в git только guard и безопасные утилиты банка
+scripts/*
+!scripts/pre_edit_guard.py
+!scripts/apply_simber_frequency_bump.py
+!scripts/update_bank_frequency.py
+!scripts/validate_bank_cards.py
+!scripts/bank_registry.py
+!scripts/bank_card_validate.py
+
+# Локальные бэкапы перед правками агента
+Заметки/.backups/
+
+# AGENTS.md — инструкции для агентов (коммитить)
+# (строка /AGENTS.md удалена — файл в репозитории)
 /GO - индекс.md
