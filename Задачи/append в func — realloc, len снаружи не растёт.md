@@ -1,6 +1,8 @@
+# append в func — realloc, len снаружи не растёт
+
+**Собес:** [[alfa go]] · ~36:47
 
 Что выведет данный код?
-
 ```go
 package main
 

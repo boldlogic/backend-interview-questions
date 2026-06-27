@@ -1,4 +1,12 @@
+# string range vs s[i] — hêllo
+
+**Собес:** [[alfa go]] · ~48:08
+
+По чему будем итерироваться?
+
 ```go
+
+
 package main
 
 import "fmt"

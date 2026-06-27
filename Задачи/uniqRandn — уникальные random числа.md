@@ -1,5 +1,7 @@
+# uniqRandn — уникальные random числа
 
-# 1. 
+**Собес:** [[alfa go]] · ~28:46
+
 ```go
 package main
 
