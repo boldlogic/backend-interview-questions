@@ -21,7 +21,7 @@
 | 1. GO - TOP.md | 7. context - что такое и зачем использовать? | 1. GO - Часто.md | context - что такое и зачем использовать? | 8/56 | #go/context |
 | 1. GO - TOP.md | 11. Порядок итерации map | 1. GO - Часто.md | Порядок итерации map | 6/56 | #go/map |
 | 1. GO - TOP.md | 6. Чем конкурентность  отличается от параллелизма? | 1. GO - Часто.md | Чем конкурентность  отличается от параллелизма? | 6/56 | #go/concurrency #go/scheduler |
-| 3. GO - Редко.md | 12. defer, panic, recover | 1. GO - Часто.md | defer, panic, recover | 5/56 | #go/errors |
+| 3. GO - Редко.md | 12. defer, panic, recover | 1. GO - Часто.md | defer, panic, recover | 7/56 | #go/errors |
 | 2. GO - Средне.md | 1. pprof: CPU, heap, goroutine | 1. GO - Часто.md | pprof: CPU, heap, goroutine | 5/56 | #go/tooling #go/goroutine |
 | 1. GO - TOP.md | 21. Select: псевдослучайный выбор case | 1. GO - Часто.md | Select: псевдослучайный выбор case | 5/56 | #go/select #go/channel |
 | 2. GO - Средне.md | 32. Для чего используется интерфейс? | 1. GO - Часто.md | Для чего используется интерфейс? | 5/56 | #go/interfaces |
@@ -57,9 +57,9 @@
 | 3. GO - Редко.md | 10. Как горутина понимает что пора проснуться | 2. GO - Средне.md | Как горутина понимает что пора проснуться | 2/56 | #go/scheduler #go/channel |
 | 3. GO - Редко.md | 25. Как работает GC (tri-color)? | 2. GO - Средне.md | Как работает GC (tri-color)? | 2/56 | #go/gc |
 | 3. GO - Редко.md | 26. Когда interface == nil? | 2. GO - Средне.md | Когда interface == nil? | 2/56 | #go/interfaces #go/errors |
-| 2. GO - Средне.md | 4. Мапа потокобезопасная? | 2. GO - Средне.md | Мапа потокобезопасная? | 2/56 | #go/map #go/data-race |
+| 2. GO - Средне.md | 4. Мапа потокобезопасная? | 2. GO - Средне.md | Мапа потокобезопасная? | 3/56 | #go/map #go/data-race |
 | 2. GO - Средне.md | 5. Можем ли взять указатель на элемент мапы | 2. GO - Средне.md | Можем ли взять указатель на элемент мапы | 2/56 | #go/map #go/pointers |
-| 3. GO - Редко.md | 63. Ограничить доступ к ресурсу N горутинами | 2. GO - Средне.md | Ограничить доступ к ресурсу N горутинами | 2/56 | #go/sync #go/channel |
+| 3. GO - Редко.md | 63. Ограничить доступ к ресурсу N горутинами | 2. GO - Средне.md | Ограничить доступ к ресурсу N горутинами | 3/56 | #go/sync #go/channel |
 | — | — | 2. GO - Средне.md | Очередь с приоритетом и binary heap | 2/56 | #go/algorithms |
 | 1. GO - TOP.md | 20. Сложность доступа по ключу в map? | 2. GO - Средне.md | Сложность доступа по ключу в map? | 2/56 | #go/map #go/hash #go/complexity |
 | 3. GO - Редко.md | 81. Строки UTF-8 и руны | 2. GO - Средне.md | Строки UTF-8 и руны | 2/56 | #go/string |
