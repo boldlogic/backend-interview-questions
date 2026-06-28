@@ -1,0 +1,56 @@
+@startuml "Context Diagram - NutsBasket"
+
+skinparam defaultFontSize 11
+skinparam roundcorner 10
+skinparam rectangle {
+    BackgroundColor #FFF4E1
+    BorderColor #CC9900
+    FontSize 11
+}
+skinparam component {
+    BackgroundColor #E1F5FF
+    BorderColor #0066CC
+    FontSize 11
+}
+skinparam arrow {
+    Thickness 2
+    FontSize 10
+}
+
+' === Внешние сущности (External Entities) ===
+rectangle "Клиент" as Client
+rectangle "SRE" as SRE
+rectangle "Render\n(Внешний сервис)" as Render
+rectangle "Система\nмониторинга" as Monitoring
+
+' === Система (как черный ящик) - можно использовать любой вид: круг, прямоугольник, компонент ===
+component "NutsBasket\nСистема хранения\nи управления файлами" as System
+
+' === Позиционирование: Клиент сверху, SRE слева, Render справа, Мониторинг снизу ===
+Client -[hidden]up- System
+SRE -[hidden]left- System
+Render -[hidden]right- System
+Monitoring -[hidden]down- System
+
+' === Потоки данных: Клиент <-> Система ===
+Client -right-> System : "1. Запрос на загрузку файла"
+Client -right-> System : "2. Запрос на получение файла"
+Client -right-> System : "3. Запрос на удаление файла"
+System -left-> Client : "4. Файл"
+System -left-> Client : "5. Список файлов"
+System -left-> Client : "6. Статус операции"
+
+' === Потоки данных: SRE <-> Система ===
+SRE -right-> System : "7. Запрос на управление\nконфигурацией"
+System -left-> SRE : "8. Статус кластера"
+System -left-> SRE : "9. Логи и метрики"
+
+' === Потоки данных: Render -> Система ===
+Render -left-> System : "10. Запрос на сохранение\nконвертированного файла"
+
+' === Потоки данных: Система -> Мониторинг ===
+System -down-> Monitoring : "11. Метрики производительности"
+System -down-> Monitoring : "12. События системы"
+
+@enduml
+

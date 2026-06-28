@@ -1,0 +1,28 @@
+@startuml "C4-L1. System Context - Project"
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+LAYOUT_TOP_DOWN()
+
+TITLE System Context - Project
+
+Enterprise_Boundary(acme, "Company") {
+    Person(client, "Клиент", "Внутренний пользователь Company. Может работать с Project напрямую или через Render")
+    Person(sre, "SRE", "Администратор системы")
+
+
+    System(Project, "Project", "Система хранения файлов и контента. Предоставляет API для загрузки, получения и удаления файлов")
+
+    System(render, "Render", "Сервис для рендеринга. Используется для конвертации изображений")
+}
+
+Rel(sre, Project, "Управляет конфигурацией системы и кластеров", "HTTP/HTTPS")
+
+Rel(client, Project, "Загружает, удаляет и просматривает файлы в своем пространстве", "HTTP/HTTPS")
+
+Rel(client, render, "Создает задания для конвертации изображений", "HTTP/HTTPS")
+
+Rel(render, Project, "Загружает конвертированные изображения в пространство клиента", "HTTP/HTTPS")
+
+SHOW_LEGEND()
+
+@enduml

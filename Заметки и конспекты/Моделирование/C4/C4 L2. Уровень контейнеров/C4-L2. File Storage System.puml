@@ -1,0 +1,58 @@
+@startuml "C4-L2. Container - File Storage System"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+LAYOUT_TOP_DOWN()
+
+TITLE Container - File Storage System
+
+Person(user, "User", "Internal user of the organization")
+Person(ops, "Operations", "System administrators and operators")
+
+System(processor, "Media Processing Service", "Service for media file conversion")
+
+' === Shared infrastructure ===
+ContainerDb(configStore, "Configuration Store", "Distributed KV", "Shared configuration service. Used by all system services")
+ContainerQueue(msgQueue, "Message Queue", "Event Broker", "Shared event bus for service communication")
+
+' === Physical infrastructure ===
+ContainerDb(fileSystem, "File System", "Block Storage", "Distributed block storage or local disks")
+
+Container_Boundary(storage, "File Storage System"){
+    Container(apiGateway, "API Gateway", "API Server", "Entry point. Authentication, authorization, routing")
+    Container(storageNode, "Storage Node", "Storage Service", "Manages files on storage nodes")
+    Container(replicationService, "Replication Service", "Replication Engine", "Ensures file availability across cluster nodes")
+    Container(clusterManager, "Cluster Manager", "Control Plane", "Manages cluster topology, sharding, node health")
+    Container(syncService, "Sync Service", "Synchronization Engine", "Synchronizes lagging replicas at block level")
+}
+
+
+' === User interactions ===
+Rel_D(user, apiGateway, "Uploads, retrieves, and deletes files", "HTTPS (REST API)")
+Rel_L(user, processor, "Creates media processing jobs", "HTTPS (REST API)")
+Rel_D(ops, clusterManager, "Manages cluster configuration", "HTTPS (REST API)")
+
+' === System interactions ===
+Rel_R(processor, apiGateway, "Stores processed media files", "HTTPS (REST API)")
+
+' === Infrastructure interactions ===
+Rel_R(apiGateway, msgQueue, "Publishes file lifecycle events", "Event Protocol")
+Rel_U(replicationService, msgQueue, "Subscribes to file lifecycle events", "Event Protocol")
+Rel(clusterManager, configStore, "Manages cluster configuration", "KV Protocol")
+
+' === Internal container interactions ===
+Rel_D(apiGateway, storageNode, "Routes requests to storage nodes, performs CRUD operations", "HTTPS (REST API)")
+BiRel(replicationService, storageNode, "Replicates files between primary and replica nodes", "HTTPS (REST API)")
+Rel(storageNode, clusterManager, "Reports node health and capacity metrics", "HTTPS (REST API)")
+
+' === Physical storage interactions ===
+Rel(storageNode, fileSystem, "Reads/writes files", "File I/O")
+Rel(syncService, fileSystem, "Copies data between storage nodes (bypasses Storage Node)", "Block sync protocol")
+
+note right of syncService
+  Sync Service operates at block level
+  for maximum performance when
+  synchronizing lagging replicas
+end note
+
+SHOW_LEGEND()
+
+@enduml

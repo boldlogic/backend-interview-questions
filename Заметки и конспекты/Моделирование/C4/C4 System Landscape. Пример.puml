@@ -1,0 +1,42 @@
+@startuml "C4. System Landscape - Wildberries"
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+LAYOUT_TOP_DOWN()
+
+TITLE System Landscape - Wildberries
+
+' === Пользователи ===
+Person(client, "Клиент", "Внутренний пользователь Wildberries")
+Person(sre, "SRE", "Администратор систем")
+
+' === Системы Wildberries ===
+Enterprise_Boundary(wb, "Wildberries") {
+    System(nutsBasket, "NutsBasket", "Система хранения и управления файлами")
+    System(render, "Render", "Сервис для рендеринга и конвертации изображений")
+    System(authService, "Auth Service", "Сервис аутентификации и авторизации")
+    System(analytics, "Analytics", "Система аналитики и метрик")
+    System(notification, "Notification Service", "Сервис уведомлений")
+}
+
+' === Внешние системы ===
+System_Ext(paymentGateway, "Payment Gateway", "Внешний платежный шлюз")
+System_Ext(emailService, "Email Service", "Внешний сервис отправки email")
+
+' === Взаимодействия пользователей ===
+Rel(client, nutsBasket, "Работает с файлами", "HTTPS")
+Rel(client, render, "Конвертирует изображения", "HTTPS")
+Rel(client, authService, "Авторизуется", "HTTPS")
+Rel(sre, nutsBasket, "Управляет", "HTTPS")
+Rel(sre, render, "Управляет", "HTTPS")
+
+' === Взаимодействия между системами ===
+Rel(render, nutsBasket, "Сохраняет результаты", "HTTPS")
+Rel(nutsBasket, authService, "Проверяет доступ", "HTTPS")
+Rel(nutsBasket, analytics, "Отправляет метрики", "HTTPS")
+Rel(notification, emailService, "Отправляет письма", "SMTP")
+Rel(authService, paymentGateway, "Проверяет платежи", "HTTPS")
+
+SHOW_LEGEND()
+
+@enduml
+

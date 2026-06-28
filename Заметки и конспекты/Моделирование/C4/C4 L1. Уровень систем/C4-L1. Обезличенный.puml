@@ -1,0 +1,38 @@
+@startuml "C4-L1. System Context - Project"
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+LAYOUT_TOP_DOWN()
+
+TITLE System Context - Project
+
+AddElementTag("infrastructure", $bgColor="#f0f7ff", $borderColor="#6ba3ff", $fontColor="#0052cc")
+AddElementTag("external-service", $bgColor="#fff7e6", $borderColor="#ffcc99", $fontColor="#cc6600")
+AddRelTag("infrastructure-link", $lineStyle="dashed", $lineColor="#6ba3ff")
+
+Enterprise_Boundary(acme, "Company") {
+    Person(client, "Клиент", "Внутренний пользователь Company. Может работать с Project напрямую или через Render")
+    Person(sre, "SRE", "Администратор системы")
+
+    System_Boundary(product, "Project") {
+        System(Project, "Project", "Система хранения файлов и контента. Предоставляет API для загрузки, получения и удаления файлов")
+    }
+
+    System(kafka, "Kafka", "Общий кластер для событий. Используется для обмена сообщениями между компонентами системы", $tags="infrastructure")
+    System(etcd, "ETCD", "Общий кластер ETCD. Используется для хранения конфигурации системы", $tags="infrastructure")
+    System(render, "Render", "Сервис для рендеринга. Используется для конвертации изображений", $tags="external-service")
+}
+
+Rel(sre, Project, "Управляет конфигурацией системы и кластеров", "HTTP/HTTPS")
+
+Rel(client, Project, "Загружает, удаляет и просматривает файлы в своем пространстве", "HTTP/HTTPS")
+
+Rel(client, render, "Создает задания для конвертации изображений", "HTTP/HTTPS")
+
+Rel(render, Project, "Загружает конвертированные изображения в пространство клиента", "HTTP/HTTPS")
+
+Rel(Project, kafka, "Публикует и читает события загрузки/удаления файлов", "Kafka Protocol", $tags="infrastructure-link")
+Rel(Project, etcd, "Обновляет и читает конфигурацию кластера", "gRPC", $tags="infrastructure-link")
+
+SHOW_LEGEND()
+
+@enduml

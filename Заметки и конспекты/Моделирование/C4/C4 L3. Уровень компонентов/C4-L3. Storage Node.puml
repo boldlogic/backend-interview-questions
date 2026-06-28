@@ -1,0 +1,56 @@
+@startuml "C4-L3. Component — Storage Node"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+LAYOUT_TOP_DOWN()
+
+TITLE Component - Storage Node (Internal Architecture)
+
+' === External context ===
+System_Ext(externalServices, "External Services", "API Gateway, Replication Service send file operation requests")
+System_Ext(clusterManager, "Cluster Manager", "Manages cluster configuration and topology")
+System_Ext(fileSystem, "File System", "Block storage or local disk array")
+
+' === Internal structure of Storage Node ===
+Container_Boundary(storageNode, "Storage Node") {
+  ' API Layer
+  Component(httpServer, "HTTP Server", "Go + HTTP", "Accepts HTTP requests for file operations (GET, POST, DELETE)")
+  Component(cmAdapter,  "Cluster Manager Adapter", "Go + HTTP", "Client adapter for communication with Cluster Manager")
+
+  ' Business Logic Layer
+  Component(fileManager,   "File Manager", "Go", "Coordinates file operations and applies business rules")
+  Component(fileRepository,"File Repository", "Go + POSIX I/O", "Low-level file system operations (CRUD)")
+
+  ' Cluster Integration
+  Component(nodeRegistration, "Node Registration", "Go", "Registers node in cluster, manages device metadata")
+  Component(healthMonitor,    "Health Monitor", "Go", "Monitors disk health and node availability")
+
+  ' Performance Optimization
+  Component(rateLimiter,          "Rate Limiter", "Go + In-Memory", "Controls request rate, manages worker queues")
+  Component(cacheLayer,           "Cache Layer", "In-Memory", "Caches frequently accessed files")
+  Component(deduplicationBuffer,  "Deduplication Buffer", "In-Memory (hashes)", "Prevents duplicate write operations")
+}
+
+' === External interactions ===
+Rel(externalServices, httpServer, "Sends read/write/delete requests", "HTTPS/REST")
+
+' === Internal interactions ===
+' Request handling
+Rel(httpServer, fileManager, "Delegates file operations", "in-process")
+
+' File operation chain
+Rel(fileManager, deduplicationBuffer, "Checks request deduplication by hash", "in-process")
+Rel(fileManager, rateLimiter,         "Checks rate limits and worker availability", "in-process")
+Rel(fileManager, cacheLayer,          "Reads/updates cache", "in-process")
+Rel(fileManager, fileRepository,      "Performs read/write/delete", "in-process")
+
+' Registration and monitoring
+Rel(nodeRegistration, cmAdapter, "Sends registration requests", "in-process")
+Rel(healthMonitor,    cmAdapter, "Sends health status reports", "in-process")
+Rel(healthMonitor,    fileRepository, "Checks disk availability", "in-process")
+
+' Communication with external systems
+Rel(cmAdapter, clusterManager, "Node registration, disk status reports", "HTTPS/REST")
+
+' File system access
+Rel(fileRepository, fileSystem, "File operations", "POSIX I/O")
+
+@enduml

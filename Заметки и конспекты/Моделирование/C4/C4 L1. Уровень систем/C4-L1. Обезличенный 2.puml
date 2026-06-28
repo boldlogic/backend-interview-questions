@@ -1,0 +1,28 @@
+@startuml "C4-L1. System Context - NutsBasket"
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+LAYOUT_TOP_DOWN()
+
+TITLE System Context - NutsBasket
+
+Enterprise_Boundary(acme, "Wildberries") {
+    Person(client, "Клиент", "Внутренний пользователь Wildberries. Может работать с NutsBasket напрямую или через Render")
+    Person(sre, "SRE", "Администратор системы")
+
+
+    System(nutsBasket, "NutsBasket", "Система хранения файлов и контента. Предоставляет API для загрузки, получения и удаления файлов")
+
+    System(render, "Render", "Сервис для рендеринга. Используется для конвертации изображений")
+}
+
+Rel(sre, nutsBasket, "Управляет конфигурацией системы и кластеров", "HTTP/HTTPS")
+
+Rel(client, nutsBasket, "Загружает, удаляет и просматривает файлы в своем пространстве", "HTTP/HTTPS")
+
+Rel(client, render, "Создает задания для конвертации изображений", "HTTP/HTTPS")
+
+Rel(render, nutsBasket, "Загружает конвертированные изображения в пространство клиента", "HTTP/HTTPS")
+
+SHOW_LEGEND()
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml "C4-L1. System Context - File Storage System"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+LAYOUT_TOP_DOWN()
+
+TITLE System Context - File Storage System
+
+Enterprise_Boundary(org, "Organization") {
+    Person(user, "User", "Internal user of the organization")
+    Person(ops, "Operations", "System administrators and operators")
+
+    System(storage, "File Storage System", "Distributed file storage system with API for file operations")
+    System(processor, "Media Processing Service", "Service for media file conversion and transformation")
+}
+
+' === User interactions ===
+Rel(user, storage, "Uploads, retrieves, and deletes files", "HTTPS (REST API)")
+Rel(user, processor, "Creates media processing jobs", "HTTPS (REST API)")
+Rel(ops, storage, "Manages cluster configuration", "HTTPS (REST API)")
+
+' === System interactions ===
+Rel(processor, storage, "Stores processed media files", "HTTPS (REST API)")
+
+SHOW_LEGEND()
+
+@enduml
