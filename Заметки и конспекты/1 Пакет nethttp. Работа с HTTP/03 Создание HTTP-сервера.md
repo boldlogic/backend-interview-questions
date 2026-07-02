@@ -1,0 +1,659 @@
+---
+title: "Создание HTTP-сервера"
+source: yandex-practicum
+course: go-developer
+converted: 2026-05-28
+part: 1
+---
+
+# Создание HTTP-сервера
+
+
+Когда-то каждый производитель оборудования разрабатывал свои собственные протоколы — наборы семантических и синтаксических правил для обмена информацией между устройствами. Но предприятиям, которые организовывали первые компьютерные сети, вскоре потребовалось наладить взаимодействие с системами других предприятий. И вот тут возникла проблема: обмениваться данными по сети могли только устройства одного производителя.
+
+Несовместимость оборудования вынудила производителей договориться о единой системе протоколов. Так появилось две модели:
+
+- **Сетевая модель взаимодействия открытых систем (Open Systems Interconnection — OSI)**, разработанная Международной организацией по стандартизации (International Organization for Standardization — ISO).
+- **Сетевая модель TCP/IP (Transmission Control Protocol/Internet Protocol — TCP/IP)**, разработанная учёными в области информатики, которых называют отцами интернета: Винтоном Серфом (Vinton Cerf) и Робертом Каном (Robert Kahn). Модель получила своё название от двух протоколов: протокола управления передачей (TCP) и интернет-протокола (IP).
+
+В сетевой модели OSI выделяют семь уровней. Каждому уровню соответствуют свои протоколы.
+
+Разработчикам интересны протоколы прикладного уровня HTTP и HTTPS. Большая часть контента в сети, будь то статьи на Хабре или картинки с гоферами, передаётся по этим протоколам.
+
+Они базируются на транспортном протоколе TCP, который, в свою очередь, использует протокол сетевого уровня IP. Протокол IP позволяет адресовать устройства в сети. А TCP гарантирует отправителю, что «посылки» (пакеты данных) дойдут до адресата, причём в том порядке, в котором были отправлены. Этого уже достаточно для информационного обмена.
+
+Протокол HTTP, используя гарантии TCP/IP, формализует стороны обмена схемой «клиент-сервер» (client–server), а сам обмен данными — схемой «запрос-ответ» (request–response).
+
+- Роль клиента — отправлять запросы и получать ответы. Можно вспомнить утилиты `wget` и `curl` из мира Unix. Да и браузер — это клиент сетевого взаимодействия.
+- Роль сервера — принимать запросы и возвращать валидные ответы. Сервер не обязательно должен обладать огромной вычислительной мощностью, это просто роль в протоколе обмена данными.
+
+Когда браузер делает HTTP-запрос к серверу, он отправляет данные по определённому адресу и порту.
+
+**HTTP-сервер** — это программа, которая прослушивает порт компьютера со статическим или динамическим IP-адресом и отвечает на входящие HTTP-запросы по тому же соединению.
+
+
+В стандартной библиотеке Go есть всё для того, чтобы создать сервер любой сложности. Но начнём с простого: в этом уроке рассмотрим лишь самое необходимое для реализации HTTP-сервера.
+
+В первую очередь будем использовать пакет `net/http` стандартной библиотеки, который позволяет не только создавать HTTP-сервер, но и выполнять HTTP-запросы от лица клиента.
+
+## Принцип работы HTTP-сервера
+
+Реализация HTTP-сервера на Go включает в себя сам сервер, который слушает порт и принимает запросы, поступающие от HTTP-клиентов, и одну или несколько функций-обработчиков, которые отвечают на эти запросы. Функции-обработчики называются **хендлерами (handlers)**.
+
+Чтобы запустить HTTP-сервер, достаточно вызвать функцию `http.ListenAndServe(addr string, handler Handler) error`. Она начинает слушать сетевой порт по указанному адресу, разбирает запросы и передаёт их обработчикам `http.Handler`. Запросы могут обрабатываться параллельно: для каждого из них создаётся отдельная горутина.
+
+Параметр `addr` содержит IP-адрес компьютера, на котором будет создан сервер, и номер порта. Записывается в формате `IP-адрес:порт` — например, `127.0.0.1:8080` или `192.168.1.101:55121`. Вместо `127.0.0.1` можно указать `localhost`, который по умолчанию будет перенаправлять на этот IP-адрес. Поскольку у компьютера обычно несколько IP-адресов и нужно, чтобы сервер был доступен с каждого из них, лучше указать `0.0.0.0:порт` или просто `:порт`.
+
+В случае успешного запуска сервера `http.ListenAndServe()` останавливает выполнение текущего потока до момента, пока не возникнет ошибка или программа не завершит свою работу. В случае неудачного запуска функция возвращает ошибку — `error`. Например, указанный порт уже прослушивается другим приложением.
+
+Скопируйте пример кода на свой компьютер и запустите:
+
+```go
+package main
+
+import "net/http"
+
+func main() {
+    err := http.ListenAndServe(`:8080`, nil)
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+Прослушивать порт по определённому адресу может только одна программа (сервер). Если вы запустите вторую копию этого примера, то получите ошибку `panic: listen tcp :8080: bind: address already in use` — «адрес уже используется».
+
+Чтобы проверить, работает ли созданный сервер, достаточно открыть в браузере `http://localhost:8080`. Страница должна показать `404 page not found`. Это значит, что сервер работает, но, так как отсутствуют обработчики запросов, он пока не может ответить ничего толкового.
+
+## Обработка HTTP-запросов
+
+Теперь добавим к серверу обработчик — хендлер.
+
+Тип `http.Handler` — это интерфейсный тип с единственной функцией `ServeHTTP(...)`. Она будет вызвана для обработки любого HTTP-запроса.
+
+Обработчику нужно передать:
+
+- `http.ResponseWriter` — интерфейс потоковой записи, куда обработчик может писать ответные данные для клиента;
+- `http.Request` — данные запроса.
+
+```go
+type Handler interface {
+    ServeHTTP(ResponseWriter, *Request)
+}
+```
+
+В первом параметре передаётся переменная интерфейсного типа `ResponseWriter`. Здесь методы `Header` и `WriteHеader` используются для работы с заголовками, а метод `Write` выводит тело ответа:
+
+```go
+type ResponseWriter interface {
+    Header() Header
+    Write([]byte) (int, error)
+    WriteHeader(statusCode int)
+}
+```
+
+Второй параметр — типа `*Request` — это указатель на структуру, которая содержит информацию о заголовках HTTP-запроса и данные, отправленные клиентом.
+
+Добавим обработчик в пример и соберём всё вместе:
+
+```go
+package main
+
+import "net/http"
+
+type MyHandler struct{}
+
+func (h MyHandler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+    data := []byte("Привет!")
+    res.Write(data)
+}
+
+func main() {
+    var h MyHandler
+
+    err := http.ListenAndServe(`:8080`, h)
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+Сейчас сервер выводит `Привет!`. Недостаток в том, что эта строка выводится в ответ на любой запрос: `http://localhost:8080/`, `http://localhost:8080/api`, `http://localhost:8080/users/cabinet`. А можно сделать так, чтобы ответ был разным в зависимости от пути, указанного в запросе.
+
+## Маршрутизация запросов
+
+Если использовать один `Handler` для всех запросов, обработчик сильно разрастётся и его трудно будет поддерживать. Чтобы этого избежать, применяют маршрутизацию запросов.
+
+Запросы расходятся к разным обработчикам в соответствии с совпадениями в URL. За маршрутизацию отвечает структура `http.ServeMux`. Метод `ServeHTTP()` для этой структуры прописан в стандартной библиотеке.
+
+`http.ServeMux` — это одновременно обработчик и мультиплексор, распределяющий задачи обработки другим `http.Handler`. Он смотрит на URL запроса, ищет совпадения в списке зарегистрированных URL (паттерн) и вызывает соответствующий обработчик.
+
+
+![[attachments/img-006.png]]
+
+По умолчанию в Go доступен маршрутизатор `http.DefaultServeMux`, который имеет тип `*http.ServeMux`. Например, в том коде, где вы запускали `ListenAndServe()` с параметром `nil`, работает именно этот маршрутизатор.
+
+Добавить маршруты и функции-обработчики к `http.DefaultServeMux` можно функцией `http.HandleFunc(pattern string, handler func(ResponseWriter, *Request))`.
+
+```go
+package main
+
+import "net/http"
+
+func mainPage(res http.ResponseWriter, req *http.Request) {
+    res.Write([]byte("Привет!"))
+}
+
+func apiPage(res http.ResponseWriter, req *http.Request) {
+    res.Write([]byte("Это страница /api."))
+}
+
+func main() {
+    http.HandleFunc(`/api`, apiPage)
+    http.HandleFunc(`/`, mainPage)
+
+    err := http.ListenAndServe(`:8080`, nil)
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+Запросы `http://localhost:8080/api` будет обрабатывать функция `apiPage()`. Все остальные запросы будут приходить обработчику по умолчанию `mainPage()`, так как у него указан маршрут `/`.
+
+Вызываемый обработчик определяется по максимально совпадающему пути маршрута, но есть одна тонкость. Обратите внимание: в первом `HandleFunc()` указан маршрут `/api` без слеша в конце. Это значит, что запросы `http://localhost:8080/api/` и `http://localhost:8080/api/getid` будет обрабатывать функция `mainPage`.
+
+Если вместо `/api` указать маршрут `/api/`, то эти запросы придут функции `apiPage()` — из-за последнего слеша этот маршрут будет перехватывать маршруты с префиксом `/api/`. При этом запрос `http://localhost:8080/api` будет перенаправляться на `http://localhost:8080/api/` и тоже обрабатываться функцией `apiPage()`.
+
+Регистрация разных обработчиков с одинаковым паттерном будет пропущена компилятором, но вызовет панику на этапе выполнения.
+
+```
+    // иcпользование этого фрагмента приведёт к ошибке
+    // panic: http: multiple registrations for /api
+    http.HandleFunc(`/api`, apiPage)
+    http.HandleFunc(`/`, mainPage)
+    http.HandleFunc(`/api`, mainPage)
+```
+
+В маршруте, который указывается в `HandleFunc()`, нельзя использовать регулярные выражения и маски, так как маршрутизатор стандартной библиотеки не проводит их разбор.
+
+Порядок определения шаблонов для маршрутизатора неважен.
+
+```
+    // этот вариант будет работать так же,
+    // как вариант в примере
+    http.HandleFunc(`/`, mainPage)
+    http.HandleFunc(`/api`, apiPage)
+```
+
+Поэтому на практике не рекомендуется использовать `http.DefaultServeMux`. Лучше создать свою переменную-маршрутизатор функцией `NewServeMux() *ServeMux` и вызвать для неё методы `HandleFunc()` с маршрутами и обработчиками.
+
+```go
+mux := http.NewServeMux()
+mux.HandleFunc(`/api/auth`, authHandler)
+mux.HandleFunc(`/api/`, apiHandler)
+// ...
+err := http.ListenAndServe(`:8080`, mux)
+// ...
+```
+
+## Структура http.Request
+
+Метод `Handler.ServeHTTP()` и функции типа `http.HandlerFunc()` передают в параметрах переменную интерфейсного типа `http.ResponseWriter` и переменную типа `*http.Request` с информацией о запросе. Покажем, как с ними работать.
+
+Детальную информацию о запросе обработчик получает из полей и методов структуры `http.Request`.
+
+```go
+type Request struct {
+    // указаны некоторые поля структуры
+    Method        string
+    URL           *url.URL
+    Header        Header
+    Body          io.ReadCloser
+    ContentLength int64
+    Host          string
+    // ...
+}
+```
+
+Так, поле `Method` содержит метод HTTP-запроса. Чтобы избежать ошибок, лучше использовать предопределённые константы пакета `net/http`:
+
+```
+const (
+    MethodGet     = "GET"
+    MethodHead    = "HEAD"
+    MethodPost    = "POST"
+    MethodPut     = "PUT"
+    MethodPatch   = "PATCH"
+    MethodDelete  = "DELETE"
+    MethodConnect = "CONNECT"
+    MethodOptions = "OPTIONS"
+    MethodTrace   = "TRACE"
+)
+```
+
+```go
+func GetHandler(w http.ResponseWriter, r *http.Request) {
+   // этот обработчик принимает только запросы, отправленные методом GET
+   if r.Method != http.MethodGet {
+      http.Error(w, "Only GET requests are allowed!", http.StatusMethodNotAllowed)
+       return
+   }
+   // продолжаем обработку запроса
+   // ...
+}
+```
+
+Заголовки запроса лежат в поле `Header` в виде мапы `map[string][]string`. Так как заголовок может содержать несколько значений, то используется мапа слайсов, а не строк:
+
+- метод `(h Header) Values(key string) []string` возвращает слайс значений указанного заголовка;
+- метод `(h Header) Get(key string) string` возвращает первое значение.
+
+Полный URL запроса хранится в поле `URL`.
+
+Получить параметры GET-запроса можно методом `Query() url.Values`, который возвращает значение типа `type Values map[string][]string`. Метод `(v Values) Get(key string) string` возвращает первое значение. Если запрашиваемый параметр не был указан, то `Get()` вернёт пустую строку.
+
+```go
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func mainPage(res http.ResponseWriter, req *http.Request) {
+    body := fmt.Sprintf("Method: %s\r\n", req.Method)
+    body += "Header ===============\r\n"
+    for k, v := range req.Header {
+        body += fmt.Sprintf("%s: %v\r\n", k, v)
+    }
+    body += "Query parameters ===============\r\n"
+    for k, v := range req.URL.Query() {
+        body += fmt.Sprintf("%s: %v\r\n", k, v)
+    }
+    res.Write([]byte(body))
+}
+
+func main() {
+    mux := http.NewServeMux()
+    mux.HandleFunc(`/`, mainPage)
+
+    err := http.ListenAndServe(`:8080`, mux)
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+Параметры POST-запроса можно получить методом `(r *Request) FormValue(key string) string`. Чтобы получить все значения параметра, используйте поле `Form`, которое имеет тип `url.Values`. В этом случае нужно предварительно вызвать метод `(r *Request) ParseForm() error`.
+
+Тело запроса хранится в поле `Body io.ReadCloser` и читается стандартными методами — например, `body, err := io.ReadAll(req.Body)`. Вызывать `Body.Close()` не нужно, так как это автоматически делает сервер.
+
+## Интерфейсный тип http.ResponseWriter
+
+В примерах этого урока уже использовался параметр типа `http.ResponseWriter` для вывода ответа сервера. Но можно записывать не только тело ответа, но и возвращать нужные заголовки и код статуса. Интерфейсный тип `http.ResponseWriter` содержит следующие методы:
+
+```go
+type ResponseWriter interface {
+    Header() Header
+    Write([]byte) (int, error)
+    WriteHeader(statusCode int)
+}
+```
+
+Метод `Header()` возвращает объект типа `http.Header`. Как вы уже знаете, он состоит из имён и значений заголовков. Для записи нужных заголовков можно использовать такие методы:
+
+- `(h Header) Set(key, value string)` — установить заголовок;
+- `(h Header) Add(key, value string)` — добавить значение заголовка;
+- `(h Header) Del(key string)` — удалить заголовок.
+
+Метод `WriteHeader()` записывает в ответ сервера текущие заголовки и код статуса. После вызова этой функции изменения заголовков не будут влиять на ответ сервера. Как обычно, из правил есть исключения: например, значения заголовков `Trailer` можно устанавливать в самом конце. Если вызов `WriteHeader` отсутствует, то заголовки автоматически запишутся с кодом статуса `200`.
+
+В пакете `net/http` для кодов статуса определены соответствующие константы. Вот некоторые из них:
+
+```
+StatusOK                  = 200
+StatusBadRequest          = 400
+StatusUnauthorized        = 401
+StatusForbidden           = 403
+StatusNotFound            = 404
+StatusMethodNotAllowed    = 405
+StatusInternalServerError = 500
+```
+
+Как используется метод `Write`, вы уже видели. Но получается, что параметр типа `http.ResponseWriter` удовлетворяет интерфейсному типу `io.Writer`, а значит, можно выводить тело ответа и таким образом:
+
+```go
+io.WriteString(res, "Привет!")
+fmt.Fprint(res, "Привет!")
+```
+
+Приведём пример обработчика, который возвращает ответ в формате JSON. Добавьте его к любому из рассмотренных выше примеров HTTP-сервера и проверьте результат в браузере.
+
+```go
+type Subj struct {
+   Product string `json:"name"`
+   Price   int    `json:"price"`
+}
+
+func JSONHandler(w http.ResponseWriter, req *http.Request) {
+    // собираем данные
+    subj := Subj{"Milk", 50}
+    // кодируем в JSON
+    resp, err := json.Marshal(subj)
+    if err != nil {
+        http.Error(w, err.Error(), 500)
+        return
+    }
+    // устанавливаем заголовок Content-Type
+    // для передачи клиенту информации, кодированной в JSON
+    w.Header().Set("content-type", "application/json")
+    // устанавливаем код 200
+    w.WriteHeader(http.StatusOK)
+    // пишем тело ответа
+    w.Write(resp)
+}
+```
+
+В этом примере сначала собираем и кодируем данные, чтобы в случае проблем вернуть код ошибки, и только если всё прошло хорошо, пишем заголовки, статус и тело ответа в `ResponseWriter`. Функция `Error(w ResponseWriter, error string, code int)` возвращает ответ в виде текста с cообщением об ошибке и указанным кодом статуса.
+
+Рассмотрим пример сервера с формой ввода логина и пароля. В случае `GET`-запроса обработчик будет возвращать форму авторизации, а при передаче данных методом `POST` — проверять логин и пароль.
+
+```go
+package main
+
+import (
+    "io"
+    "net/http"
+)
+
+const form = `<html>
+    <head>
+    <title></title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            <label>Логин</label><input type="text" name="login">
+            <label>Пароль<input type="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>`
+
+func Auth(login, password string) bool {
+    return login == `guest` && password == `demo`
+}
+
+func mainPage(w http.ResponseWriter, r *http.Request) {
+    if r.Method == http.MethodPost {
+        login := r.FormValue("login")
+        password := r.FormValue("password")
+        if Auth(login, password) {
+            io.WriteString(w, "Добро пожаловать!")
+        } else {
+            http.Error(w, "Неверный логин или пароль", http.StatusUnauthorized)
+        }
+        return
+    } else {
+        io.WriteString(w, form)
+    }
+}
+
+func main() {
+    err := http.ListenAndServe(`:8080`, http.HandlerFunc(mainPage))
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+В этом примере функция `mainPage` приведена к типу `http.HandlerFunc`, который выступает адаптером и позволяет использовать функцию-обработчик как `http.Handler`.
+
+## Middleware
+
+Среди бэкенд-разработчиков популярна концепция **middleware** — конвейерной обработки запросов несколькими хендлерами. Иногда её называют «мидлварь». Например, чтобы в каждом обработчике не проверять авторизацию или не логировать запрос, можно вынести эти действия в отдельные функции-обёртки.
+
+В разработке часто используют сторонние маршрутизаторы, которые предоставляют удобный интерфейс для создания и подключения `middleware`, — об этом расскажем в следующих уроках темы. А сейчас покажем, как сделать конвейерную обработку запросов средствами стандартной библиотеки.
+
+Соберём конвейер. Для этого понадобится такая сигнатура:
+
+```go
+// middleware принимает параметром Handler и возвращает тоже Handler.
+func middleware(next http.Handler) http.Handler {
+    // получаем Handler приведением типа http.HandlerFunc
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        // здесь пишем логику обработки
+        // например, разрешаем запросы cross-domain
+        // w.Header().Set("Access-Control-Allow-Origin", "*")
+        // ...
+        // замыкание: используем ServeHTTP следующего хендлера
+        next.ServeHTTP(w, r)
+    })
+}
+```
+
+Функция `middleware()` принимает и возвращает значения типа `http.Handler`. Для связи маршрута и `http.Handler` используется функция `Handle(pattern string, handler Handler)`. Соответственно, функцию-обработчик, которую будем передавать в `middleware()`, нужно также привести к `http.Handler`.
+
+```go
+func rootHandle(w http.ResponseWriter, r *http.Request) {
+    w.Write([]byte("Привет"))
+}
+
+func main() {
+   http.Handle("/", middleware(http.HandlerFunc(rootHandle)))
+   //...
+}
+```
+
+Если функций-обёрток много, можно подключить их с помощью вспомогательной функции.
+
+```go
+type Middleware func(http.Handler) http.Handler
+
+func Conveyor(h http.Handler, middlewares ...Middleware) http.Handler {
+    for _, middleware := range middlewares {
+        h = middleware(h)
+    }
+    return h
+}
+
+func main() {
+    http.Handle("/", Conveyor(http.HandlerFunc(rootHandle), middleware1, middleware2, middleware3))
+    // ...
+}
+```
+
+## Вспомогательные функции
+
+Для решения типовых задач при написании обработчиков используют вспомогательные функции `http.Error()`, `http.NotFound()`, `http.Redirect()` из пакета `net/http`. Функция `http.Error()` уже упоминалась в этом уроке, a `NotFound(w ResponseWriter, r *Request)` возвращает конкретную ошибку `404`.
+
+Функцию `Redirect(w ResponseWriter, r *Request, url string, code int)` можно использовать для перенаправления следующим образом:
+
+```go
+func redirect(w http.ResponseWriter, r *http.Request) {
+    http.Redirect(w, r, "https://yandex.ru/", http.StatusMovedPermanently)
+}
+
+func main() {
+    http.HandleFunc("/search/", redirect)
+    log.Fatal(http.ListenAndServe(":8080", nil))
+}
+```
+
+Также есть несколько функций, которые возвращают готовый `http.Handler`:
+
+- `NotFoundHandler() Handler` — выдаёт ошибку `404`;
+- `RedirectHandler(url string, code int) Handler` — перенаправляет;
+- `TimeoutHandler(h Handler, dt time.Duration, msg string) Handler` — выдаёт ошибку `503 Service Unavailable`, если ответ не успел отправиться в течение указанного интервала времени.
+
+```
+http.Handle("/dummy", http.RedirectHandler("https://google.com", http.StatusMovedPermanently))
+```
+
+## Работа с файлами
+
+Нередко веб-сайт состоит только из статических страниц, но даже если ваш сервер динамически генерирует контент, то всё равно нужно возвращать готовые JS-файлы со скриптами и изображения. Никто не запрещает самостоятельно читать файлы и возвращать их содержимое, но в пакете `net/http` есть специальные возможности для работы с файлами.
+
+Функция `FileServer(root FileSystem) Handler` принимает параметром переменную интерфейсного типа `http.FileSystem`:
+
+```go
+type FileSystem interface {
+    Open(name string) (File, error)
+}
+```
+
+И возвращает готовый к использованию `http.Handler`. Самый простой способ получить для директории переменную типа `http.FileSystem` — это привести путь к типу `http.Dir`, который поддерживает этот интерфейс.
+
+```go
+package main
+
+import (
+    "net/http"
+)
+
+func main() {
+   // простейший сервер, которому доступны все файлы в поддиректории static
+    err := http.ListenAndServe(":8080", http.FileServer(http.Dir("./static")))
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+Если запустить этот пример и открыть в браузере `http://localhost:8080`, то будет показано содержимое директории `static` в виде ссылок на файлы и поддиректории.
+
+Если этому файл-серверу послать запрос `http://localhost:8080/assets/images/image.png`, то он будет искать файл `./static/assets/images/image.png`.
+
+```go
+fs := http.FileServer(http.Dir("./static"))
+http.Handle("/assets/", http.StripPrefix("/assets/", fs))
+```
+
+Можно определять несколько обработчиков `FileServer()` для разных директорий. Если при определённом запросе нужно вернуть содержимое конкретного файла, стоит использовать функцию `ServeFile(w ResponseWriter, r *Request, name string)`.
+
+```
+http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request){
+   http.ServeFile(w, r, "./public/favicon.ico")
+})
+```
+
+Внезапно распахивается дверь.
+
+## Обучаем Алису
+
+Начиная с этого урока вы будете разбирать пройденный материал на примере итеративно разрабатываемого сервиса. Вы можете повторять описанные ниже действия на своём компьютере и следить за развитием сервиса, таким образом добавляя к учебному проекту («Сервис сокращения URL» или «Сервис сбора метрик и алертинга») ещё одну возможность попрактиковаться. Это необязательно — проверять не будем.
+
+Итак, нам нужно разработать навык для устройства с виртуальным помощником Алисой — неважно, колонка это или мобильное приложение. Этот навык позволял бы двум пользователям обмениваться голосовой почтой. Документацию по написанию навыка для Алисы вы можете найти [в Яндекс Технологиях](https://yandex.ru/dev/dialogs/alice/doc/request.html).
+
+Начнём с создания структуры проекта.
+
+Предположим, есть директория `~/dev/alice-skill`. Внутри этой директории создадим следующую структуру:
+
+```
+> ~/dev/alice-skill
+     |
+     |--- cmd
+     |     |--- skill
+     |--- internal
+```
+
+Теперь рассмотрим каждую директорию подробнее.
+
+По соглашению между разработчиками, исходные коды компилируемых исполняемых файлов хранятся в директориях `cmd/<name>`, где `<name>` — название результирующего бинарного файла после компиляции. Бинарный файл с веб-сервером навыка Алисы будет называться просто `skill` (или `skill.exe` для Windows), поэтому в проекте есть директория `cmd/skill`.
+
+В директории `internal` хранится код, доступный для использования только в данном проекте, — это гарантирует сам компилятор языка Go. В этой директории будут храниться модели данных и детали реализации навыка, о которых не стоит знать какому-либо внешнему коду.
+
+Представленная выше структура — минимально оговорённая между разработчиками. Все остальные директории и их иерархии никак не регламентируются, разработчику предоставлена полная творческая свобода.
+
+Для начала работы с навыком нужно создать файл `go.mod` в корне проекта. В этом файле описывается название модуля, минимальная версия компилятора и внешние зависимости проекта. Файл можно создать командой `$ go mod init <project_address>`, где `<project_address>` — адрес проекта без префикса протокола.
+
+Предположим, вы будете публиковать проект на GitHub по адресу `https://github.com/bluegopher/alice-skill`. Тогда команда будет выглядеть так: `$ go mod init github.com/bluegopher/alice-skill`. А файл `go.mod` — так:
+
+```go
+module github.com/bluegopher/alice-skill
+
+go 1.18
+```
+
+Теперь создадим файл с веб-сервером по пути `cmd/skill/main.go`. По соглашению между разработчиками, файл, содержащий входную функцию `main()`, называют `main.go`. В  файле напишем:
+
+```go
+// пакеты исполняемых приложений должны называться main
+package main
+
+import (
+    "net/http"
+)
+
+// функция main вызывается автоматически при запуске приложения
+func main() {
+    if err := run(); err != nil {
+        panic(err)
+    }
+}
+
+// функция run будет полезна при инициализации зависимостей сервера перед запуском
+func run() error {
+    return http.ListenAndServe(`:8080`, http.HandlerFunc(webhook))
+}
+
+// функция webhook — обработчик HTTP-запроса
+func webhook(w http.ResponseWriter, r *http.Request) {
+    if r.Method != http.MethodPost {
+        // разрешаем только POST-запросы
+        w.WriteHeader(http.StatusMethodNotAllowed)
+        return
+    }
+
+    // установим правильный заголовок для типа данных
+    w.Header().Set("Content-Type", "application/json")
+    // пока установим ответ-заглушку, без проверки ошибок
+    _, _ = w.Write([]byte(`
+      {
+        "response": {
+          "text": "Извините, я пока ничего не умею"
+        },
+        "version": "1.0"
+      }
+    `))
+}
+```
+
+Скомпилируем и запустим сервер, чтобы проверить базовую работоспособность. Выполним в директории `cmd/skill` команду:
+
+```go
+$ go run
+```
+
+Если при запуске не выводится ошибка, значит, сервер успешно запустился по адресу `http://localhost:8080/`. Попробуем отправить запрос:
+
+```
+$ curl -v -X POST 'http://localhost:8080'
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> POST / HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.79.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Date: Wed, 12 Oct 2022 20:42:50 GMT
+< Content-Length: 233
+<
+
+      {
+        "response": {
+          "text": "Извините, я пока ничего не умею"
+        },
+        "version": "1.0"
+      }
+```
+
+## Дополнительные материалы
+
+- [go.dev/net/http](https://pkg.go.dev/net/http) — документация пакета `net/http`.
+- [go.dev | Writing Web Applications](https://go.dev/doc/articles/wiki/) — о создании веб-приложений.
+- [GitHub | Build web application with golang](https://github.com/astaxie/build-web-application-with-golang/blob/master/ru/preface.md) — о веб-приложениях от авторитетного Go-разработчика @astaxie, автора библиотеки `beego`.
+- [IANA | HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml) — список кодов статуса.
