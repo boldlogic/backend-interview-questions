@@ -11,6 +11,28 @@ TRANSCRIPTS = ROOT / "Транскрипты"
 INDEX_FILE = "GO - индекс.md"
 BANK_GLOB = "[0-9]*.md"
 
+# SA-корпус (см. Заметки/SA_CORPUS.md) — знаменатель для 11. SA.md
+SA_CORPUS_FILES: frozenset[str] = frozenset(
+    {
+        "Озон SA 300_water.md",
+        "АльфаБанк SA 280_water.md",
+        "0223.md",
+        "2024_07_16_ASTON_тех_собес_online_audio_converter_mp3cut_net.md",
+        "Собеседование Астра ОМ.md",
+        "t1_SystemAnalyst.md",
+    }
+)
+
+SA_ONLY_BANKS: frozenset[str] = frozenset({"11. SA.md"})
+SA_GO_BANKS: frozenset[str] = frozenset(
+    {
+        "6. БД.md",
+        "7. HTTP, сети.md",
+        "8. Интеграции.md",
+        "9. Архитектура.md",
+    }
+)
+
 SKIP_H2 = frozenset({"Задают редко", "Задают часто", "Задают средне"})
 SUBSECTION_DENY = frozenset(
     {
@@ -79,14 +101,22 @@ MANUAL_ALIASES: dict[tuple[str, str], tuple[str, str]] = {
         "можем ли взять указатель на элемент мапы",
     ),
     ("6. БД", "32. join: inner, left, right"): ("6. БД", "виды join запросов: inner vs left"),
-    ("8. Интеграции", "1. kafka — зачем и как работает?"): ("8. Интеграции", "10.3 kafka / rabbitmq?"),
-    ("8. Интеграции", "2. outbox pattern"): ("9. Архитектура", "9.8 transactional outbox"),
-    ("9. Архитектура", "1. микросервисы vs монолит"): ("9. Архитектура", "9.6 монолит vs микросервисы"),
-    ("9. Архитектура", "3. распределённые транзакции"): ("9. Архитектура", "9.2 saga / 2pc для двух бд?"),
+    ("8. Интеграции", "1. kafka — зачем и как работает?"): ("8. Интеграции", "kafka / rabbitmq?"),
+    ("8. Интеграции", "10.3 kafka / rabbitmq?"): ("8. Интеграции", "kafka / rabbitmq?"),
+    ("8. Интеграции", "2. outbox pattern"): ("9. Архитектура", "transactional outbox"),
+    ("9. Архитектура", "1. микросервисы vs монолит"): ("9. Архитектура", "монолит vs микросервисы"),
+    ("9. Архитектура", "3. распределённые транзакции"): ("9. Архитектура", "saga / 2pc для двух бд?"),
+    ("9. Архитектура", "9.8 transactional outbox"): ("9. Архитектура", "transactional outbox"),
+    ("9. Архитектура", "9.2 saga / 2pc для двух бд?"): ("9. Архитектура", "saga / 2pc для двух бд?"),
     ("7. HTTP, сети", "14. Reverse proxy — что это?"): (
         "7. HTTP, сети",
         "что такое restful принципы?",
     ),
+    ("7. HTTP, сети", "23. что такое stateless и stateful сервисы?"): (
+        "7. HTTP, сети",
+        "что такое stateless и stateful сервисы?",
+    ),
+    ("7. HTTP, сети", "1. http методы"): ("7. HTTP, сети", "http методы"),
     ("2. GO - Средне", "Сложность алгоритмов — Big-O"): (
         "2. GO - Средне",
         "что такое o нотация, какая сложность бывает",
@@ -204,6 +234,41 @@ def is_bank_question_heading(level: str, title: str) -> bool:
 
 def list_transcripts() -> list[Path]:
     return sorted(p for p in TRANSCRIPTS.glob("*.md") if p.name != "INDEX.md")
+
+
+def corpus_for_bank(bank_name: str) -> str:
+    """Return corpus id: sa | sa_go | go."""
+    if bank_name in SA_ONLY_BANKS:
+        return "sa"
+    if bank_name in SA_GO_BANKS:
+        return "sa_go"
+    return "go"
+
+
+def corpus_transcript_names(corpus_id: str) -> frozenset[str]:
+    """Transcript filenames allowed for frequency numerator/denominator."""
+    if corpus_id == "sa":
+        return SA_CORPUS_FILES
+    if corpus_id in ("sa_go", "go"):
+        return frozenset(p.name for p in list_transcripts())
+    raise ValueError(f"unknown corpus_id: {corpus_id!r}")
+
+
+def corpus_denominator(corpus_id: str) -> int:
+    return len(corpus_transcript_names(corpus_id))
+
+
+def count_for_card_in_corpus(
+    bank_file: str,
+    card_title: str,
+    hits: dict[tuple[str, str], set[str]],
+    corpus_id: str,
+) -> int:
+    nf = norm_file(bank_file)
+    nh = norm_heading(card_title)
+    txs = hits.get((nf, nh), set())
+    allowed = corpus_transcript_names(corpus_id)
+    return len(txs & allowed)
 
 
 def list_bank_paths() -> list[Path]:
@@ -350,6 +415,18 @@ def load_index_aliases() -> dict[tuple[str, str], tuple[str, str]]:
     return aliases
 
 
+def finalize_canon(
+    canon: tuple[str, str] | None,
+    resolver: dict[tuple[str, str], tuple[str, str]],
+) -> tuple[str, str] | None:
+    """Map alias targets and numbered headings to real bank card keys."""
+    if canon is None:
+        return None
+    nf, nh = canon
+    key = (nf, norm_heading(nh))
+    return resolver.get(key, key)
+
+
 def resolve_link(
     file_part: str,
     heading: str,
@@ -365,20 +442,20 @@ def resolve_link(
     ]
     for key in keys:
         if key in resolver:
-            return resolver[key]
+            return finalize_canon(resolver[key], resolver)
         if key in aliases:
-            return aliases[key]
+            return finalize_canon(aliases[key], resolver)
 
     num = heading_number(heading)
     if num and (file_part, num) in number_index:
-        return number_index[(file_part, num)]
+        return finalize_canon(number_index[(file_part, num)], resolver)
 
     pk = heading_prefix_key(heading)
     if pk:
         candidates = prefix_index.get((file_part, pk), [])
         unique = list(dict.fromkeys(candidates))
         if len(unique) == 1:
-            return unique[0]
+            return finalize_canon(unique[0], resolver)
 
     return None
 

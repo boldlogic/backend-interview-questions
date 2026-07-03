@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -13,6 +14,9 @@ from bank_registry import (
     INDEX_FILE,
     ROOT,
     build_question_registry,
+    corpus_denominator,
+    corpus_for_bank,
+    count_for_card_in_corpus,
     list_bank_paths,
     list_transcripts,
     load_index_aliases,
@@ -90,7 +94,8 @@ def upsert_freq_in_card(lines: list[str], n: int, d: int) -> list[str]:
     return out
 
 
-def apply_bank_file(path: Path, hits, d: int, dry_run: bool) -> list[dict]:
+def apply_bank_file(path: Path, hits, corpus_id: str, dry_run: bool) -> list[dict]:
+    d = corpus_denominator(corpus_id)
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines()
     cards = parse_bank_cards(text)
@@ -98,13 +103,19 @@ def apply_bank_file(path: Path, hits, d: int, dry_run: bool) -> list[dict]:
 
     replacements: list[tuple[int, int, list[str]]] = []
     for card in cards:
-        n = count_for_card(path.name, card["title"], hits)
+        n = count_for_card_in_corpus(path.name, card["title"], hits, corpus_id)
         old = read_old_freq(card["lines"])
         new = f"{n}/{d}"
         updated = upsert_freq_in_card(card["lines"], n, d)
         if old != new:
             changes.append(
-                {"file": path.name, "title": card["title"], "old_freq": old, "new_freq": new}
+                {
+                    "file": path.name,
+                    "title": card["title"],
+                    "old_freq": old,
+                    "new_freq": new,
+                    "corpus": corpus_id,
+                }
             )
         replacements.append((card["start"], card["end"], updated))
 
@@ -160,12 +171,20 @@ def write_report(all_changes, orphans, hits, d: int) -> None:
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with REPORT_PATH.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter="\t")
-        w.writerow(["file", "title", "old_freq", "new_freq"])
+        w.writerow(["file", "title", "old_freq", "new_freq", "corpus"])
         for row in sorted(
             all_changes,
             key=lambda r: (-int(r["new_freq"].split("/")[0]), r["file"], r["title"]),
         ):
-            w.writerow([row["file"], row["title"], row["old_freq"], row["new_freq"]])
+            w.writerow(
+                [
+                    row["file"],
+                    row["title"],
+                    row["old_freq"],
+                    row["new_freq"],
+                    row.get("corpus", ""),
+                ]
+            )
         w.writerow([])
         w.writerow(["orphan_transcript", "orphan_file", "orphan_heading"])
         seen: set[tuple[str, str]] = set()
@@ -183,12 +202,18 @@ def write_report(all_changes, orphans, hits, d: int) -> None:
                 w.writerow([i, nf + ".md", nh, len(txs), d])
 
 
-def run(dry_run: bool) -> None:
+def run(dry_run: bool, bank_filter: list[str] | None = None) -> None:
     transcripts = list_transcripts()
-    d = len(transcripts)
+    d_go = len(transcripts)
     bank_paths = list_bank_paths()
+    if bank_filter is not None:
+        allowed = {norm_file(name) for name in bank_filter}
+        bank_paths = [bp for bp in bank_paths if norm_file(bp.name) in allowed]
+        if not bank_paths:
+            print("ERROR: --files: no matching bank files", file=sys.stderr)
+            raise SystemExit(2)
 
-    resolver, number_index, prefix_index, _display = build_question_registry(bank_paths)
+    resolver, number_index, prefix_index, _display = build_question_registry(list_bank_paths())
     aliases = load_index_aliases()
     hits, orphans = build_transcript_hits(resolver, aliases, number_index, prefix_index)
 
@@ -203,23 +228,35 @@ def run(dry_run: bool) -> None:
 
     all_changes: list[dict] = []
     for bp in bank_paths:
-        all_changes.extend(apply_bank_file(bp, hits, d, dry_run))
-    index_updates = update_go_index(hits, d, dry_run)
-    write_report(all_changes, orphans, hits, d)
+        corpus_id = corpus_for_bank(bp.name)
+        all_changes.extend(apply_bank_file(bp, hits, corpus_id, dry_run))
+
+    index_updates = 0
+    if bank_filter is None:
+        index_updates = update_go_index(hits, d_go, dry_run)
+    write_report(all_changes, orphans, hits, d_go)
 
     mode = "DRY-RUN" if dry_run else "WRITE"
-    print(f"=== update_bank_frequency ({mode}) ===")
-    print(f"Corpus D={d} transcripts")
+    scope = f"{len(bank_paths)} file(s)" if bank_filter else "full bank"
+    print(f"=== update_bank_frequency ({mode}, {scope}) ===")
+    print(f"GO corpus D={d_go} transcripts")
+    print(f"SA corpus D={corpus_denominator('sa')} transcripts")
     print(f"Bank cards: {total_cards}, with N>0: {with_hits}, zero: {total_cards - with_hits}")
     print(f"Unique questions with hits: {sum(1 for s in hits.values() if s)}")
     print(f"Orphan link pairs: {len({(o['file'], o['heading']) for o in orphans})}")
     print(f"Card frequency lines changed: {len(all_changes)}")
-    print(f"GO index rows updated: {index_updates}")
+    if bank_filter is None:
+        print(f"GO index rows updated: {index_updates}")
     print(f"Report: {REPORT_PATH.relative_to(ROOT)}")
+
+    for row in all_changes[:15]:
+        print(f"  {row['file']}: {row['title'][:50]}  {row['old_freq']} -> {row['new_freq']} ({row['corpus']})")
+    if len(all_changes) > 15:
+        print(f"  ... +{len(all_changes) - 15} more")
 
     top = sorted(hits.items(), key=lambda x: -len(x[1]))[:5]
     for (nf, nh), txs in top:
-        print(f"  top: {len(txs)}/{d}  {nf}.md | {nh}")
+        print(f"  top: {len(txs)}/{d_go}  {nf}.md | {nh}")
 
 
 def main() -> None:
@@ -228,20 +265,29 @@ def main() -> None:
     parser.add_argument(
         "--full-corpus",
         action="store_true",
-        help="Required with --write: explicit intent to recompute ALL bank cards",
+        help="Required with --write when updating ALL bank cards",
+    )
+    parser.add_argument(
+        "--files",
+        nargs="+",
+        metavar="BANK.md",
+        help="Only recompute these bank files (corpus-aware per file)",
     )
     parser.add_argument("--check", action="store_true", help="Exit 1 if frequency lines would change")
     args = parser.parse_args()
-    if args.write and not args.full_corpus:
+
+    if args.write and not args.full_corpus and not args.files:
         print(
-            "ERROR: --write пересчитывает ВЕСЬ банк и затирает ручные частоты.\n"
-            "Для одного собеса: scripts/apply_simber_frequency_bump.py --write\n"
-            "Для полного пересчёта: --write --full-corpus (только по явной просьбе пользователя)",
+            "ERROR: --write без --full-corpus допустим только с --files.\n"
+            "  Точечно: --write --files \"11. SA.md\" \"6. БД.md\" ...\n"
+            "  Весь банк: --write --full-corpus\n"
+            "  Один собес: scripts/apply_simber_frequency_bump.py --write",
             file=sys.stderr,
         )
         raise SystemExit(2)
+
     dry_run = not args.write
-    run(dry_run=dry_run)
+    run(dry_run=dry_run, bank_filter=args.files)
     if args.check and dry_run:
         for line in REPORT_PATH.read_text(encoding="utf-8").splitlines():
             if not line or line.startswith("file\t"):
