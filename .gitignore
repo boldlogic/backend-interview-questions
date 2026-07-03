@@ -49,3 +49,5 @@ scripts/*
 # AGENTS.md — инструкции для агентов (коммитить)
 # (строка /AGENTS.md удалена — файл в репозитории)
 /GO - индекс.md
+.obsidian
+workspace.json
