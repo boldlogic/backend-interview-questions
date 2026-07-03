@@ -33,7 +33,8 @@ SA_GO_BANKS: frozenset[str] = frozenset(
     }
 )
 
-SKIP_H2 = frozenset({"Задают редко", "Задают часто", "Задают средне"})
+SKIP_H2 = frozenset({"Задают редко", "Задают часто", "Задают средне", "Оглавление"})
+SECTION_NUM_H2_RE = re.compile(r"^\d+\.\s")
 SUBSECTION_DENY = frozenset(
     {
         "1. читатель",
@@ -252,12 +253,20 @@ def heading_number(title: str) -> str | None:
     return None
 
 
+def is_experience_section_h2(title: str) -> bool:
+    if title.startswith("Топ-25%"):
+        return True
+    if SECTION_NUM_H2_RE.match(title):
+        return True
+    return False
+
+
 def is_architecture_sd_heading(title: str) -> bool:
     return ARCH_NUM_RE.match(title.strip()) is not None
 
 
 def is_bank_question_heading(level: str, title: str) -> bool:
-    if title in SKIP_H2:
+    if title in SKIP_H2 or is_experience_section_h2(title):
         return False
     nh = norm_heading(title)
     if nh in SUBSECTION_DENY:
@@ -363,7 +372,7 @@ def parse_bank_cards(text: str) -> list[dict]:
         h3 = H3_RE.match(lines[i]) if not h2 else None
         if h2:
             title = h2.group(1).strip()
-            if title in SKIP_H2:
+            if title in SKIP_H2 or is_experience_section_h2(title):
                 i += 1
                 continue
             start = i
