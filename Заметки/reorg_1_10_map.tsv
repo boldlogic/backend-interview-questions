@@ -1,0 +1,293 @@
+old_file	title	new_file	freq
+1. GO - Часто.md	Stack vs heap — зачем и производительность?	1. GO - Часто.md	10
+1. GO - Часто.md	`atomic` vs mutex	1. GO - Часто.md	15
+1. GO - Часто.md	`sync.Map`	1. GO - Часто.md	8
+1. GO - Часто.md	context - что такое и зачем использовать?	1. GO - Часто.md	14
+1. GO - Часто.md	Для чего используется интерфейс? / что такое / как устроен интерфейс?	1. GO - Часто.md	8
+1. GO - Часто.md	Зачем нужен select	1. GO - Часто.md	21
+1. GO - Часто.md	Как устроен канал и как он работает под капотом? / Какие виды каналов бывают?	1. GO - Часто.md	11
+1. GO - Часто.md	Как устроен слайс?	1. GO - Часто.md	17
+1. GO - Часто.md	Какие ключи могут быть у мапы?	1. GO - Часто.md	8
+1. GO - Часто.md	Рост capacity слайса / Как работает append?	1. GO - Часто.md	12
+1. GO - Часто.md	Способы синхронизации горутин / Какие примитивы синхронизации / как горутины общаются	1. GO - Часто.md	10
+1. GO - Часто.md	Чем горутина отличается от потока?	1. GO - Часто.md	14
+1. GO - Часто.md	Чем слайс отличается от массива?	1. GO - Часто.md	12
+1. GO - Часто.md	Что при записи/чтении из закрытого канала?	1. GO - Часто.md	23
+1. GO - Часто.md	Что такое горутины и зачем нужны	1. GO - Часто.md	21
+1. GO - Часто.md	Что такое дедлок и рейс кондишион, и `-race`	1. GO - Часто.md	18
+1. GO - Часто.md	Что такое модель GMP и GOMAXPROCS?	1. GO - Часто.md	20
+1. GO - Часто.md	Что такое указатель и сколько он весит	1. GO - Часто.md	9
+10. Ops и Linux.md	Blue-green deployment	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	CI/CD — обзор инструментов	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Canary deployment	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Dark deploy vs A/B testing	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Docker image vs container?	10. БД · HTTP · Arch · Ops — Реже.md	1
+10. Ops и Linux.md	Docker layers	10. БД · HTTP · Arch · Ops — Реже.md	1
+10. Ops и Linux.md	Docker vs виртуальная машина	6. Ops - Часто.md	8
+10. Ops и Linux.md	Ingress	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	K8s liveness vs readiness	10. БД · HTTP · Arch · Ops — Реже.md	1
+10. Ops и Linux.md	Kubernetes Pod	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Kubernetes Service	10. БД · HTTP · Arch · Ops — Реже.md	1
+10. Ops и Linux.md	Load average в Linux	10. БД · HTTP · Arch · Ops — Реже.md	2
+10. Ops и Linux.md	SLA / SLO / SLI	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Важно помнить	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Как убить процесс в Linux?	6. Ops - Часто.md	9
+10. Ops и Linux.md	Нет памяти: swap, OOM killer	10. БД · HTTP · Arch · Ops — Реже.md	1
+10. Ops и Linux.md	Системные каталоги	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Структура каталогов Linux (FHS)	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Что происходит при malloc / выделение 1 KB?	6. Ops - Часто.md	4
+10. Ops и Linux.md	Что такое Pod в Kubernetes?	6. Ops - Часто.md	7
+10. Ops и Linux.md	Что такое Pod?	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Что такое SFTP?	10. БД · HTTP · Arch · Ops — Реже.md	0
+10. Ops и Linux.md	Что такое fork?	10. БД · HTTP · Arch · Ops — Реже.md	1
+2. GO - Средне.md	Cooperative vs preemptive scheduling в Go?	7. GO - Средне.md	4
+2. GO - Средне.md	Generics vs interfaces?	7. GO - Средне.md	3
+2. GO - Средне.md	Mutex и RWMutex / Когда Mutex, а когда RWMutex?	7. GO - Средне.md	7
+2. GO - Средне.md	Work stealing и global queue	7. GO - Средне.md	4
+2. GO - Средне.md	`sync.WaitGroup`	7. GO - Средне.md	5
+2. GO - Средне.md	defer, panic, recover / exceptions в Go	7. GO - Средне.md	15
+2. GO - Средне.md	errors.Is / errors.As / %w?	7. GO - Средне.md	3
+2. GO - Средне.md	pprof: CPU, heap, goroutine	7. GO - Средне.md	7
+2. GO - Средне.md	Атомарные операции	7. GO - Средне.md	3
+2. GO - Средне.md	Как устроено ООП в Go?	7. GO - Средне.md	7
+2. GO - Средне.md	Мапа потокобезопасная?	7. GO - Средне.md	3
+2. GO - Средне.md	Общее: недостатки Go, компиляция, init, reflect	7. GO - Средне.md	4
+2. GO - Средне.md	Передача и возврат: значение vs указатель? / Value vs pointer receiver	7. GO - Средне.md	4
+2. GO - Средне.md	Порядок итерации map	7. GO - Средне.md	7
+2. GO - Средне.md	Процесс / поток / IPC	7. GO - Средне.md	6
+2. GO - Средне.md	Расскажи про каналы / Что это такое каналы, какие бывают, все-все	7. GO - Средне.md	8
+2. GO - Средне.md	Сборщик мусора: что, зачем, отключение / Как работает GC	7. GO - Средне.md	5
+2. GO - Средне.md	Чем конкурентность отличается от параллелизма?	7. GO - Средне.md	5
+2. GO - Средне.md	Что такое generics?	7. GO - Средне.md	10
+2. GO - Средне.md	Что такое map? / Как устроена map под капотом?	7. GO - Средне.md	7
+3. GO - Редко 1.md	Append внутри функции по значению — виден ли снаружи?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Comparable types	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	GOPRIVATE и GOPROXY?	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	Set через map / Есть ли структура set?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Type assertion и type switch	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	`-race` в CI	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	`GOGC` и настройка GC	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	`errgroup`	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	`len(sync.Map)` — почему нет, как считать	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	`sync.Once`	8. GO - Редко 1.md	1
+3. GO - Редко 1.md	`sync.Pool`	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Бинарный поиск vs дерево поиска (оба O(log n))	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Как горутина понимает что пора проснуться	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Канал vs мьютекс	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Когда interface == nil / `any` / struct{}	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Конкурентная запись в мапу, почему нельзя?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Можем ли взять указатель на элемент мапы	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Можно ли передать функцию как параметр?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Ограничить доступ к ресурсу N горутинами	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Очередь с приоритетом и binary heap	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Пакет sync — обзор	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Параллельные исходящие HTTP-запросы (fan-out)?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Сложность доступа по ключу в map?	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Указатель в цикле — один адрес	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Утечка горутин	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Что произойдет с читателями/писателями если закрыть канал?	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Что такое O нотация, какая сложность бывает	8. GO - Редко 1.md	3
+3. GO - Редко 1.md	Что такое string? / строки vs руны	8. GO - Редко 1.md	2
+3. GO - Редко 1.md	Что такое планировщик	8. GO - Редко 1.md	2
+4. GO - Редко 2.md	1000 горутин инкрементят int — получим 1000?	9. GO - Редко 2-3.md	0
+4. GO - Редко 2.md	Middleware и ` http.Handler`	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Reference types в Go	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	` context.WithValue` — антипаттерны	9. GO - Редко 2-3.md	0
+4. GO - Редко 2.md	` make`vs` new`	9. GO - Редко 2-3.md	0
+4. GO - Редко 2.md	` sync.Cond`	9. GO - Редко 2-3.md	0
+4. GO - Редко 2.md	Где в памяти размещается массив, а где слайс?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Для чего можно использовать массивы в Golang?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	До какого размера можно увеличивать слайс?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Как в го можно создать собственный тип	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Как устроен контекст?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Какие ключевые особенности го	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Какие преимущества есть у Golang?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Линтеры: `go vet`, golangci-lint	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Операции и параметры канала	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Пакет и папка internal	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Системные вызовы (syscall) в Go?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Сколько ядер нужно для sync.Map?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Структуры: порядок полей и выравнивание	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Тестирование: unit, table-driven, integration, httptest	9. GO - Редко 2-3.md	2
+4. GO - Редко 2.md	Типы: руна, enum, переполнение	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Чем хорош массив по сравнению со слайсом?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Что если GOMAXPROCS=1 и goroutine блокируется?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Что используется для неблокирующего чтения из канала?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Что такое context switching и как горутины решают эту проблему	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Что такое массив?	9. GO - Редко 2-3.md	1
+4. GO - Редко 2.md	Что такое хеш-таблица / коллизии / эвакуация map	9. GO - Редко 2-3.md	3
+5. GO - Редко 3.md	Buffer overflow — возможен ли в Go?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Go — императивный или декларативный?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Inline: когда компилятор заинлайнирует функцию?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Map: конкурентность и типичные сценарии	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Memory arenas (runtime после syscall)	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	ORM vs `database/sql`	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Panic vs return error в библиотеке	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Safepoints / вытеснение / G на разных P	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	WaitGroup под капотом	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Write barrier?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	go.mod / go.sum в git?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	select, switch, циклы	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	В чем разница между слайсом указателей и слайсом значений с точки зрения вызова функции?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Где объявлять интерфейс — у потребителя или реализации?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Какие типы данных есть в Go?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Код ревью слайс	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Массив vs связный список — производительность	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Память: утечка, стек, рекурсия, переполнение слайса	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Разбор кода map	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Слайс: ограничения, make/copy/append, типичные ошибки	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Сценарии блокировки каналов (без читателя)	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Указатели: зачем, ref vs pointer, риски	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Чем mutex отличается от семафора?	9. GO - Редко 2-3.md	0
+5. GO - Редко 3.md	Что делает runtime Go при нехватке памяти?	9. GO - Редко 2-3.md	0
+6. БД.md	ACID и транзакции	2. БД - Часто.md	26
+6. БД.md	B-tree и физическое хранение на диске	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	CTE vs подзапрос (+ recursive)	10. БД · HTTP · Arch · Ops — Реже.md	3
+6. БД.md	ClickHouse и колоночные СУБД	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	Covering index	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	DDS и DM в хранилищах	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	DW (Data Warehouse) vs Data Lake	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	DWH — хранилище данных	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Deadlock в БД	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	EXPLAIN и EXPLAIN ANALYZE	2. БД - Часто.md	10
+6. БД.md	Hash index	10. БД · HTTP · Arch · Ops — Реже.md	4
+6. БД.md	Heap и физическое хранение таблицы	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	Index-only scan	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	MVCC в PostgreSQL	10. БД · HTTP · Arch · Ops — Реже.md	4
+6. БД.md	ODS — операционное хранилище	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Partial (частичный) индекс	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	PostGIS и геозапросы	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Prepared statements / `$1`	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	SQL vs NoSQL — Чем реляционные БД отличаются от NoSQL?	2. БД - Часто.md	8
+6. БД.md	Selectivity и cardinality индекса	10. БД · HTTP · Arch · Ops — Реже.md	4
+6. БД.md	TRUNCATE vs DELETE	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Агрегатные функции SQL	2. БД - Часто.md	5
+6. БД.md	Виды Constraints?	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	Виды JOIN запросов: INNER vs LEFT	2. БД - Часто.md	15
+6. БД.md	Виды связей между таблицами	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	Витрина данных	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Даются следующие три операции SQL. Какой будет результат?	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Задача на нормализацию таблиц базы данных.	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	Индекс есть, но план его не использует	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	Как выбирать индексы под запросы	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	Масштабирование БД	2. БД - Часто.md	14
+6. БД.md	Миграция MSSQL → PostgreSQL	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Нормализация и денормализация	2. БД - Часто.md	7
+6. БД.md	Оконные функции (Window Functions)	10. БД · HTTP · Arch · Ops — Реже.md	3
+6. БД.md	Оптимизация БД	10. БД · HTTP · Arch · Ops — Реже.md	4
+6. БД.md	Отличия процедуры от триггера	10. БД · HTTP · Arch · Ops — Реже.md	1
+6. БД.md	Почему B-tree быстрее полного перебора?	2. БД - Часто.md	9
+6. БД.md	Представления в БД	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Репликация и read replica	2. БД - Часто.md	9
+6. БД.md	Топологии хранилищ данных	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Уровни изоляции транзакций	2. БД - Часто.md	22
+6. БД.md	Чем отличается UNION от UNION ALL?	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Чем отличается WHERE от HAVING?	2. БД - Часто.md	6
+6. БД.md	Что такое БД	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Что такое СУБД	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Что такое индексы БД и зачем они нужны?	2. БД - Часто.md	18
+6. БД.md	Что такое поисковые пути в базах данных?	10. БД · HTTP · Arch · Ops — Реже.md	0
+6. БД.md	Что такое процедуры и функции в БД?	10. БД · HTTP · Arch · Ops — Реже.md	2
+6. БД.md	Что такое триггер	10. БД · HTTP · Arch · Ops — Реже.md	3
+7. HTTP, сети.md	/etc/hosts — локальный редирект домена	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	1. **Какие HTTP методы вы знаете и в чем их различия?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	1. Что такое RESTful принципы?	3. HTTP - Часто.md	5
+7. HTTP, сети.md	10. **Можно ли использовать GET для передачи чувствительных данных?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	2. **В чем разница между PUT и PATCH?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	2. Чем POST отличается от GET?	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	2. Что такое stateless и stateful сервисы?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	3. **Что означает идемпотентность HTTP метода?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	3. Чем PUT отличается от PATCH?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	4. **Какие HTTP методы считаются безопасными?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	4. Чем отличается код 200 от 201?	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	4. Что такое идемпотентность? Какие методы HTTP идемпотентны?	10. БД · HTTP · Arch · Ops — Реже.md	4
+7. HTTP, сети.md	5. **Какие HTTP методы кешируются?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	5. Как сделать метод POST идемпотентным?	10. БД · HTTP · Arch · Ops — Реже.md	3
+7. HTTP, сети.md	5. Какие методы безопасны?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	5. Что содержит HEADER в ответе REST?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	6. **Когда использовать POST, а когда PUT для создания ресурса?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	7. **Может ли DELETE запрос содержать тело?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	8. **В чем разница между GET и POST?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	9. **Почему PUT идемпотентный, а POST нет?**	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	CORS и cross-origin (браузер)	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	CSRF (Cross-Site Request Forgery)	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	DNS — как работает резолвинг?	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	Graceful shutdown HTTP-сервера	10. БД · HTTP · Arch · Ops — Реже.md	4
+7. HTTP, сети.md	HTTP vs HTTPS?	3. HTTP - Часто.md	8
+7. HTTP, сети.md	HTTP методы	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	HTTP/1.1 vs HTTP/2 vs HTTP/3?	10. БД · HTTP · Arch · Ops — Реже.md	3
+7. HTTP, сети.md	JSON-RPC vs REST	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	Long polling vs polling vs WebSocket vs SSE?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Man-in-the-middle (MITM)	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	OpenID Connect / OAuth2	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	REST principles / gRPC vs HTTP?	3. HTTP - Часто.md	23
+7. HTTP, сети.md	Stateful vs Stateless API	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	TCP vs UDP?	3. HTTP - Часто.md	9
+7. HTTP, сети.md	WebSocket vs REST	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	WebSocket vs gRPC	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	XSS (Cross-Site Scripting)	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Зачем timeouts в HTTP?	10. БД · HTTP · Arch · Ops — Реже.md	3
+7. HTTP, сети.md	Из чего состоит HTTP-запрос?	10. БД · HTTP · Arch · Ops — Реже.md	4
+7. HTTP, сети.md	Как подобрать timeout (p99)?	10. БД · HTTP · Arch · Ops — Реже.md	4
+7. HTTP, сети.md	Как разделяются заголовки и тело HTTP-запроса?	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Как сделать метод POST идемпотентным?	10. БД · HTTP · Arch · Ops — Реже.md	3
+7. HTTP, сети.md	Какие методы безопасны?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Коды ответов HTTP	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	От чего защищает HTTPS (TLS)?	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	Синхронное и асинхронное шифрование	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Уровни сетевых протоколов	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Хеширование в контексте безопасности	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Чем POST отличается от GET?	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	Чем PUT отличается от PATCH?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Чем идентификация отличается от авторизации и аутентификации?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Что не шифруется в HTTPS?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Что происходит после Enter в адресной строке	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Что содержит HEADER в ответе REST?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Что содержится в XML?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Что такое NAT?	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Что такое RESTful принципы?	3. HTTP - Часто.md	5
+7. HTTP, сети.md	Что такое URL?	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	Что такое XSD?	10. БД · HTTP · Arch · Ops — Реже.md	2
+7. HTTP, сети.md	Что такое stateless и stateful сервисы?	10. БД · HTTP · Arch · Ops — Реже.md	1
+7. HTTP, сети.md	Что такое идемпотентность? Какие методы HTTP идемпотентны?	10. БД · HTTP · Arch · Ops — Реже.md	4
+7. HTTP, сети.md	🔥 Часто задаваемые вопросы	10. БД · HTTP · Arch · Ops — Реже.md	0
+7. HTTP, сети.md	🔥 Часто задаваемые вопросы	10. БД · HTTP · Arch · Ops — Реже.md	0
+8. Интеграции.md	ESB — принцип работы корпоративной шины	4. Интеграции.md	0
+8. Интеграции.md	Kafka / RabbitMQ?	4. Интеграции.md	13
+8. Интеграции.md	Kafka producer: acks и idempotent producer	4. Интеграции.md	2
+8. Интеграции.md	Kafka: topic, partition, offset, consumer group	4. Интеграции.md	5
+8. Интеграции.md	OpenAPI / Swagger — проектирование API	4. Интеграции.md	0
+8. Интеграции.md	SOAP — протокол обмена	4. Интеграции.md	0
+8. Интеграции.md	WSDL — описание веб-сервиса	4. Интеграции.md	0
+8. Интеграции.md	Выбор транспорта межсервисного взаимодействия: HTTP vs gRPC vs брокер	4. Интеграции.md	1
+8. Интеграции.md	Интеграция четырёх систем: заявка → скоринг → печать → логистика	4. Интеграции.md	0
+8. Интеграции.md	Какие виды/способы интеграции ты знаешь?	4. Интеграции.md	1
+8. Интеграции.md	Полнота доставки сообщения брокером	4. Интеграции.md	0
+8. Интеграции.md	Семантики доставки: at-most-once / at-least-once / exactly-once	4. Интеграции.md	3
+8. Интеграции.md	Что такое синхронные и асинхронные вызовы?	4. Интеграции.md	2
+9. Архитектура.md	CQRS — когда уместен	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Clean / hexagonal architecture?	5. Архитектура - Часто.md	4
+9. Архитектура.md	Negative cache	10. БД · HTTP · Arch · Ops — Реже.md	1
+9. Архитектура.md	Partitioning vs sharding	10. БД · HTTP · Arch · Ops — Реже.md	1
+9. Архитектура.md	Rate limit при нескольких репликах?	5. Архитектура - Часто.md	3
+9. Архитектура.md	SD: latency растёт неделями, restart помогает	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	SOA vs микросервисы	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	SOLID — принципы проектирования	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Saga / 2PC для двух БД?	5. Архитектура - Часто.md	7
+9. Архитектура.md	Strangler fig pattern	10. БД · HTTP · Arch · Ops — Реже.md	1
+9. Архитектура.md	Transactional outbox	5. Архитектура - Часто.md	6
+9. Архитектура.md	Алгоритмы rate limiting: fixed window / sliding window / token bucket / leaky bucket	10. БД · HTTP · Arch · Ops — Реже.md	1
+9. Архитектура.md	В чем разница между монолитами и микросервисами? Какие плюсы и минусы той и другой архитектуры?	10. БД · HTTP · Arch · Ops — Реже.md	2
+9. Архитектура.md	Достоинства и недостатки микросервисов	10. БД · HTTP · Arch · Ops — Реже.md	2
+9. Архитектура.md	Знаете ли вы CAP-теорему?	10. БД · HTTP · Arch · Ops — Реже.md	2
+9. Архитектура.md	Какие виды архитектур ПО знаешь?	5. Архитектура - Часто.md	3
+9. Архитектура.md	Какие знаешь архитектурные стили?	5. Архитектура - Часто.md	4
+9. Архитектура.md	Монолит vs микросервисы	5. Архитектура - Часто.md	4
+9. Архитектура.md	Низкая связанность — что это?	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Опыт с legacy: поддержка vs переписывание	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Паттерны микросервисной архитектуры	10. БД · HTTP · Arch · Ops — Реже.md	1
+9. Архитектура.md	Что класть в кэш (и что не класть)	5. Архитектура - Часто.md	6
+9. Архитектура.md	Что означает устойчивость к отказам?	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Что такое Хореография и Оркестрация?	10. БД · HTTP · Arch · Ops — Реже.md	2
+9. Архитектура.md	Что такое архитектура?	10. БД · HTTP · Arch · Ops — Реже.md	0
+9. Архитектура.md	Что такое архитектурный стиль?	10. БД · HTTP · Arch · Ops — Реже.md	2

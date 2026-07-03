@@ -1186,7 +1186,7 @@
 **[28:19]** даже там, при, я не знаю,
 
 **[28:21]** каком GRPC, когда ты
-> 📎 **База:** ✅ [[7. HTTP, сети#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
 
 **[28:23]** указываешь
 
@@ -5456,7 +5456,7 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | Slice pointers, stack/heap, map, channels, mutex, select, gRPC | ✅ | [[1–3. GO]] · [[7. HTTP, сети]] |
+| — | Slice pointers, stack/heap, map, channels, mutex, select, gRPC | ✅ | [[1–3. GO]] · [[3. HTTP - Часто]] |
 
 ### Практические задачи
 

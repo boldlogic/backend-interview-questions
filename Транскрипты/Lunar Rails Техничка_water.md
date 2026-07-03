@@ -101,7 +101,7 @@
 **[01:12]** at Clover Labs.
 
 **[01:14]** I'll explain a bit more later,
-> 📎 **База:** ✅ [[6. БД#EXPLAIN и EXPLAIN ANALYZE]]
+> 📎 **База:** ✅ [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]]
 
 **[01:16]** but Clover Labs
 
@@ -210,7 +210,7 @@
 **[03:58]** will financially use cases.
 
 **[04:00]** I'm particularly interested in mechanics
-> 📎 **База:** ✅ [[7. HTTP, сети#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
 
 **[04:04]** ability and clean architecture.
 
@@ -635,7 +635,7 @@
 **[15:32]** Так что, вместо каждой станики, дейтабейсиндексы можно quickly locate the needed records using the index structure.
 
 **[15:42]** И ты обычно используешь индексы и колонны, которые часто используют в конструкциях, such as queer, join, over-the-buy, closes, to speed up queries.
-> 📎 **База:** ✅ [[6. БД#Виды JOIN запросов: INNER vs LEFT]]
+> 📎 **База:** ✅ [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]]
 
 **[15:55]** Но также у нас есть конс, such as indexes come with trade-offs, they consume extra storage and slow down write operations.
 
@@ -1075,7 +1075,7 @@
 **[27:45]** This construction is useful
 
 **[27:47]** to schedule a function call
-> 📎 **База:** ✅ [[12. Опыт и soft skills#2.5 On-call и инциденты]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#2.5 On-call и инциденты]]
 
 **[27:49]** to run after the
 
@@ -1148,7 +1148,7 @@
 **[29:00]** we had a disagreement about
 
 **[29:02]** whether to use Kafka or Rabbit
-> 📎 **База:** ✅ [[8. Интеграции#Kafka / RabbitMQ?]]
+> 📎 **База:** ✅ [[4. Интеграции#Kafka / RabbitMQ?]]
 
 **[29:04]** MQ.
 
@@ -1365,7 +1365,7 @@
 **[33:04]** icing updates
 
 **[33:06]** just using short daily weekly updates
-> 📎 **База:** ✅ [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]]
 
 **[33:08]** shared channels helped
 
@@ -2314,7 +2314,7 @@
 **[50:17]** as payment rates
 
 **[50:19]** like the sender and the receiver
-> 📎 **База:** ✅ [[2. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]]
+> 📎 **База:** ✅ [[7. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]]
 
 **[50:21]** let's say someone wants to export
 
@@ -2431,7 +2431,7 @@
 **[52:25]** right now
 
 **[52:27]** screen planning, code reviews, deployments
-> 📎 **База:** ✅ [[12. Опыт и soft skills#6.1 Code review и agile как опыт]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#6.1 Code review и agile как опыт]]
 
 **[52:29]** something like that
 
@@ -2565,18 +2565,18 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[8. Интеграции#Kafka / RabbitMQ?]] |
-| — | value vs pointer receiver | ✅ | [[2. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
+| — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] · [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[4. Интеграции#Kafka / RabbitMQ?]] |
+| — | value vs pointer receiver | ✅ | [[7. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
 
 
 ### Опыт / behavioral
 
 | Время | Тема | Статус | Пункт |
 |-------|------|--------|-------|
-| 27:47 | to schedule a function call | ✅ | [[12. Опыт и soft skills#2.5 On-call и инциденты]] |
+| 27:47 | to schedule a function call | ✅ | [[16. Опыт и soft skills#2.5 On-call и инциденты]] |
 
-| 33:06 | just using short daily weekly updates | ✅ | [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
-| 52:27 | screen planning, code reviews, deployments | ✅ | [[12. Опыт и soft skills#6.1 Code review и agile как опыт]] |
+| 33:06 | just using short daily weekly updates | ✅ | [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
+| 52:27 | screen planning, code reviews, deployments | ✅ | [[16. Опыт и soft skills#6.1 Code review и agile как опыт]] |
 ### Без разметки
 
 | Время | Тема | Статус |

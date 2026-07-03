@@ -725,7 +725,7 @@
 **[12:58]** Еще раз?
 
 **[13:01]** Как это, просто, в очереди событий,
-> 📎 **База:** ✅ [[8. Интеграции#Kafka: topic, partition, offset, consumer group]] · рефералка, очередь событий
+> 📎 **База:** ✅ [[4. Интеграции#Kafka: topic, partition, offset, consumer group]] · рефералка, очередь событий
 
 **[13:03]** где события, которые нужны для этого
 
@@ -950,7 +950,7 @@
 **[16:52]** Окей.
 
 **[16:54]** Так, давай перейдем к кодингу.
-> 📎 **Задача:** 🔧 live coding: parking lot (small/medium/large, park/unpark, configurable slots) · [[2. GO - Средне#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]]
+> 📎 **Задача:** 🔧 live coding: parking lot (small/medium/large, park/unpark, configurable slots) · [[7. GO - Средне#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]]
 
 **[16:56]** Я сейчас скину
 
@@ -1243,7 +1243,7 @@
 **[33:34]** Yeah.
 
 **[33:35]** So, let's suppose that you are reviewing this code, like, what would be your suggestions for further improvement?
-> 📎 **Задача:** 🔧 code review: parking lot implementation (DRY, enum sizes, concurrency, persistence) · [[3. GO - Редко 1#Канал vs мьютекс]]
+> 📎 **Задача:** 🔧 code review: parking lot implementation (DRY, enum sizes, concurrency, persistence) · [[8. GO - Редко 1#Канал vs мьютекс]]
 
 **[33:42]** Or, like, let's say someone is, like, you know, asking to review this tool request, like, with these requirements, right, and this implementation, like, what would you suggest for later on?
 
@@ -1408,7 +1408,7 @@
 **[45:42]** у нас команды обычно работают спринтали,
 
 **[45:45]** спринты по две недели, вот, у нас там общая демо для бизнес-людей,
-> 📎 **База:** ✅ [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]]
 
 **[45:51]** а раз спринт у нас маленькая внутриинженерская демо,
 
@@ -2003,21 +2003,21 @@
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
 | 03:10–11:30 | Авторизация по телефону, капча, geo-IP, рефералка | ❌ | опыт (рассказ) |
-| 13:01 | Как события попадают в очередь (рефералка) | ✅ | [[8. Интеграции#Kafka: topic, partition, offset, consumer group]] |
+| 13:01 | Как события попадают в очередь (рефералка) | ✅ | [[4. Интеграции#Kafka: topic, partition, offset, consumer group]] |
 
 ### Практика
 
 | Время | Задача | Статус | Пункт |
 |-------|--------|--------|-------|
-| 16:54 | Live coding: parking lot | 🔧 | [[2. GO - Средне#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]] |
-| 33:35 | Code review: parking lot | 🔧 | [[3. GO - Редко 1#Канал vs мьютекс]] |
+| 16:54 | Live coding: parking lot | 🔧 | [[7. GO - Средне#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]] |
+| 33:35 | Code review: parking lot | 🔧 | [[8. GO - Редко 1#Канал vs мьютекс]] |
 
 
 ### Опыт / behavioral
 
 | Время | Тема | Статус | Пункт |
 |-------|------|--------|-------|
-| 45:45 | спринты по две недели, вот, у нас там общая демо для бизнес- | ✅ | [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
+| 45:45 | спринты по две недели, вот, у нас там общая демо для бизнес- | ✅ | [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
 
 ### Без разметки
 

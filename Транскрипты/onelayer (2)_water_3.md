@@ -70,7 +70,7 @@
 **[01:10]** About your experience, about some flag project that you did,
 
 **[01:17]** That you can display and see your skills.
-> 📎 **База:** ✅ [[10. Ops и Linux#Как убить процесс в Linux?]]
+> 📎 **База:** ✅ [[6. Ops - Часто#Как убить процесс в Linux?]]
 
 **[01:20]** And afterward, it will be my turn to present a little bit about one layer,
 
@@ -103,7 +103,7 @@
 **[02:11]** Mostly I develop microservices using different interaction formats,
 
 **[02:18]** Like GCP, REST, and some asynchronous message brokers and so on.
-> 📎 **База:** ✅ [[7. HTTP, сети#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
 
 **[02:25]** Well, most of my experience, the majority of my experience is in FinTech.
 
@@ -164,7 +164,7 @@
 **[04:44]** If we are talking about the different technologists,
 
 **[04:47]** Like Docker and Kubernetes, I also use all of them.
-> 📎 **База:** ✅ [[10. Ops и Linux#Docker vs виртуальная машина]]
+> 📎 **База:** ✅ [[6. Ops - Часто#Docker vs виртуальная машина]]
 
 **[04:53]** What else, I've been working with clouds for around,
 
@@ -1037,7 +1037,7 @@
 **[24:41]** and microservice architecture,
 
 **[24:45]** usually using Kafka or Nuts,
-> 📎 **База:** ✅ [[8. Интеграции#Kafka / RabbitMQ?]]
+> 📎 **База:** ✅ [[4. Интеграции#Kafka / RabbitMQ?]]
 
 **[24:47]** if you're familiar,
 
@@ -1496,7 +1496,7 @@
 **[34:21]** And we really believe that developer need to see
 
 **[34:24]** what is the roadmap and division up next
-> 📎 **База:** ✅ [[12. Опыт и soft skills#7.1 Вопросы про продукт]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#7.1 Вопросы про продукт]]
 
 **[34:27]** in order to have meaningful impact around it.
 
@@ -1873,7 +1873,7 @@
 **[43:56]** in different tabs and share the screen, please,
 
 **[43:58]** so I can explain a little bit more.
-> 📎 **База:** ✅ [[6. БД#EXPLAIN и EXPLAIN ANALYZE]]
+> 📎 **База:** ✅ [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]]
 
 **[44:01]** Sure, wait.
 
@@ -2323,7 +2323,7 @@
 **[56:12]** return from my
 
 **[56:14]** function call
-> 📎 **База:** ✅ [[12. Опыт и soft skills#2.5 On-call и инциденты]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#2.5 On-call и инциденты]]
 
 **[56:16]** and in other case, I mean
 
@@ -2697,15 +2697,15 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[6. БД#Виды JOIN запросов: INNER vs LEFT]] · [[10. Ops и Linux#Как убить процесс в Linux?]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[8. Интеграции#Kafka / RabbitMQ?]] · [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] |
+| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[6. Ops - Часто#Как убить процесс в Linux?]] · [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]] · [[4. Интеграции#Kafka / RabbitMQ?]] · [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] |
 
 
 ### Опыт / behavioral
 
 | Время | Тема | Статус | Пункт |
 |-------|------|--------|-------|
-| 34:24 | what is the roadmap and division up next | ✅ | [[12. Опыт и soft skills#7.1 Вопросы про продукт]] |
-| 56:14 | function call | ✅ | [[12. Опыт и soft skills#2.5 On-call и инциденты]] |
+| 34:24 | what is the roadmap and division up next | ✅ | [[16. Опыт и soft skills#7.1 Вопросы про продукт]] |
+| 56:14 | function call | ✅ | [[16. Опыт и soft skills#2.5 On-call и инциденты]] |
 
 ### Без разметки
 

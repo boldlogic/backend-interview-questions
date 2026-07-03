@@ -69,7 +69,7 @@
 **[01:54]** Итак, мы имеем рекламу.
 
 **[02:04]** Мы хотим создать SDK.
-> 📎 **Задача:** 🔧 live coding: SDK симуляция сущностей (barracuda/shark/human, attack, статусы) · [[2. GO - Средне#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]]
+> 📎 **Задача:** 🔧 live coding: SDK симуляция сущностей (barracuda/shark/human, attack, статусы) · [[7. GO - Средне#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]]
 
 **[02:06]** Это SDK будет очень похожа на лабораторию.
 
@@ -1528,7 +1528,7 @@
 **[30:39]** do you have
 
 **[30:41]** the reason why you add it
-> 📎 **База:** ✅ [[2. GO - Средне#Как устроено ООП в Go?]] · зачем метод isDead() vs проверка health-полей
+> 📎 **База:** ✅ [[7. GO - Средне#Как устроено ООП в Go?]] · зачем метод isDead() vs проверка health-полей
 
 **[30:43]** I mean it's just
 
@@ -1942,7 +1942,7 @@
 **[38:13]** is an attacker behavior
 
 **[38:17]** so my question is
-> 📎 **База:** ✅ [[2. GO - Средне#Как устроено ООП в Go?]] · общий тип attacker vs отдельные shark/barracuda
+> 📎 **База:** ✅ [[7. GO - Средне#Как устроено ООП в Go?]] · общий тип attacker vs отдельные shark/barracuda
 
 **[38:19]** instead of use as individual
 
@@ -2531,7 +2531,7 @@
 **[49:02]** now we're going to
 
 **[49:04]** have system design
-> 📎 **Задача:** 🔧 system design: e-commerce (корзина, inventory, promotion, payment gateway), Black Friday 10M concurrent · [[9. Архитектура#Монолит vs микросервисы]] · [[9. Архитектура#CQRS — когда уместен]] · [[12. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]]
+> 📎 **Задача:** 🔧 system design: e-commerce (корзина, inventory, promotion, payment gateway), Black Friday 10M concurrent · [[5. Архитектура - Часто#Монолит vs микросервисы]] · [[13. Архитектура — Реже#CQRS — когда уместен]] · [[16. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]]
 
 **[49:06]** right
 
@@ -2550,7 +2550,7 @@
 **[49:20]** resume has mentioned that you
 
 **[49:22]** have worked with e-commerce before
-> 📎 **База:** ✅ [[12. Опыт и soft skills#Опыт с e-commerce]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Опыт с e-commerce]]
 
 **[49:24]** so basically
 
@@ -4013,7 +4013,7 @@
 **[01:16:15]** that we might address in the future
 
 **[01:16:17]** and we are gonna like address our high load
-> 📎 **База:** ✅ [[12. Опыт и soft skills#2.2 Архитектура и стек проекта]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#2.2 Архитектура и стек проекта]]
 
 **[01:16:19]** that's one option
 
@@ -4312,7 +4312,7 @@
 **[01:22:06]** do you have
 
 **[01:22:08]** experience with the payment gateway
-> 📎 **База:** ✅ [[12. Опыт и soft skills#Опыт с payment gateway / платёжными системами]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Опыт с payment gateway / платёжными системами]]
 
 **[01:22:10]** before
 
@@ -4393,7 +4393,7 @@
 **[01:23:27]** receive the request
 
 **[01:23:29]** what's gonna be the sequence
-> 📎 **База:** ✅ [[9. Архитектура#Saga / 2PC для двух БД?]] · порядок checkout → payment gateway → БД → message queue
+> 📎 **База:** ✅ [[5. Архитектура - Часто#Saga / 2PC для двух БД?]] · порядок checkout → payment gateway → БД → message queue
 
 **[01:23:31]** between
 
@@ -5114,7 +5114,7 @@
 **[01:36:46]** during the checkout why we need to
 
 **[01:36:48]** calculate the inventory right
-> 📎 **База:** ✅ [[6. БД#Уровни изоляции транзакций]] · optimistic в корзине vs pessimistic при checkout
+> 📎 **База:** ✅ [[2. БД - Часто#Уровни изоляции транзакций]] · optimistic в корзине vs pessimistic при checkout
 
 **[01:36:50]** so this is the reason
 
@@ -5436,27 +5436,27 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| 30:41 | Зачем метод isDead() | ✅ | [[2. GO - Средне#Как устроено ООП в Go?]] |
+| 30:41 | Зачем метод isDead() | ✅ | [[7. GO - Средне#Как устроено ООП в Go?]] |
 | 33:47 | Что будет при добавлении нового attacker | ✅ | [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] |
-| 38:17 | Общий тип attacker vs shark/barracuda | ✅ | [[2. GO - Средне#Как устроено ООП в Go?]] |
-| 01:23:29 | Порядок checkout → payment gateway → БД → queue | ✅ | [[9. Архитектура#Saga / 2PC для двух БД?]] |
-| 01:36:48 | Зачем пересчитывать inventory при checkout | ✅ | [[6. БД#Уровни изоляции транзакций]] |
+| 38:17 | Общий тип attacker vs shark/barracuda | ✅ | [[7. GO - Средне#Как устроено ООП в Go?]] |
+| 01:23:29 | Порядок checkout → payment gateway → БД → queue | ✅ | [[5. Архитектура - Часто#Saga / 2PC для двух БД?]] |
+| 01:36:48 | Зачем пересчитывать inventory при checkout | ✅ | [[2. БД - Часто#Уровни изоляции транзакций]] |
 
 ### Практические задачи
 
 | Время | Задача (кратко) | Статус | Пункт / контекст |
 |-------|-----------------|--------|------------------|
-| 02:04 | Live coding: SDK симуляция сущностей | 🔧 | [[2. GO - Средне#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] |
-| 49:04 | System design: e-commerce Black Friday | 🔧 | [[9. Архитектура#Монолит vs микросервисы]] · [[9. Архитектура#CQRS — когда уместен]] · [[12. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]] |
+| 02:04 | Live coding: SDK симуляция сущностей | 🔧 | [[7. GO - Средне#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] |
+| 49:04 | System design: e-commerce Black Friday | 🔧 | [[5. Архитектура - Часто#Монолит vs микросервисы]] · [[13. Архитектура — Реже#CQRS — когда уместен]] · [[16. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]] |
 
 ### Опыт / behavioral
 
 | Время | Тема | Статус | Пункт |
 |-------|------|--------|-------|
-| 49:22 | Опыт с e-commerce (по резюме) | ✅ | [[12. Опыт и soft skills#Опыт с e-commerce]] |
-| 01:22:08 | Опыт с payment gateway | ✅ | [[12. Опыт и soft skills#Опыт с payment gateway / платёжными системами]] |
+| 49:22 | Опыт с e-commerce (по резюме) | ✅ | [[16. Опыт и soft skills#Опыт с e-commerce]] |
+| 01:22:08 | Опыт с payment gateway | ✅ | [[16. Опыт и soft skills#Опыт с payment gateway / платёжными системами]] |
 
-| 01:16:17 | and we are gonna like address our high load | ✅ | [[12. Опыт и soft skills#2.2 Архитектура и стек проекта]] |
+| 01:16:17 | and we are gonna like address our high load | ✅ | [[16. Опыт и soft skills#2.2 Архитектура и стек проекта]] |
 ### Без разметки
 
 | Время | Тема | Статус |
