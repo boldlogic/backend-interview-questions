@@ -2,7 +2,7 @@
 размечено: true
 теория: true
 лайвкодинг: true
-опыт: true
+опыт: false
 ---
 
 # Собес в DataGile v2

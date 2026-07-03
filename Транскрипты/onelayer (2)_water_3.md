@@ -1,5 +1,4 @@
 ---
-размечено: true
 теория: true
 лайвкодинг: false
 опыт: true
@@ -14,7 +13,7 @@
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-06-30 20:30 UTC
 - **Разметка:** после реплики интервьюера — одна строка:
-  - `> 📎 **База:** …` — **теория**; ссылка на `1–10.*.md`
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–12.*.md`
   - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
   - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
@@ -1497,6 +1496,7 @@
 **[34:21]** And we really believe that developer need to see
 
 **[34:24]** what is the roadmap and division up next
+> 📎 **База:** ✅ [[12. Опыт и soft skills#7.1 Вопросы про продукт]]
 
 **[34:27]** in order to have meaningful impact around it.
 
@@ -2323,6 +2323,7 @@
 **[56:12]** return from my
 
 **[56:14]** function call
+> 📎 **База:** ✅ [[12. Опыт и soft skills#2.5 On-call и инциденты]]
 
 **[56:16]** and in other case, I mean
 
@@ -2697,6 +2698,14 @@
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
 | — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[6. БД#Виды JOIN запросов: INNER vs LEFT]] · [[10. Ops и Linux#Как убить процесс в Linux?]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[8. Интеграции#Kafka / RabbitMQ?]] · [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] |
+
+
+### Опыт / behavioral
+
+| Время | Тема | Статус | Пункт |
+|-------|------|--------|-------|
+| 34:24 | what is the roadmap and division up next | ✅ | [[12. Опыт и soft skills#7.1 Вопросы про продукт]] |
+| 56:14 | function call | ✅ | [[12. Опыт и soft skills#2.5 On-call и инциденты]] |
 
 ### Без разметки
 

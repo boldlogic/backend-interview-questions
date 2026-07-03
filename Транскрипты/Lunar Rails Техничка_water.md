@@ -14,7 +14,7 @@
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-06-30 17:55 UTC
 - **Разметка:** после реплики интервьюера — одна строка:
-  - `> 📎 **База:** …` — **теория**; ссылка на `1–10.*.md`
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–12.*.md`
   - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
   - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
@@ -1075,6 +1075,7 @@
 **[27:45]** This construction is useful
 
 **[27:47]** to schedule a function call
+> 📎 **База:** ✅ [[12. Опыт и soft skills#2.5 On-call и инциденты]]
 
 **[27:49]** to run after the
 
@@ -1364,6 +1365,7 @@
 **[33:04]** icing updates
 
 **[33:06]** just using short daily weekly updates
+> 📎 **База:** ✅ [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]]
 
 **[33:08]** shared channels helped
 
@@ -2429,6 +2431,7 @@
 **[52:25]** right now
 
 **[52:27]** screen planning, code reviews, deployments
+> 📎 **База:** ✅ [[12. Опыт и soft skills#6.1 Code review и agile как опыт]]
 
 **[52:29]** something like that
 
@@ -2565,6 +2568,15 @@
 | — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[8. Интеграции#Kafka / RabbitMQ?]] |
 | — | value vs pointer receiver | ✅ | [[2. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
 
+
+### Опыт / behavioral
+
+| Время | Тема | Статус | Пункт |
+|-------|------|--------|-------|
+| 27:47 | to schedule a function call | ✅ | [[12. Опыт и soft skills#2.5 On-call и инциденты]] |
+
+| 33:06 | just using short daily weekly updates | ✅ | [[12. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
+| 52:27 | screen planning, code reviews, deployments | ✅ | [[12. Опыт и soft skills#6.1 Code review и agile как опыт]] |
 ### Без разметки
 
 | Время | Тема | Статус |
