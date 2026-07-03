@@ -1,3 +1,10 @@
+---
+размечено: true
+теория: true
+лайвкодинг: false
+опыт: true
+---
+
 # @exbur ом оффер betica tech water
 
 - **Видео:** `@exbur ом_оффер betica_tech_water.mp4`
@@ -6,6 +13,10 @@
 - **Язык (детект):** ru
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-07-01 18:25 UTC
+- **Разметка:** после реплики интервьюера — одна строка:
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–10.*.md`
+  - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
+  - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
 ## Транскрипт
 
@@ -326,6 +337,7 @@
 **[06:39]** SDK here, like in this
 
 **[06:41]** context, in this specific one.
+> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[06:47]** Basically, we would like to have some
 
@@ -2328,6 +2340,7 @@
 **[45:34]** I guess from like from my
 
 **[45:36]** from my you know probably like restricted knowledge
+> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
 
 **[45:38]** of how you know game
 
@@ -4252,6 +4265,7 @@
 **[01:21:22]** like some sort of
 
 **[01:21:24]** like SKS or like Kafka
+> 📎 **База:** ✅ [[8. Интеграции#kafka / rabbitmq?]]
 
 **[01:21:26]** here
 
@@ -5218,6 +5232,7 @@
 **[01:38:57]** so that's why there's a lot of less condition
 
 **[01:38:59]** and deadlocks coming afterwards
+> 📎 **База:** ✅ [[1. GO - Часто#что такое дедлок и рейс кондишион, и `-race`]]
 
 **[01:39:01]** as well
 
@@ -5244,6 +5259,7 @@
 **[01:39:23]** so we plan for move
 
 **[01:39:25]** to the Google Kubernetes
+> 📎 **База:** ✅ [[10. Ops и Linux#что такое pod в kubernetes?]]
 
 **[01:39:27]** name project is
 
@@ -5286,6 +5302,7 @@
 **[01:40:05]** and
 
 **[01:40:07]** the infrastructure
+> 📎 **База:** ✅ [[11. SA#пример нефункционального требования]]
 
 **[01:40:09]** site is
 
@@ -5406,3 +5423,17 @@
 **[01:42:08]** bye bye
 
 **[01:42:10]** see you
+
+## Сопоставление с базой
+
+### Теоретические вопросы
+
+| Время | Вопрос (кратко) | Статус | Пункт |
+|-------|-----------------|--------|-------|
+| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+
+### Без разметки
+
+| Время | Тема | Статус |
+|-------|------|--------|
+| — | HR, опыт, live coding без теории | ❌ |

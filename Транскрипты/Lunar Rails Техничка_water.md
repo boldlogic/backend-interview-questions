@@ -1,3 +1,10 @@
+---
+размечено: true
+теория: true
+лайвкодинг: false
+опыт: true
+---
+
 # Lunar Rails Техничка water
 
 - **Видео:** `Lunar Rails Техничка_water.mp4`
@@ -6,6 +13,10 @@
 - **Язык (детект):** ru
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-06-30 17:55 UTC
+- **Разметка:** после реплики интервьюера — одна строка:
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–10.*.md`
+  - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
+  - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
 ## Транскрипт
 
@@ -90,6 +101,7 @@
 **[01:12]** at Clover Labs.
 
 **[01:14]** I'll explain a bit more later,
+> 📎 **База:** ✅ [[6. БД#explain и explain analyze]]
 
 **[01:16]** but Clover Labs
 
@@ -198,6 +210,7 @@
 **[03:58]** will financially use cases.
 
 **[04:00]** I'm particularly interested in mechanics
+> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
 
 **[04:04]** ability and clean architecture.
 
@@ -492,10 +505,12 @@
 **[10:22]** And to multiple threads share the same memory and resources of a parent process,
 
 **[10:27]** which makes context switching faster and communication easier.
+> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[10:31]** But, of course, we have some challenging moments with currency issues,
 
 **[10:38]** race conditions, something like that.
+> 📎 **База:** ✅ [[1. GO - Часто#что такое дедлок и рейс кондишион, и `-race`]]
 
 **[10:41]** Cool.
 
@@ -508,6 +523,7 @@
 **[11:04]** we need to use some synchronization primitives like Utexs, or AirWim Utexs,
 
 **[11:11]** or Atomics, etc.
+> 📎 **База:** ✅ [[2. GO - Средне#`atomic` vs mutex]]
 
 **[11:14]** If we talk about Golung, we can use channel-based communication,
 
@@ -620,6 +636,7 @@
 **[15:32]** Так что, вместо каждой станики, дейтабейсиндексы можно quickly locate the needed records using the index structure.
 
 **[15:42]** И ты обычно используешь индексы и колонны, которые часто используют в конструкциях, such as queer, join, over-the-buy, closes, to speed up queries.
+> 📎 **База:** ✅ [[6. БД#виды join запросов: inner vs left]]
 
 **[15:55]** Но также у нас есть конс, such as indexes come with trade-offs, they consume extra storage and slow down write operations.
 
@@ -1052,6 +1069,7 @@
 **[27:37]** just to
 
 **[27:39]** Sorry, I mean select or defer.
+> 📎 **База:** ✅ [[1. GO - Часто#зачем нужен select]]
 
 **[27:43]** Differ.
 
@@ -1130,6 +1148,7 @@
 **[29:00]** we had a disagreement about
 
 **[29:02]** whether to use Kafka or Rabbit
+> 📎 **База:** ✅ [[8. Интеграции#kafka / rabbitmq?]]
 
 **[29:04]** MQ.
 
@@ -2294,6 +2313,7 @@
 **[50:17]** as payment rates
 
 **[50:19]** like the sender and the receiver
+> 📎 **База:** ✅ [[2. GO - Средне#передача и возврат: значение vs указатель? / value vs pointer receiver]]
 
 **[50:21]** let's say someone wants to export
 
@@ -2534,3 +2554,17 @@
 **[54:39]** have a nice day
 
 **[54:41]** thank you, bye bye
+
+## Сопоставление с базой
+
+### Теоретические вопросы
+
+| Время | Вопрос (кратко) | Статус | Пункт |
+|-------|-----------------|--------|-------|
+| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+
+### Без разметки
+
+| Время | Тема | Статус |
+|-------|------|--------|
+| — | HR, опыт, live coding без теории | ❌ |
