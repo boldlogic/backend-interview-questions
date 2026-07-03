@@ -19,9 +19,10 @@
 | 1. GO - TOP.md | 18. Способы синхронизации горутин | 1. GO - Часто.md | Способы синхронизации горутин | 9/56 | #go/sync #go/channel |
 | 1. GO - TOP.md | 33. Что такое map? | 1. GO - Часто.md | Что такое map? | 9/56 | #go/map |
 | 1. GO - TOP.md | 7. context - что такое и зачем использовать? | 1. GO - Часто.md | context - что такое и зачем использовать? | 8/56 | #go/context |
+| 3. GO - Редко.md | 12. defer, panic, recover | 1. GO - Часто.md | defer, panic, recover | 7/56 | #go/errors |
+| 1. GO - TOP.md | 19. `atomic` vs mutex | 2. GO - Средне.md | `atomic` vs mutex | 6/56 | #go/atomic #go/sync |
 | 1. GO - TOP.md | 11. Порядок итерации map | 1. GO - Часто.md | Порядок итерации map | 6/56 | #go/map |
 | 1. GO - TOP.md | 6. Чем конкурентность  отличается от параллелизма? | 1. GO - Часто.md | Чем конкурентность  отличается от параллелизма? | 6/56 | #go/concurrency #go/scheduler |
-| 3. GO - Редко.md | 12. defer, panic, recover | 1. GO - Часто.md | defer, panic, recover | 7/56 | #go/errors |
 | 2. GO - Средне.md | 1. pprof: CPU, heap, goroutine | 1. GO - Часто.md | pprof: CPU, heap, goroutine | 5/56 | #go/tooling #go/goroutine |
 | 1. GO - TOP.md | 21. Select: псевдослучайный выбор case | 1. GO - Часто.md | Select: псевдослучайный выбор case | 5/56 | #go/select #go/channel |
 | 2. GO - Средне.md | 32. Для чего используется интерфейс? | 1. GO - Часто.md | Для чего используется интерфейс? | 5/56 | #go/interfaces |
@@ -38,14 +39,16 @@
 | 2. GO - Средне.md | 3. Какие ключи могут быть у мапы? | 1. GO - Часто.md | Какие ключи могут быть у мапы? | 4/56 | #go/map #go/types |
 | 2. GO - Средне.md | 25. Что такое defer? | 2. GO - Средне.md | Что такое defer? | 4/56 | #go/defer |
 | 1. GO - TOP.md | 30. Что такое дедлок и рейс кондишион | 2. GO - Средне.md | Что такое дедлок и рейс кондишион | 4/56 | #go/deadlock #go/data-race |
-| 1. GO - TOP.md | 19. `atomic` vs mutex | 2. GO - Средне.md | `atomic` vs mutex | 6/56 | #go/atomic #go/sync |
+| 3. GO - Редко.md | 18. `sync.WaitGroup` | 3. GO - Редко 1.md | `sync.WaitGroup` | 3/56 | #go/sync |
 | 3. GO - Редко.md | 70. defer: до return или после? Где хранится? | 2. GO - Средне.md | defer: до return или после? Где хранится? | 3/56 | #go/defer |
 | 3. GO - Редко.md | 14. Generics vs interfaces? | 2. GO - Средне.md | Generics vs interfaces? | 3/56 | #go/generics #go/interfaces |
 | 3. GO - Редко.md | 21. Unit-тесты и table-driven | 2. GO - Средне.md | Unit-тесты и table-driven | 3/56 | #go/testing |
 | 3. GO - Редко.md | 16. Work stealing и global queue | 2. GO - Средне.md | Work stealing и global queue | 3/56 | #go/scheduler |
 | 1. GO - TOP.md | 27. В чем разница между процессом и потоком | 2. GO - Средне.md | В чем разница между процессом и потоком | 3/56 | #go/goroutine #go/scheduler |
 | 2. GO - Средне.md | 31. Как устроен интерфейс? | 2. GO - Средне.md | Как устроен интерфейс? | 3/56 | #go/interfaces |
+| 2. GO - Средне.md | 4. Мапа потокобезопасная? | 2. GO - Средне.md | Мапа потокобезопасная? | 3/56 | #go/map #go/data-race |
 | 3. GO - Редко.md | 83. Общее: недостатки Go, компиляция, init, reflect | 2. GO - Средне.md | Общее: недостатки Go, компиляция, init, reflect | 3/56 | #go/general #go/runtime |
+| 3. GO - Редко.md | 63. Ограничить доступ к ресурсу N горутинами | 2. GO - Средне.md | Ограничить доступ к ресурсу N горутинами | 3/56 | #go/sync #go/channel |
 | 3. GO - Редко.md | 79. Сборщик мусора: что, зачем, отключение | 2. GO - Средне.md | Сборщик мусора: что, зачем, отключение | 3/56 | #go/gc |
 | 3. GO - Редко.md | 8. Что такое O нотация, какая сложность бывает | 2. GO - Средне.md | Что такое O нотация, какая сложность бывает | 3/56 | #go/complexity |
 | 3. GO - Редко.md | 35. Append внутри функции по значению — виден ли снаружи? | 2. GO - Средне.md | Append внутри функции по значению — виден ли снаружи? | 2/56 | #go/slice |
@@ -57,9 +60,7 @@
 | 3. GO - Редко.md | 10. Как горутина понимает что пора проснуться | 2. GO - Средне.md | Как горутина понимает что пора проснуться | 2/56 | #go/scheduler #go/channel |
 | 3. GO - Редко.md | 25. Как работает GC (tri-color)? | 2. GO - Средне.md | Как работает GC (tri-color)? | 2/56 | #go/gc |
 | 3. GO - Редко.md | 26. Когда interface == nil? | 2. GO - Средне.md | Когда interface == nil? | 2/56 | #go/interfaces #go/errors |
-| 2. GO - Средне.md | 4. Мапа потокобезопасная? | 2. GO - Средне.md | Мапа потокобезопасная? | 3/56 | #go/map #go/data-race |
 | 2. GO - Средне.md | 5. Можем ли взять указатель на элемент мапы | 2. GO - Средне.md | Можем ли взять указатель на элемент мапы | 2/56 | #go/map #go/pointers |
-| 3. GO - Редко.md | 63. Ограничить доступ к ресурсу N горутинами | 2. GO - Средне.md | Ограничить доступ к ресурсу N горутинами | 3/56 | #go/sync #go/channel |
 | — | — | 2. GO - Средне.md | Очередь с приоритетом и binary heap | 2/56 | #go/algorithms |
 | 1. GO - TOP.md | 20. Сложность доступа по ключу в map? | 2. GO - Средне.md | Сложность доступа по ключу в map? | 2/56 | #go/map #go/hash #go/complexity |
 | 3. GO - Редко.md | 81. Строки UTF-8 и руны | 2. GO - Средне.md | Строки UTF-8 и руны | 2/56 | #go/string |
@@ -74,7 +75,6 @@
 | 3. GO - Редко.md | 13. `len(sync.Map)` — почему нет, как считать | 3. GO - Редко 1.md | `len(sync.Map)` — почему нет, как считать | 1/56 | #go/sync #go/map |
 | 3. GO - Редко.md | 32. `sync.Once` | 3. GO - Редко 1.md | `sync.Once` | 1/56 | #go/sync |
 | 3. GO - Редко.md | 23. `sync.Pool` | 3. GO - Редко 1.md | `sync.Pool` | 1/56 | #go/sync #go/gc |
-| 3. GO - Редко.md | 18. `sync.WaitGroup` | 3. GO - Редко 1.md | `sync.WaitGroup` | 3/56 | #go/sync |
 | — | go.mod — зачем нужен? | 3. GO - Редко 1.md | go.mod — зачем нужен? | 1/56 | #go/tooling #go/modules |
 | 3. GO - Редко.md | 43. go.sum в git? | 3. GO - Редко 1.md | go.sum в git? | 1/56 | #go/tooling |
 | — | GOPRIVATE и GOPROXY? | 3. GO - Редко 1.md | GOPRIVATE и GOPROXY? | 1/56 | #go/tooling #go/modules |
@@ -108,6 +108,7 @@
 | 3. GO - Редко.md | 82. Пакет и папка internal | 4. GO - Редко 2.md | Пакет и папка internal | 1/56 | #go/packages |
 | 3. GO - Редко.md | 75. Паника, recover и парадигма ошибок | 4. GO - Редко 2.md | Паника, recover и парадигма ошибок | 1/56 | #go/errors |
 | — | Параллельные исходящие HTTP-запросы (fan-out)? | 4. GO - Редко 2.md | Параллельные исходящие HTTP-запросы (fan-out)? | 1/56 | #go/concurrency #go/context |
+| 3. GO - Редко.md | 69. Пустой интерфейс, `any` и пустая struct | 5. GO - Редко 3.md | Пустой интерфейс, `any` и пустая struct | 1/56 | #go/interfaces #go/types |
 | 3. GO - Редко.md | 7. С какой скоростью идет поиск в массиве и почему? | 4. GO - Редко 2.md | С какой скоростью идет поиск в массиве и почему? | 1/56 | #go/array #go/complexity |
 | — | Системные вызовы (syscall) в Go? | 4. GO - Редко 2.md | Системные вызовы (syscall) в Go? | 1/56 | #go/scheduler #go/runtime |
 | 3. GO - Редко.md | 66. Сколько ядер нужно для sync.Map? | 4. GO - Редко 2.md | Сколько ядер нужно для sync.Map? | 1/56 | #go/sync #go/map |
@@ -154,11 +155,9 @@
 | 1. GO - TOP.md | 14. Код ревью слайс | 5. GO - Редко 3.md | Код ревью слайс | 0/56 | #go/slice |
 | 3. GO - Редко.md | 72. Память: утечка, стек, рекурсия, переполнение слайса | 5. GO - Редко 3.md | Память: утечка, стек, рекурсия, переполнение слайса | 0/56 | #go/memory |
 | 3. GO - Редко.md | 71. Планировщик: вытеснение, G на разных P, создание горутины | 5. GO - Редко 3.md | Планировщик: вытеснение, G на разных P, создание горутины | 0/56 | #go/scheduler |
-| 3. GO - Редко.md | 69. Пустой интерфейс, `any` и пустая struct | 5. GO - Редко 3.md | Пустой интерфейс, `any` и пустая struct | 1/56 | #go/interfaces #go/types |
 | 1. GO - TOP.md | 16. Разбор кода map | 5. GO - Редко 3.md | Разбор кода map | 0/56 | #go/map #go/sync |
 | 2. GO - Средне.md | 33. С дженериками работали? | 5. GO - Редко 3.md | С дженериками работали? | 0/56 | #go/generics |
 | 3. GO - Редко.md | 76. Указатели: зачем, ref vs pointer, риски | 5. GO - Редко 3.md | Указатели: зачем, ref vs pointer, риски | 0/56 | #go/pointers |
 | 2. GO - Средне.md | 24. Чем mutex отличается от семафора? | 5. GO - Редко 3.md | Чем mutex отличается от семафора? | 0/56 | #go/sync |
 | 2. GO - Средне.md | 23. Что делает runtime Go при нехватке памяти? | 5. GO - Редко 3.md | Что делает runtime Go при нехватке памяти? | 0/56 | #go/gc #go/runtime |
 | 3. GO - Редко.md | 85. Что такое указатель? (кратко) | 5. GO - Редко 3.md | Что такое указатель? (кратко) | 0/56 | #go/pointers |
-| старый файл | старый заголовок | новый файл | новый заголовок | частота | теги |
