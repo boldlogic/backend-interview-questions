@@ -1295,7 +1295,7 @@
 **[47:45]** А как именно понять, в чем проблема,
 
 **[47:47]** почему пятисотая ошибка возвращается?
-> 📎 **База:** ⚠️ HTTP 500 debug · [[1. GO - Часто#pprof: CPU, heap, goroutine]] · logs/traces
+> 📎 **База:** ⚠️ HTTP 500 debug · [[2. GO - Средне#pprof: CPU, heap, goroutine]] · logs/traces
 
 **[47:52]** Нет, подождите,
 
@@ -1342,7 +1342,7 @@
 **[48:46]** занимает, инфопанится.
 
 **[48:48]** А, какие еще инструменты вы
-> 📎 **База:** ✅ [[1. GO - Часто#pprof: CPU, heap, goroutine]] · metrics/traces
+> 📎 **База:** ✅ [[2. GO - Средне#pprof: CPU, heap, goroutine]] · metrics/traces
 
 **[48:50]** знаете, помимо трейсов?
 
@@ -1450,8 +1450,8 @@
 | 39:13 | unidirectional channel | ✅ | [[1. GO - Часто#какие виды каналов бывают?]] |
 | 42:19 | closed channel / range | ✅ | [[1. GO - Часто#Что при записи/чтении из закрытого канала?]] |
 | 44:01 | defer timing | ✅ | [[2. GO - Средне#defer: до return или после? где хранится?]] |
-| 47:47 | HTTP 500 debug | ⚠️ | [[1. GO - Часто#pprof: CPU, heap, goroutine]] |
-| 48:48 | observability tools | ✅ | [[1. GO - Часто#pprof: CPU, heap, goroutine]] |
+| 47:47 | HTTP 500 debug | ⚠️ | [[2. GO - Средне#pprof: CPU, heap, goroutine]] |
+| 48:48 | observability tools | ✅ | [[2. GO - Средне#pprof: CPU, heap, goroutine]] |
 
 ### Практические задачи
 

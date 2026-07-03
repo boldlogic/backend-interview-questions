@@ -522,7 +522,7 @@
 **[11:04]** we need to use some synchronization primitives like Utexs, or AirWim Utexs,
 
 **[11:11]** or Atomics, etc.
-> 📎 **База:** ✅ [[2. GO - Средне#`atomic` vs mutex]]
+> 📎 **База:** ✅ [[1. GO - Часто#`atomic` vs mutex]]
 
 **[11:14]** If we talk about Golung, we can use channel-based communication,
 
