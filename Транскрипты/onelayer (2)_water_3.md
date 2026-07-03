@@ -33,14 +33,12 @@
 **[00:09]** Да, конечно.
 
 **[00:10]** Отлично, спасибо за joining me and taking the time off to this interview.
-> 📎 **База:** ✅ [[6. БД#виды join запросов: inner vs left]]
 
 **[00:16]** Я просто хочу портить немного,
 
 **[00:20]** About the framing of this interview,
 
 **[00:22]** To give you a little bit more context,
-> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[00:24]** And then we will continue.
 
@@ -73,7 +71,7 @@
 **[01:10]** About your experience, about some flag project that you did,
 
 **[01:17]** That you can display and see your skills.
-> 📎 **База:** ✅ [[10. Ops и Linux#как убить процесс в linux?]]
+> 📎 **База:** ✅ [[10. Ops и Linux#Как убить процесс в Linux?]]
 
 **[01:20]** And afterward, it will be my turn to present a little bit about one layer,
 
@@ -106,7 +104,7 @@
 **[02:11]** Mostly I develop microservices using different interaction formats,
 
 **[02:18]** Like GCP, REST, and some asynchronous message brokers and so on.
-> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
+> 📎 **База:** ✅ [[7. HTTP, сети#REST principles / gRPC vs HTTP?]]
 
 **[02:25]** Well, most of my experience, the majority of my experience is in FinTech.
 
@@ -167,7 +165,7 @@
 **[04:44]** If we are talking about the different technologists,
 
 **[04:47]** Like Docker and Kubernetes, I also use all of them.
-> 📎 **База:** ✅ [[10. Ops и Linux#docker vs виртуальная машина]]
+> 📎 **База:** ✅ [[10. Ops и Linux#Docker vs виртуальная машина]]
 
 **[04:53]** What else, I've been working with clouds for around,
 
@@ -1010,7 +1008,6 @@
 **[24:03]** So the company that uses private cellular
 
 **[24:07]** and building its own infrastructure
-> 📎 **База:** ✅ [[11. SA#пример нефункционального требования]]
 
 **[24:09]** can have a better ROI
 
@@ -1041,7 +1038,7 @@
 **[24:41]** and microservice architecture,
 
 **[24:45]** usually using Kafka or Nuts,
-> 📎 **База:** ✅ [[8. Интеграции#kafka / rabbitmq?]]
+> 📎 **База:** ✅ [[8. Интеграции#Kafka / RabbitMQ?]]
 
 **[24:47]** if you're familiar,
 
@@ -1670,7 +1667,6 @@
 **[38:34]** Can you mention other things, what else you use?
 
 **[38:38]** All of the deployments are Kubernetes,
-> 📎 **База:** ✅ [[10. Ops и Linux#что такое pod в kubernetes?]]
 
 **[38:41]** so everything is based on Kubernetes
 
@@ -1877,7 +1873,7 @@
 **[43:56]** in different tabs and share the screen, please,
 
 **[43:58]** so I can explain a little bit more.
-> 📎 **База:** ✅ [[6. БД#explain и explain analyze]]
+> 📎 **База:** ✅ [[6. БД#EXPLAIN и EXPLAIN ANALYZE]]
 
 **[44:01]** Sure, wait.
 
@@ -2258,7 +2254,7 @@
 **[54:39]** might
 
 **[54:41]** write, you know, select
-> 📎 **База:** ✅ [[1. GO - Часто#зачем нужен select]]
+> 📎 **База:** ✅ [[1. GO - Часто#Зачем нужен select]]
 
 **[54:43]** and context done
 
@@ -2694,14 +2690,19 @@
 
 ## Сопоставление с базой
 
-### Теоретические вопросы
+> Разметка по смыслу вопроса интервьюера. ✅ — точная карточка, ⚠️ — частично, ❌ — нет, 🔧 — практика.
+
+### Теория
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[6. БД#Виды JOIN запросов: INNER vs LEFT]] · [[10. Ops и Linux#Как убить процесс в Linux?]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[8. Интеграции#Kafka / RabbitMQ?]] · [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] |
 
 ### Без разметки
 
 | Время | Тема | Статус |
 |-------|------|--------|
-| — | HR, опыт, live coding без теории | ❌ |
+| 00:10 | «joining» (не SQL JOIN) | ❌ |
+| 00:22 | «more context» (не Go context) | ❌ |
+| 24:07 | ROI / business (не NFR-карточка) | ❌ |
+| 38:38 | Kubernetes deployments (опыт) | ❌ |

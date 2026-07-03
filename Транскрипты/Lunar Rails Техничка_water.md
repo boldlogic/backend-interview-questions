@@ -101,7 +101,7 @@
 **[01:12]** at Clover Labs.
 
 **[01:14]** I'll explain a bit more later,
-> 📎 **База:** ✅ [[6. БД#explain и explain analyze]]
+> 📎 **База:** ✅ [[6. БД#EXPLAIN и EXPLAIN ANALYZE]]
 
 **[01:16]** but Clover Labs
 
@@ -210,7 +210,7 @@
 **[03:58]** will financially use cases.
 
 **[04:00]** I'm particularly interested in mechanics
-> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
+> 📎 **База:** ✅ [[7. HTTP, сети#REST principles / gRPC vs HTTP?]]
 
 **[04:04]** ability and clean architecture.
 
@@ -505,12 +505,11 @@
 **[10:22]** And to multiple threads share the same memory and resources of a parent process,
 
 **[10:27]** which makes context switching faster and communication easier.
-> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[10:31]** But, of course, we have some challenging moments with currency issues,
 
 **[10:38]** race conditions, something like that.
-> 📎 **База:** ✅ [[1. GO - Часто#что такое дедлок и рейс кондишион, и `-race`]]
+> 📎 **База:** ✅ [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]]
 
 **[10:41]** Cool.
 
@@ -636,7 +635,7 @@
 **[15:32]** Так что, вместо каждой станики, дейтабейсиндексы можно quickly locate the needed records using the index structure.
 
 **[15:42]** И ты обычно используешь индексы и колонны, которые часто используют в конструкциях, such as queer, join, over-the-buy, closes, to speed up queries.
-> 📎 **База:** ✅ [[6. БД#виды join запросов: inner vs left]]
+> 📎 **База:** ✅ [[6. БД#Виды JOIN запросов: INNER vs LEFT]]
 
 **[15:55]** Но также у нас есть конс, such as indexes come with trade-offs, they consume extra storage and slow down write operations.
 
@@ -1069,7 +1068,7 @@
 **[27:37]** just to
 
 **[27:39]** Sorry, I mean select or defer.
-> 📎 **База:** ✅ [[1. GO - Часто#зачем нужен select]]
+> 📎 **База:** ✅ [[1. GO - Часто#Зачем нужен select]]
 
 **[27:43]** Differ.
 
@@ -1148,7 +1147,7 @@
 **[29:00]** we had a disagreement about
 
 **[29:02]** whether to use Kafka or Rabbit
-> 📎 **База:** ✅ [[8. Интеграции#kafka / rabbitmq?]]
+> 📎 **База:** ✅ [[8. Интеграции#Kafka / RabbitMQ?]]
 
 **[29:04]** MQ.
 
@@ -2313,7 +2312,7 @@
 **[50:17]** as payment rates
 
 **[50:19]** like the sender and the receiver
-> 📎 **База:** ✅ [[2. GO - Средне#передача и возврат: значение vs указатель? / value vs pointer receiver]]
+> 📎 **База:** ✅ [[2. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]]
 
 **[50:21]** let's say someone wants to export
 
@@ -2557,14 +2556,17 @@
 
 ## Сопоставление с базой
 
-### Теоретические вопросы
+> Разметка по смыслу вопроса интервьюера. ✅ — точная карточка, ⚠️ — частично, ❌ — нет, 🔧 — практика.
+
+### Теория
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+| — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[6. БД#EXPLAIN и EXPLAIN ANALYZE]] · [[7. HTTP, сети#REST principles / gRPC vs HTTP?]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[8. Интеграции#Kafka / RabbitMQ?]] |
+| — | value vs pointer receiver | ✅ | [[2. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
 
 ### Без разметки
 
 | Время | Тема | Статус |
 |-------|------|--------|
-| — | HR, опыт, live coding без теории | ❌ |
+| 10:27 | OS context switching (не Go context) | ❌ |
