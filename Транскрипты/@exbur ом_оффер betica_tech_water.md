@@ -1,12 +1,13 @@
 ---
 размечено: true
 теория: true
-лайвкодинг: false
+лайвкодинг: true
 опыт: true
 ---
 
 # @exbur ом оффер betica tech water
 
+- **Специальность:** backend (Betica Tech, e-commerce/betting; интервью на английском)
 - **Видео:** `@exbur ом_оффер betica_tech_water.mp4`
 - **Аудио:** [@exbur ом_оффер betica_tech_water.mp3](../audio/@exbur ом_оффер betica_tech_water.mp3)
 - **Длительность:** 1:42:12
@@ -69,6 +70,7 @@
 **[01:54]** Итак, мы имеем рекламу.
 
 **[02:04]** Мы хотим создать SDK.
+> 📎 **Задача:** 🔧 live coding: SDK симуляция сущностей (barracuda/shark/human, attack, статусы) · [[1. GO - Часто#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]]
 
 **[02:06]** Это SDK будет очень похожа на лабораторию.
 
@@ -337,7 +339,6 @@
 **[06:39]** SDK here, like in this
 
 **[06:41]** context, in this specific one.
-> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[06:47]** Basically, we would like to have some
 
@@ -1528,6 +1529,7 @@
 **[30:39]** do you have
 
 **[30:41]** the reason why you add it
+> 📎 **База:** ✅ [[1. GO - Часто#Как устроено ООП в Go?]] · зачем метод isDead() vs проверка health-полей
 
 **[30:43]** I mean it's just
 
@@ -1690,6 +1692,7 @@
 **[33:45]** then
 
 **[33:47]** the second question is
+> 📎 **База:** ✅ [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] · что будет при добавлении нового attacker (tiger, t-rex)
 
 **[33:49]** if we add more
 
@@ -1940,6 +1943,7 @@
 **[38:13]** is an attacker behavior
 
 **[38:17]** so my question is
+> 📎 **База:** ✅ [[1. GO - Часто#Как устроено ООП в Go?]] · общий тип attacker vs отдельные shark/barracuda
 
 **[38:19]** instead of use as individual
 
@@ -2340,7 +2344,6 @@
 **[45:34]** I guess from like from my
 
 **[45:36]** from my you know probably like restricted knowledge
-> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
 
 **[45:38]** of how you know game
 
@@ -2529,6 +2532,7 @@
 **[49:02]** now we're going to
 
 **[49:04]** have system design
+> 📎 **Задача:** 🔧 system design: e-commerce (корзина, inventory, promotion, payment gateway), Black Friday 10M concurrent · [[9. Архитектура#Монолит vs микросервисы]] · [[9. Архитектура#CQRS — когда уместен]] · [[12. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]]
 
 **[49:06]** right
 
@@ -2547,6 +2551,7 @@
 **[49:20]** resume has mentioned that you
 
 **[49:22]** have worked with e-commerce before
+> 📎 **База:** ✅ [[12. Опыт и soft skills#Опыт с e-commerce]]
 
 **[49:24]** so basically
 
@@ -3993,7 +3998,6 @@
 **[01:15:59]** it's called like you know
 
 **[01:16:01]** cqrs pattern
-> 📎 **База:** ✅ [[9. Архитектура#CQRS — когда уместен]]
 
 **[01:16:03]** and we can
 
@@ -4266,7 +4270,6 @@
 **[01:21:22]** like some sort of
 
 **[01:21:24]** like SKS or like Kafka
-> 📎 **База:** ✅ [[8. Интеграции#kafka / rabbitmq?]]
 
 **[01:21:26]** here
 
@@ -4309,6 +4312,7 @@
 **[01:22:06]** do you have
 
 **[01:22:08]** experience with the payment gateway
+> 📎 **База:** ✅ [[12. Опыт и soft skills#Опыт с payment gateway / платёжными системами]]
 
 **[01:22:10]** before
 
@@ -4389,6 +4393,7 @@
 **[01:23:27]** receive the request
 
 **[01:23:29]** what's gonna be the sequence
+> 📎 **База:** ✅ [[9. Архитектура#Saga / 2PC для двух БД?]] · порядок checkout → payment gateway → БД → message queue
 
 **[01:23:31]** between
 
@@ -5109,6 +5114,7 @@
 **[01:36:46]** during the checkout why we need to
 
 **[01:36:48]** calculate the inventory right
+> 📎 **База:** ✅ [[6. БД#Уровни изоляции транзакций]] · optimistic в корзине vs pessimistic при checkout
 
 **[01:36:50]** so this is the reason
 
@@ -5233,7 +5239,6 @@
 **[01:38:57]** so that's why there's a lot of less condition
 
 **[01:38:59]** and deadlocks coming afterwards
-> 📎 **База:** ✅ [[1. GO - Часто#что такое дедлок и рейс кондишион, и `-race`]]
 
 **[01:39:01]** as well
 
@@ -5260,7 +5265,6 @@
 **[01:39:23]** so we plan for move
 
 **[01:39:25]** to the Google Kubernetes
-> 📎 **База:** ✅ [[10. Ops и Linux#что такое pod в kubernetes?]]
 
 **[01:39:27]** name project is
 
@@ -5303,7 +5307,6 @@
 **[01:40:05]** and
 
 **[01:40:07]** the infrastructure
-> 📎 **База:** ✅ [[11. SA#пример нефункционального требования]]
 
 **[01:40:09]** site is
 
@@ -5427,14 +5430,35 @@
 
 ## Сопоставление с базой
 
+> Разметка по смыслу вопроса интервьюера. ✅ — точная карточка, ⚠️ — частично, ❌ — карточки нет, 🔧 — практика.
+
 ### Теоретические вопросы
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+| 30:41 | Зачем метод isDead() | ✅ | [[1. GO - Часто#Как устроено ООП в Go?]] |
+| 33:47 | Что будет при добавлении нового attacker | ✅ | [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] |
+| 38:17 | Общий тип attacker vs shark/barracuda | ✅ | [[1. GO - Часто#Как устроено ООП в Go?]] |
+| 01:23:29 | Порядок checkout → payment gateway → БД → queue | ✅ | [[9. Архитектура#Saga / 2PC для двух БД?]] |
+| 01:36:48 | Зачем пересчитывать inventory при checkout | ✅ | [[6. БД#Уровни изоляции транзакций]] |
+
+### Практические задачи
+
+| Время | Задача (кратко) | Статус | Пункт / контекст |
+|-------|-----------------|--------|------------------|
+| 02:04 | Live coding: SDK симуляция сущностей | 🔧 | [[1. GO - Часто#Как устроено ООП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]] |
+| 49:04 | System design: e-commerce Black Friday | 🔧 | [[9. Архитектура#Монолит vs микросервисы]] · [[9. Архитектура#CQRS — когда уместен]] · [[12. Опыт и soft skills#Опыт с брокерами сообщений и Kafka]] |
+
+### Опыт / behavioral
+
+| Время | Тема | Статус | Пункт |
+|-------|------|--------|-------|
+| 49:22 | Опыт с e-commerce (по резюме) | ✅ | [[12. Опыт и soft skills#Опыт с e-commerce]] |
+| 01:22:08 | Опыт с payment gateway | ✅ | [[12. Опыт и soft skills#Опыт с payment gateway / платёжными системами]] |
 
 ### Без разметки
 
 | Время | Тема | Статус |
 |-------|------|--------|
-| — | HR, опыт, live coding без теории | ❌ |
+| 01:38:00–01:40:30 | Контекст Betica: legacy, race/deadlock, миграция в GKE | ❌ контекст компании, не вопрос к кандидату |
+| 01:40:54–01:42:10 | Small talk (Dubai, налоги) | ❌ |

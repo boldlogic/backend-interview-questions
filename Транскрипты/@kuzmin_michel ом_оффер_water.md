@@ -1,11 +1,14 @@
 ---
 размечено: true
 теория: true
-лайвкодинг: false
+лайвкодинг: true
 опыт: true
 ---
 
 # @kuzmin michel ом оффер water
+
+- **Специальность:** Go backend (michel)
+
 
 - **Видео:** `@kuzmin_michel ом_оффер_water.mp4`
 - **Аудио:** [@kuzmin_michel ом_оффер_water.mp3](../audio/@kuzmin_michel ом_оффер_water.mp3)
@@ -105,7 +108,6 @@
 **[01:43]** Вот.
 
 **[01:45]** В контексте того, да, что мы с тобой можем
-> 📎 **База:** ✅ [[1. GO - Часто#context - что такое и зачем использовать?]]
 
 **[01:47]** общаться, если быть нам намем работать,
 
@@ -150,7 +152,6 @@
 **[02:30]** ну, сейчас надо,
 
 **[02:32]** HTTPS добавить, например,
-> 📎 **База:** ✅ [[7. HTTP, сети#http vs https?]]
 
 **[02:34]** квадратики, там,
 
@@ -725,6 +726,7 @@
 **[12:58]** Еще раз?
 
 **[13:01]** Как это, просто, в очереди событий,
+> 📎 **База:** ✅ [[8. Интеграции#Kafka: topic, partition, offset, consumer group]] · рефералка, очередь событий
 
 **[13:03]** где события, которые нужны для этого
 
@@ -795,7 +797,6 @@
 **[14:15]** окей, ну, а потом, если я там совершу
 
 **[14:17]** 10 транзакций, или еще что-то,
-> 📎 **База:** ✅ [[6. БД#acid и транзакции]]
 
 **[14:19]** такое событие, то есть,
 
@@ -950,6 +951,7 @@
 **[16:52]** Окей.
 
 **[16:54]** Так, давай перейдем к кодингу.
+> 📎 **Задача:** 🔧 live coding: parking lot (small/medium/large, park/unpark, configurable slots) · [[1. GO - Часто#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]]
 
 **[16:56]** Я сейчас скину
 
@@ -1242,6 +1244,7 @@
 **[33:34]** Yeah.
 
 **[33:35]** So, let's suppose that you are reviewing this code, like, what would be your suggestions for further improvement?
+> 📎 **Задача:** 🔧 code review: parking lot implementation (DRY, enum sizes, concurrency, persistence) · [[4. GO - Редко 2#Канал vs мьютекс]]
 
 **[33:42]** Or, like, let's say someone is, like, you know, asking to review this tool request, like, with these requirements, right, and this implementation, like, what would you suggest for later on?
 
@@ -1250,7 +1253,6 @@
 **[33:59]** I would like to discuss earlier, use params for small medium-large.
 
 **[34:10]** So, if it's micro-service, or basically service, we should, like, restart from previous, like, we should store it in database.
-> 📎 **База:** ✅ [[7. HTTP, сети#rest principles / grpc vs http?]]
 
 **[34:24]** Like, we can store tickets in database.
 
@@ -1994,14 +1996,25 @@
 
 ## Сопоставление с базой
 
-### Теоретические вопросы
+> Разметка по смыслу вопроса интервьюера. ✅ — точная карточка, ⚠️ — частично, ❌ — нет, 🔧 — практика.
+
+### Опыт / интеграции (до кодинга)
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | Авторазметка по ключевым словам | ✅ | см. inline 📎 |
+| 03:10–11:30 | Авторизация по телефону, капча, geo-IP, рефералка | ❌ | опыт (рассказ) |
+| 13:01 | Как события попадают в очередь (рефералка) | ✅ | [[8. Интеграции#Kafka: topic, partition, offset, consumer group]] |
+
+### Практика
+
+| Время | Задача | Статус | Пункт |
+|-------|--------|--------|-------|
+| 16:54 | Live coding: parking lot | 🔧 | [[1. GO - Часто#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]] |
+| 33:35 | Code review: parking lot | 🔧 | [[4. GO - Редко 2#Канал vs мьютекс]] |
 
 ### Без разметки
 
 | Время | Тема | Статус |
 |-------|------|--------|
-| — | HR, опыт, live coding без теории | ❌ |
+| 00:27–03:00 | HR, формат собеса | ❌ |
+| 42:54+ | Обратная связь, процессы, локация, вопросы кандидата | ❌ |
