@@ -103,7 +103,7 @@
 **[02:11]** Mostly I develop microservices using different interaction formats,
 
 **[02:18]** Like GCP, REST, and some asynchronous message brokers and so on.
-> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST — принципы и best practices]]
 
 **[02:25]** Well, most of my experience, the majority of my experience is in FinTech.
 
@@ -2697,7 +2697,7 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[6. Ops - Часто#Как убить процесс в Linux?]] · [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]] · [[4. Интеграции#Kafka / RabbitMQ?]] · [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] |
+| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[6. Ops - Часто#Как убить процесс в Linux?]] · [[3. HTTP - Часто#REST — принципы и best practices]] · [[4. Интеграции#Kafka / RabbitMQ?]] · [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] |
 
 
 ### Опыт / behavioral

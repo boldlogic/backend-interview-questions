@@ -210,7 +210,7 @@
 **[03:58]** will financially use cases.
 
 **[04:00]** I'm particularly interested in mechanics
-> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST — принципы и best practices]]
 
 **[04:04]** ability and clean architecture.
 
@@ -2565,7 +2565,7 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] · [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[4. Интеграции#Kafka / RabbitMQ?]] |
+| — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] · [[3. HTTP - Часто#REST — принципы и best practices]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[4. Интеграции#Kafka / RabbitMQ?]] |
 | — | value vs pointer receiver | ✅ | [[7. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
 
 

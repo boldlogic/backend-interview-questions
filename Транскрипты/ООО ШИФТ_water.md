@@ -3191,7 +3191,7 @@
 **[01:09:00]** недостаток то, что его нужно
 
 **[01:09:02]** перестраивать постоянно
-> 📎 **База:** ✅ [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]]
+> 📎 **База:** ✅ [[3. HTTP - Часто#REST — принципы и best practices]]
 
 **[01:09:04]** при вставке удалении
 
@@ -4565,7 +4565,7 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | timeout, JOIN, REST, replication, kill process | ✅ | [[12. HTTP — Реже#Как подобрать timeout (p99)?]] · [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[3. HTTP - Часто#REST principles / gRPC vs HTTP?]] · [[2. БД - Часто#Репликация и read replica]] · [[6. Ops - Часто#Как убить процесс в Linux?]] |
+| — | timeout, JOIN, REST, replication, kill process | ✅ | [[12. HTTP — Реже#Как подобрать timeout (p99)?]] · [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[3. HTTP - Часто#REST — принципы и best practices]] · [[2. БД - Часто#Репликация и read replica]] · [[6. Ops - Часто#Как убить процесс в Linux?]] |
 
 
 ### Опыт / behavioral
