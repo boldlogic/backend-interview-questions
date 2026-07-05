@@ -1,3 +1,7 @@
+---
+решено: true
+---
+
 # aiWeatherForecast — highload RPC 10k RPS
 
 **Собес:** [[record_water]] · ~46:53

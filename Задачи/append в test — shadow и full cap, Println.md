@@ -1,3 +1,7 @@
+---
+решено: true
+---
+
 # append в test — shadow и full cap, Println
 
 **Собес:** [[СимберСофт]] · ~07:59–12:18
