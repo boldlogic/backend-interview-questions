@@ -14,7 +14,7 @@
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-06-30 17:55 UTC
 - **Разметка:** после реплики интервьюера — одна строка:
-  - `> 📎 **База:** …` — **теория**; сылка на `1–12.*.md`
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–12.*.md`
   - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
   - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
@@ -1663,7 +1663,7 @@
 
 **[38:36]** are written in
 
-**[38:38]** mostly they are Golan
+**[38:38]** mostly they are Golang
 
 **[38:40]** or TypeScript
 
@@ -1671,7 +1671,7 @@
 
 **[38:44]** as well we have a bit of Python
 
-**[38:46]** but it's mostly Golan and TypeScript
+**[38:46]** but it's mostly Golang and TypeScript
 
 **[38:52]** so
 

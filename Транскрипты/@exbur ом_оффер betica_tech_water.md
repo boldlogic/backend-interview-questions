@@ -36,7 +36,7 @@
 
 **[00:31]** Первая часть будет 30 минут для написания код.
 
-**[00:35]** И потом мы будем иметь 15 минут для Q&A и нового рекламы.
+**[00:35]** И потом мы будем иметь 15 минут для Q&A и нового review.
 
 **[00:41]** И вторая сессия будет 40 минут для системы дизайн-челленджа.
 
@@ -44,19 +44,19 @@
 
 **[00:52]** ваша экрана.
 
-**[00:54]** Так что нечувствованы, что нет AI в бакууме.
+**[00:54]** Так что make sure, что нет AI в Zoomе.
 
 **[00:59]** Вы можете использовать любые IDE, которые вы удобны.
 
-**[01:05]** Но просто для того, чтобы вы дизабулировали
+**[01:05]** Но просто для того, чтобы вы disabled
 
-**[01:08]** колпайлот или любые AI, которые помогут вам для написания код.
+**[01:08]** Copilot или любые AI, которые помогут вам для написания код.
 
 **[01:16]** Какие-то вопросы перед этим?
 
 **[01:19]** Да, конечно.
 
-**[01:21]** Позвольте мне создать бакуум для интервью.
+**[01:21]** Позвольте мне создать Zoom для интервью.
 
 **[01:27]** Окей.
 
@@ -64,18 +64,18 @@
 
 **[01:48]** Позвольте мне поделить эту экрана.
 
-**[01:52]** Это будет реклама.
+**[01:52]** Это будет review.
 
-**[01:54]** Итак, мы имеем рекламу.
+**[01:54]** Итак, мы имеем review.
 
 **[02:04]** Мы хотим создать SDK.
 > 📎 **Задача:** 🔧 live coding: SDK симуляция сущностей (barracuda/shark/human, attack, статусы) · [[7. GO - Средне#Как устроено ОП в Go?]] · [[1. GO - Часто#Для чего используется интерфейс? / что такое / как устроен интерфейс?]]
 
 **[02:06]** Это SDK будет очень похожа на лабораторию.
 
-**[02:10]** Это будет рекламу.
+**[02:10]** Это будет review.
 
-**[02:12]** Думаю, что эти рекламу,
+**[02:12]** Думаю, что эти review,
 
 **[02:15]** у нас нет разработчиков в нашей организации,
 
@@ -101,17 +101,17 @@
 
 **[02:43]** Поэтому мы называем это SDK.
 
-**[02:46]** Эти рекламы
+**[02:46]** Эти review
 
 **[02:48]** имеют,
 
-**[02:50]** в принципе, три креатива.
+**[02:50]** в принципе, три creature.
 
 **[02:52]** Сейчас,
 
-**[02:53]** первая креатива
+**[02:53]** первая creature
 
-**[02:54]** это бакуум,
+**[02:54]** это barracuda,
 
 **[02:55]** вторая,
 
@@ -125,9 +125,9 @@
 
 **[03:02]** мы имеем,
 
-**[03:04]** большинство них имеют бакуум,
+**[03:04]** большинство них имеют barracuda,
 
-**[03:06]** бакуум,
+**[03:06]** barracuda,
 
 **[03:08]** но человек не может убить.
 
@@ -687,7 +687,7 @@
 
 **[12:55]** and then the same thing, but for, you know,
 
-**[12:57]** shark, barcuda, entity, you know,
+**[12:57]** shark, barracuda, entity, you know,
 
 **[12:59]** for human.
 
@@ -695,7 +695,7 @@
 
 **[13:03]** like, repetition.
 
-**[13:05]** And anyway, you know, barcuda and shark, they also
+**[13:05]** And anyway, you know, barracuda and shark, they also
 
 **[13:07]** can take damage.
 
@@ -783,7 +783,7 @@
 
 **[14:37]** gore, you know, like what it's called,
 
-**[14:39]** like gore case or something,
+**[14:39]** like guard clause or something,
 
 **[14:41]** and, like, if it's dead,
 
@@ -1125,7 +1125,7 @@
 
 **[21:17]** for the
 
-**[21:19]** for the barcuda
+**[21:19]** for the barracuda
 
 **[21:50]** and
 
@@ -1145,7 +1145,7 @@
 
 **[22:10]** new shark and new
 
-**[22:12]** barcuda.
+**[22:12]** barracuda.
 
 **[22:14]** So let me do it.
 
@@ -1235,7 +1235,7 @@
 
 **[24:17]** shark
 
-**[24:19]** and for barcuda
+**[24:19]** and for barracuda
 
 **[24:21]** name
 
@@ -1267,11 +1267,11 @@
 
 **[24:55]** for the new
 
-**[24:57]** new barcuda
+**[24:57]** new barracuda
 
 **[24:59]** string
 
-**[25:04]** barcuda
+**[25:04]** barracuda
 
 **[25:06]** entity
 
@@ -1333,17 +1333,17 @@
 
 **[26:22]** some
 
-**[26:24]** and for barcuda
+**[26:24]** and for barracuda
 
 **[26:26]** I don't know what we should call
 
-**[26:28]** barcuda let's call it
+**[26:28]** barracuda let's call it
 
 **[26:30]** like
 
 **[26:32]** do you have any names
 
-**[26:34]** for the barcuda
+**[26:34]** for the barracuda
 
 **[26:36]** any name
 
@@ -1365,7 +1365,7 @@
 
 **[26:57]** what are we going to do
 
-**[26:59]** barcuda attack human
+**[26:59]** barracuda attack human
 
 **[27:01]** so we want to
 
@@ -1622,7 +1622,7 @@
 
 **[32:24]** let's see
 
-**[32:29]** Berkeley attacks human
+**[32:29]** Barracuda attacks human
 
 **[32:31]** shark attacks
 
@@ -1636,7 +1636,7 @@
 
 **[32:46]** but like
 
-**[32:48]** Berkeley attacks human
+**[32:48]** Barracuda attacks human
 
 **[32:50]** yeah this is our junk
 
@@ -1705,7 +1705,7 @@
 
 **[34:00]** add new attacker
 
-**[34:02]** it's not balacuda it's not char
+**[34:02]** it's not barracuda it's not char
 
 **[34:04]** maybe it's
 
@@ -1805,7 +1805,7 @@
 
 **[35:47]** individual
 
-**[35:49]** each balacuda and char
+**[35:49]** each barracuda and char
 
 **[35:53]** what is different
 
@@ -1915,13 +1915,13 @@
 
 **[37:43]** Chinese also implement
 
-**[37:45]** on the shark and balacuda
+**[37:45]** on the shark and barracuda
 
 **[37:47]** I mean
 
 **[37:49]** yeah I mean
 
-**[37:53]** yeah I mean yeah shark and balacuda
+**[37:53]** yeah I mean yeah shark and barracuda
 
 **[37:55]** they also do have you know these methods because
 
@@ -1937,7 +1937,7 @@
 
 **[38:09]** there is an attacker
 
-**[38:11]** right so this shark and balacuda
+**[38:11]** right so this shark and barracuda
 
 **[38:13]** is an attacker behavior
 
@@ -1958,7 +1958,7 @@
 
 **[38:31]** and instead of type
 
-**[38:33]** balacuda have damage
+**[38:33]** barracuda have damage
 
 **[38:37]** so you mean we should have some sort of
 
@@ -2558,7 +2558,7 @@
 
 **[49:28]** decide for the e-commerce
 
-**[49:30]** that's going to support it back
+**[49:30]** that's going to support Black
 
 **[49:32]** and for this
 
@@ -2620,11 +2620,11 @@
 
 **[50:32]** the payment gateway accept that
 
-**[50:34]** time section
+**[50:34]** transaction
 
 **[50:36]** no means it's going to reject
 
-**[50:38]** that time section and I would
+**[50:38]** that transaction and I would
 
 **[50:40]** like
 
@@ -2648,7 +2648,7 @@
 
 **[51:04]** so we would like to have
 
-**[51:06]** support the back Friday
+**[51:06]** support the Black Friday
 
 **[51:08]** so it's going to be very crazy
 
@@ -2718,7 +2718,7 @@
 
 **[52:31]** and the solution
 
-**[52:33]** how to prevent the less condition
+**[52:33]** how to prevent the race condition
 
 **[52:35]** any trace of analysis
 
@@ -2798,15 +2798,15 @@
 
 **[54:01]** of warehouse that you got it here
 
-**[54:05]** the third one is full-motion
+**[54:05]** the third one is promotion
 
-**[54:07]** Это репортение, то есть это как какой-то так, как даже дискал, как какой-то, как 50%.
+**[54:07]** Это promotion, то есть это как какой-то так, как даже дискал, как какой-то, как 50%.
 
 **[54:19]** Это сейчас правильно?
 
-**[54:21]** Телее того, это лампорат ли.
+**[54:21]** Телее того, это promotion.
 
-**[54:24]** А, лампорат ли.
+**[54:24]** А, promotion.
 
 **[54:25]** Т items.
 
@@ -2814,13 +2814,13 @@
 
 **[54:31]** И final one for the external services is payment gateway.
 
-**[54:37]** А, с Ваймэнгейтвей.
+**[54:37]** А, с payment gateway.
 
-**[54:39]** Ваймэнгейтвей.
+**[54:39]** payment gateway.
 
-**[54:43]** Ваймэнгейтвей.
+**[54:43]** payment gateway.
 
-**[54:46]** Ваймэнгейтвей.
+**[54:46]** payment gateway.
 
 **[54:48]** Слышно.
 
@@ -3508,7 +3508,7 @@
 
 **[01:06:57]** here is to like
 
-**[01:06:59]** in the potency keys here
+**[01:06:59]** in the idempotency keys here
 
 **[01:07:01]** just to make sure
 
@@ -4113,13 +4113,13 @@
 
 **[01:18:09]** a pretty basic approach
 
-**[01:18:11]** sort of like read is here
+**[01:18:11]** sort of like Redis here
 
 **[01:18:13]** in the front
 
 **[01:18:15]** so
 
-**[01:18:17]** gonna hit you know the read is first
+**[01:18:17]** gonna hit you know the Redis first
 
 **[01:18:19]** something like this
 
@@ -5138,7 +5138,7 @@
 
 **[01:37:10]** but yes that's
 
-**[01:37:12]** to prevent it less condition
+**[01:37:12]** to prevent it race condition
 
 **[01:37:14]** I think that's
 
@@ -5204,7 +5204,7 @@
 
 **[01:38:18]** volume
 
-**[01:38:20]** because of the bed thing
+**[01:38:20]** because of the betting
 
 **[01:38:22]** so we need to handle
 
@@ -5236,13 +5236,13 @@
 
 **[01:38:55]** we gonna have this kind of volume
 
-**[01:38:57]** so that's why there's a lot of less condition
+**[01:38:57]** so that's why there's a lot of race condition
 
 **[01:38:59]** and deadlocks coming afterwards
 
 **[01:39:01]** as well
 
-**[01:39:03]** so that's the name as legacy patch
+**[01:39:03]** so that's the name as legacy stack
 
 **[01:39:05]** from
 
@@ -5268,7 +5268,7 @@
 
 **[01:39:27]** name project is
 
-**[01:39:29]** one patch from
+**[01:39:29]** one tech from
 
 **[01:39:31]** so
 
@@ -5280,9 +5280,9 @@
 
 **[01:39:39]** more because
 
-**[01:39:41]** you're gonna specify to what is the time section
+**[01:39:41]** you're gonna specify to what is the transaction
 
-**[01:39:43]** where it's gonna be charting
+**[01:39:43]** where it's gonna be sharding
 
 **[01:39:45]** where is the positioning
 
@@ -5294,9 +5294,9 @@
 
 **[01:39:53]** concurrent write operation
 
-**[01:39:55]** it's not just lead operation
+**[01:39:55]** it's not just read operation
 
-**[01:39:57]** lead operation is more than that
+**[01:39:57]** read operation is more than that
 
 **[01:39:59]** but yeah, you could imagine
 
@@ -5314,19 +5314,19 @@
 
 **[01:40:13]** that you have designed like
 
-**[01:40:15]** we use both guests
+**[01:40:15]** we use Postgres
 
 **[01:40:17]** legacy, we use mysql
 
 **[01:40:19]** but yes
 
-**[01:40:21]** charting, write operation,
+**[01:40:21]** sharding, write operation,
 
-**[01:40:23]** lead, lepica, all of them need to be settled
+**[01:40:23]** lead, replica, all of them need to be settled
 
 **[01:40:25]** and
 
-**[01:40:27]** all of them need to be in Golan
+**[01:40:27]** all of them need to be in Golang
 
 **[01:40:29]** so that's the reason
 
@@ -5394,7 +5394,7 @@
 
 **[01:41:36]** 13-14
 
-**[01:41:38]** chances
+**[01:41:38]** degrees
 
 **[01:41:40]** but yes, so far so good
 

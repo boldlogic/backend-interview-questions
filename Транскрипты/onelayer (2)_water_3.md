@@ -13,7 +13,7 @@
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-06-30 20:30 UTC
 - **Разметка:** после реплики интервьюера — одна строка:
-  - `> 📎 **База:** …` — **теория**; сылка на `1–12.*.md`
+  - `> 📎 **База:** …` — **теория**; ссылка на `1–12.*.md`
   - `> 📎 **Задача:** …` — **практика** (live coding, SQL, code review)
   - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
@@ -96,7 +96,7 @@
 
 **[02:00]** I started in 2018, I think.
 
-**[02:03]** What I mainly use Golan is my language,
+**[02:03]** What I mainly use Golang is my language,
 
 **[02:08]** But I also know some other languages.
 
@@ -111,7 +111,7 @@
 
 **[02:36]** And it was Java application monolith.
 
-**[02:41]** And we needed to split it up into different microservices using Golan.
+**[02:41]** And we needed to split it up into different microservices using Golang.
 
 **[02:48]** Well, I worked there, I would say, around 3 years if I'm mistaken.
 
@@ -149,7 +149,7 @@
 
 **[04:06]** If we are talking about, you know, technologists,
 
-**[04:11]** As I said, my main language is Golan.
+**[04:11]** As I said, my main language is Golang.
 
 **[04:14]** And I mostly write microservices in terms of databases.
 
@@ -1662,7 +1662,7 @@
 
 **[38:21]** Can you tell me more about the technologies you use?
 
-**[38:29]** You mentioned Golan and Kafka, Nats.
+**[38:29]** You mentioned Golang and Kafka, Nats.
 
 **[38:34]** Can you mention other things, what else you use?
 
