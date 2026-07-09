@@ -2314,7 +2314,7 @@
 **[50:17]** as payment rates
 
 **[50:19]** like the sender and the receiver
-> 📎 **База:** ✅ [[7. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]]
+> 📎 **База:** ✅ [[8. GO - Редко 1#Передача и возврат: значение vs указатель? / Value vs pointer receiver]]
 
 **[50:21]** let's say someone wants to export
 
@@ -2566,7 +2566,7 @@
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
 | — | EXPLAIN, REST, context/cancel, race, atomic, JOIN, select, Kafka | ✅ | [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] · [[3. HTTP - Часто#REST — принципы и best practices]] · [[1. GO - Часто#Что такое дедлок и рейс кондишион, и `-race`]] · [[4. Интеграции#Kafka / RabbitMQ?]] |
-| — | value vs pointer receiver | ✅ | [[7. GO - Средне#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
+| — | value vs pointer receiver | ✅ | [[8. GO - Редко 1#Передача и возврат: значение vs указатель? / Value vs pointer receiver]] |
 
 
 ### Опыт / behavioral

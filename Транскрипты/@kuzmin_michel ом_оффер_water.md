@@ -1243,7 +1243,7 @@
 **[33:34]** Yeah.
 
 **[33:35]** So, let's suppose that you are reviewing this code, like, what would be your suggestions for further improvement?
-> 📎 **Задача:** 🔧 code review: parking lot implementation (DRY, enum sizes, concurrency, persistence) · [[8. GO - Редко 1#Канал vs мьютекс]]
+> 📎 **Задача:** 🔧 code review: parking lot implementation (DRY, enum sizes, concurrency, persistence) · [[9. GO - Редко 2#Канал vs мьютекс]]
 
 **[33:42]** Or, like, let's say someone is, like, you know, asking to review this tool request, like, with these requirements, right, and this implementation, like, what would you suggest for later on?
 
@@ -2010,7 +2010,7 @@
 | Время | Задача | Статус | Пункт |
 |-------|--------|--------|-------|
 | 16:54 | Live coding: parking lot | 🔧 | [[7. GO - Средне#Mutex и RWMutex / Когда Mutex, а когда RWMutex?]] |
-| 33:35 | Code review: parking lot | 🔧 | [[8. GO - Редко 1#Канал vs мьютекс]] |
+| 33:35 | Code review: parking lot | 🔧 | [[9. GO - Редко 2#Канал vs мьютекс]] |
 
 
 ### Опыт / behavioral
