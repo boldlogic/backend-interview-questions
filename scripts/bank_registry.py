@@ -26,6 +26,7 @@ SA_CORPUS_FILES: frozenset[str] = frozenset(
         "ЛадаЦифра_SA_240_water.md",
         "Собес Гнивц_water-1.md",
         "@foreverrwednesday ом_оффер Digital Biz Factory_water.md",
+        "СисАналитик_350к_Aston_water.md",
     }
 )
 
