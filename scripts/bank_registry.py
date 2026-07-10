@@ -20,6 +20,12 @@ SA_CORPUS_FILES: frozenset[str] = frozenset(
         "2024_07_16_ASTON_тех_собес_online_audio_converter_mp3cut_net.md",
         "Собеседование Астра ОМ.md",
         "t1_SystemAnalyst.md",
+        "Сбербанк 250к отказ_water_2.md",
+        "ТТК-Связь.md",
+        "АльфаБанк_SA_250_water_1.md",
+        "ЛадаЦифра_SA_240_water.md",
+        "Собес Гнивц_water-1.md",
+        "@foreverrwednesday ом_оффер Digital Biz Factory_water.md",
     }
 )
 
