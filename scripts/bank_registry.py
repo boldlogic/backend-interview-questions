@@ -158,6 +158,11 @@ MANUAL_ALIASES: dict[tuple[str, str], tuple[str, str]] = {
     ("9. GO - Редко 2-3", "чем отличается запись/чтение в буферизованном и небуферизованном канале?"): ("9. GO - Редко 2", "Операции и параметры канала"),
     ("9. GO - Редко 2-3", "что такое generics?"): ("7. GO - Средне", "Что такое generics?"),
     ("9. GO - Редко 2-3", "эвакуация мапы"): ("9. GO - Редко 2", "Что такое хеш-таблица / коллизии / эвакуация map"),
+    ("16. Опыт и soft skills", "4.4 Дедлайн и стресс (STAR)"): ("16. Опыт и soft skills", "4.2 Дедлайн и стресс (STAR)"),
+    ("16. Опыт и soft skills", "Опыт с e-commerce"): ("16. Опыт и soft skills", "8.2 Опыт с e-commerce"),
+    ("16. Опыт и soft skills", "Опыт с payment gateway / платёжными системами"): ("16. Опыт и soft skills", "8.4 Опыт с payment gateway / платёжными системами"),
+    ("16. Опыт и soft skills", "Опыт с Kubernetes (базовый деплой)"): ("16. Опыт и soft skills", "8.3 Опыт с Kubernetes (базовый деплой)"),
+    ("16. Опыт и soft skills", "Опыт с брокерами сообщений и Kafka"): ("16. Опыт и soft skills", "8.6 Опыт с брокерами сообщений и Kafka"),
 }
 
 WIKILINK_RE = re.compile(r"\[\[([^#\]]+)(?:#([^\]]+))?\]\]")
@@ -241,7 +246,9 @@ def is_bank_question_heading(level: str, title: str) -> bool:
 
 
 def list_transcripts() -> list[Path]:
-    return sorted(p for p in TRANSCRIPTS.glob("*.md") if p.name != "INDEX.md")
+    return sorted(
+        p for p in TRANSCRIPTS.rglob("*.md") if p.name != "INDEX.md"
+    )
 
 
 def corpus_for_bank(bank_name: str) -> str:
@@ -392,10 +399,12 @@ def build_question_registry(
                 prefix_index[(nf, pk)].append(canon)
 
     for (nf, nh), canon in list(MANUAL_ALIASES.items()):
-        resolver[(nf, nh)] = canon
-        resolver[(nf, norm_heading(nh))] = canon
-        if canon in display:
-            resolver[(nf, heading_equiv_key(display[canon]))] = canon
+        nf_c, nh_c = canon
+        norm_canon = (nf_c, norm_heading(nh_c))
+        resolver[(nf, nh)] = norm_canon
+        resolver[(nf, norm_heading(nh))] = norm_canon
+        if norm_canon in display:
+            resolver[(nf, heading_equiv_key(display[norm_canon]))] = norm_canon
 
     return resolver, number_index, prefix_index, display
 

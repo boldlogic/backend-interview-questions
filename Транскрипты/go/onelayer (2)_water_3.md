@@ -1805,6 +1805,8 @@
 **[42:16]** And we are not requiring any prior information.
 
 **[42:19]** We have our own onboarding plan,
+> 📎 **База:** ✅ [[16. Опыт и soft skills#7.3 Вопросы про процессы и рост]]
+
 
 **[42:21]** where we will help you to learn both about network and cybersecurity
 
