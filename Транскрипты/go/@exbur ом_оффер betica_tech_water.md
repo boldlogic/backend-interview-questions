@@ -4013,7 +4013,7 @@
 **[01:16:15]** that we might address in the future
 
 **[01:16:17]** and we are gonna like address our high load
-> 📎 **База:** ✅ [[16. Опыт и soft skills#2.2 Архитектура и стек проекта]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Архитектура и стек проекта]]
 
 **[01:16:19]** that's one option
 
@@ -5456,7 +5456,7 @@
 | 49:22 | Опыт с e-commerce (по резюме) | ✅ | [[16. Опыт и soft skills#Опыт с e-commerce]] |
 | 01:22:08 | Опыт с payment gateway | ✅ | [[16. Опыт и soft skills#Опыт с payment gateway / платёжными системами]] |
 
-| 01:16:17 | and we are gonna like address our high load | ✅ | [[16. Опыт и soft skills#2.2 Архитектура и стек проекта]] |
+| 01:16:17 | and we are gonna like address our high load | ✅ | [[16. Опыт и soft skills#Архитектура и стек проекта]] |
 ### Без разметки
 
 | Время | Тема | Статус |

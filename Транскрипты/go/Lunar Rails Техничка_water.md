@@ -435,7 +435,7 @@
 **[08:03]** Это очень эффективный проект для нашей компании.
 
 **[08:07]** Например, еще один проект, который я очень понравился,
-> 📎 **База:** ✅ [[16. Опыт и soft skills#1.3 Один проект за 2–3 минуты]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Один проект за 2–3 минуты]]
 
 
 **[08:09]** был с Лопольщиной в адаптере сервис.
@@ -1077,7 +1077,7 @@
 **[27:45]** This construction is useful
 
 **[27:47]** to schedule a function call
-> 📎 **База:** ✅ [[16. Опыт и soft skills#2.5 On-call и инциденты]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#On-call, инцидент и ошибка в проде]]
 
 **[27:49]** to run after the
 
@@ -1367,7 +1367,7 @@
 **[33:04]** icing updates
 
 **[33:06]** just using short daily weekly updates
-> 📎 **База:** ✅ [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Команда и процессы на проекте]]
 
 **[33:08]** shared channels helped
 
@@ -2433,7 +2433,7 @@
 **[52:25]** right now
 
 **[52:27]** screen planning, code reviews, deployments
-> 📎 **База:** ✅ [[16. Опыт и soft skills#6.1 Code review и agile как опыт]]
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Команда и процессы на проекте]]
 
 **[52:29]** something like that
 
@@ -2575,10 +2575,10 @@
 
 | Время | Тема | Статус | Пункт |
 |-------|------|--------|-------|
-| 27:47 | to schedule a function call | ✅ | [[16. Опыт и soft skills#2.5 On-call и инциденты]] |
+| 27:47 | to schedule a function call | ✅ | [[16. Опыт и soft skills#On-call, инцидент и ошибка в проде]] |
 
-| 33:06 | just using short daily weekly updates | ✅ | [[16. Опыт и soft skills#2.4 Команда и процессы на проекте]] |
-| 52:27 | screen planning, code reviews, deployments | ✅ | [[16. Опыт и soft skills#6.1 Code review и agile как опыт]] |
+| 33:06 | just using short daily weekly updates | ✅ | [[16. Опыт и soft skills#Команда и процессы на проекте]] |
+| 52:27 | screen planning, code reviews, deployments | ✅ | [[16. Опыт и soft skills#Команда и процессы на проекте]] |
 ### Без разметки
 
 | Время | Тема | Статус |
