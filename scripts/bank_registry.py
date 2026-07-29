@@ -41,6 +41,7 @@ SA_GO_BANKS: frozenset[str] = frozenset(
         "12. HTTP — Реже.md",
         "13. Архитектура — Реже.md",
         "14. Ops — Реже.md",
+        "17. Data Python ML.md",
     }
 )
 
