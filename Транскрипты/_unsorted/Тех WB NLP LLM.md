@@ -2011,7 +2011,7 @@
 **[38:50]** Хорошо.
 
 **[38:52]** Знаешь, что такое deal?
-> 📎 **База:** ✅ [[17. Data Python ML#GIL в Python]]
+> 📎 **База:** ✅ [[18. Python#GIL в Python]]
 
 **[38:54]** Да, global interpreter log, вот.
 
@@ -2066,7 +2066,7 @@
 **[39:46]** Да.
 
 **[39:48]** И тогда давай сразу плавно перейдем
-> 📎 **База:** ✅ [[17. Data Python ML#GIL в Python]] · threading vs multiprocessing
+> 📎 **База:** ✅ [[18. Python#GIL в Python]] · threading vs multiprocessing
 
 **[39:50]** к трём видам
 
