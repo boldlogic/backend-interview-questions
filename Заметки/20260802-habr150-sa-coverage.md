@@ -78,7 +78,27 @@
 - User Story / Use Case как форматы — уже в SA; добавили только **USM**, **UC-диаграмма**, **FR vs NFR** как отдельные углы Habr.
 - Casual «story map» в ASTON без вопроса «что такое USM» — без +1.
 
+## По литературе (2026-08-02, follow-up)
+
+Все 21 stub заполнены секциями **По литературе** из конспектов vault (не эталоны):
+
+| Источник | Карточки |
+|----------|----------|
+| Репин BPMN | события, шлюзы |
+| Вигерс выжимка + ТОП 25 + курс 2.2 | FR vs NFR, UC-диаграмма, стейкхолдеры, UI |
+| Курс 1.3 / Agile | Scrum ceremonies |
+| Concurrency in UML | Sequence alt/opt/loop |
+| Курс 2.4 + Guide/INCOSE | ГОСТ 19 vs 34 |
+| Профстандарт 233 | джун vs сеньор (A/B/C) |
+| Курс 2.4 + «Проектирование веб-API» | постановка UI/интеграции, JSON Schema, GraphQL, client-server, API Gateway |
+| Kafka event book гл.7 | Event Sourcing |
+| Курс 5.1 | M:N |
+| PostgreSQL 16 изнутри | dirty read, БД vs СУБД |
+| Impact Mapping + артефакты SA | USM (Patton в vault нет — честно отмечено) |
+
+Backup lit-правок: `Заметки/.backups/20260802-habr150-lit/`
+
 ## Бэкап / скрипт
 
-- Backup: `Заметки/.backups/20260802-habr150-sa/`
-- Применяющий скрипт: `Заметки/_habr150_apply.py` (одноразовый)
+- Backup stubs/markup: `Заметки/.backups/20260802-habr150-sa/`
+- Backup литературы: `Заметки/.backups/20260802-habr150-lit/`
