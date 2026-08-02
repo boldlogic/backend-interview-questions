@@ -173,32 +173,165 @@ def resolve_bank(fpart: str, banks: dict[str, set[str]]) -> str | None:
     return best if best_score > 0 else (cands[0] if len(cands) == 1 else cands[0])
 
 
+def _norm_h(s: str) -> str:
+    return s.strip().replace("ё", "е").lower()
+
+
+# (link_bank, alias_norm) -> (canonical_bank, canonical_title)
+# Short/legacy headings after merges (`A / B`) and card moves between files.
+MANUAL_ALIASES: dict[tuple[str, str], tuple[str, str]] = {
+    ("1. GO - Часто.md", "чем горутина отличается от потока?"): (
+        "1. GO - Часто.md",
+        "Что такое горутины и зачем нужны / отличия от потоков ОС",
+    ),
+    ("1. GO - Часто.md", "что такое горутины и зачем нужны"): (
+        "1. GO - Часто.md",
+        "Что такое горутины и зачем нужны / отличия от потоков ОС",
+    ),
+    ("1. GO - Часто.md", "способы синхронизации горутин"): (
+        "1. GO - Часто.md",
+        "Способы синхронизации горутин / Какие примитивы синхронизации / как горутины общаются",
+    ),
+    ("1. GO - Часто.md", "что при записи/чтении из закрытого канала?"): (
+        "1. GO - Часто.md",
+        "Что при записи/чтении из закрытого канала? / Что произойдет с читателями/писателями если закрыть канал?",
+    ),
+    ("1. GO - Часто.md", "какие виды каналов бывают?"): (
+        "1. GO - Часто.md",
+        "Как устроен канал и как он работает под капотом? / Какие виды каналов бывают?",
+    ),
+    ("1. GO - Часто.md", "как устроен канал и как он работает под капотом?"): (
+        "1. GO - Часто.md",
+        "Как устроен канал и как он работает под капотом? / Какие виды каналов бывают?",
+    ),
+    ("1. GO - Часто.md", "расскажи про каналы"): (
+        "1. GO - Часто.md",
+        "Как устроен канал и как он работает под капотом? / Какие виды каналов бывают?",
+    ),
+    ("1. GO - Часто.md", "что такое указатель и сколько он весит"): (
+        "1. GO - Часто.md",
+        "Указатели: зачем, что такое и сколько он весит",
+    ),
+    ("1. GO - Часто.md", "что такое модель gmp и gomaxprocs?"): (
+        "1. GO - Часто.md",
+        "Что такое планировщик / GMP и GOMAXPROCS?",
+    ),
+    ("1. GO - Часто.md", "context - что такое и зачем использовать?"): (
+        "7. GO - Средне.md",
+        "context - что такое, как устроен и зачем использовать?",
+    ),
+    ("1. GO - Часто.md", "mutex и rwmutex"): (
+        "7. GO - Средне.md",
+        "Mutex / RWMutex / Когда Mutex, а когда RWMutex?",
+    ),
+    ("1. GO - Часто.md", "что такое string?"): (
+        "7. GO - Средне.md",
+        "Что такое string? / строки vs руны",
+    ),
+    ("1. GO - Часто.md", "чем конкурентность  отличается от параллелизма?"): (
+        "8. GO - Редко 1.md",
+        "Чем конкурентность отличается от параллелизма?",
+    ),
+    ("1. GO - Часто.md", "чем конкурентность отличается от параллелизма?"): (
+        "8. GO - Редко 1.md",
+        "Чем конкурентность отличается от параллелизма?",
+    ),
+    ("1. GO - Часто.md", "зачем нужен select"): (
+        "1. GO - Часто.md",
+        "Зачем нужен select",
+    ),
+    ("1. GO - Часто.md", "select: псевдослучайный выбор case"): (
+        "1. GO - Часто.md",
+        "Зачем нужен select",
+    ),
+    ("2. БД - Часто.md", "уровни изоляции транзакций"): (
+        "2. БД - Часто.md",
+        "Уровни изоляции транзакций / Default в PostgreSQL?",
+    ),
+    ("2. БД - Часто.md", "нормализация и денормализация"): (
+        "2. БД - Часто.md",
+        "Нормализация / Что такое нормальные формы / Когда денормализуют?",
+    ),
+    ("5. Архитектура - Часто.md", "монолит vs микросервисы"): (
+        "5. Архитектура - Часто.md",
+        "Монолит vs микросервисы, главные компромиссы?",
+    ),
+    ("7. GO - Средне.md", "defer, panic, recover"): (
+        "7. GO - Средне.md",
+        "defer, panic, recover / exceptions в Go",
+    ),
+}
+
+
+def build_title_resolver(banks: dict[str, set[str]]) -> dict[str, dict[str, tuple[str, str]]]:
+    """bank -> {norm_heading -> (canonical_bank, title)}."""
+    out: dict[str, dict[str, tuple[str, str]]] = {}
+    for bank, titles in banks.items():
+        m: dict[str, tuple[str, str]] = {}
+        candidates: dict[str, list[str]] = defaultdict(list)
+        for t in titles:
+            candidates[_norm_h(t)].append(t)
+            for part in t.split(" / "):
+                part = part.strip()
+                if len(part) >= 8:
+                    candidates[_norm_h(part)].append(t)
+        for key, lst in candidates.items():
+            uniq = list(dict.fromkeys(lst))
+            if len(uniq) == 1:
+                m[key] = (bank, uniq[0])
+        out[bank] = m
+    # manuals (incl. cross-bank) win
+    for (b, alias), (tb, title) in MANUAL_ALIASES.items():
+        if title not in banks.get(tb, set()):
+            continue
+        out.setdefault(b, {})[_norm_h(alias)] = (tb, title)
+    return out
+
+
+def resolve_heading(
+    bank: str,
+    heading: str,
+    resolvers: dict[str, dict[str, tuple[str, str]]],
+    banks: dict[str, set[str]],
+) -> tuple[str, str] | None:
+    h = heading.split("|", 1)[0].strip()
+    if not h:
+        return None
+    titles = banks.get(bank, set())
+    if h in titles:
+        return bank, h
+    hit = resolvers.get(bank, {}).get(_norm_h(h))
+    if hit:
+        return hit
+    if len(h) >= 12:
+        cands = [t for t in titles if _norm_h(t).startswith(_norm_h(h))]
+        if len(cands) == 1:
+            return bank, cands[0]
+        cands = [t for t in titles if _norm_h(t.split(" / ")[0]) == _norm_h(h)]
+        if len(cands) == 1:
+            return bank, cands[0]
+    return None
+
+
 def collect_hits(banks: dict[str, set[str]]) -> dict[tuple[str, str], set[str]]:
-    """(bank_file, title) -> set of transcript paths (posix)."""
+    """(bank_file, title) -> set of transcript paths (posix).
+
+    Counts all wikilinks in transcript (База + таблицы/итоги).
+    Resolves short/legacy headings after merges (`A / B`) and cross-file moves.
+    """
     hits: dict[tuple[str, str], set[str]] = defaultdict(set)
-    unresolved = []
+    resolvers = build_title_resolver(banks)
+    wikilink = re.compile(r"\[\[([^\]|#]+)#([^\]|]+)(?:\|[^\]]+)?\]\]")
     for folder in ["go", "python", "sa", "qa"]:
         for p in (TRANS / folder).rglob("*.md"):
             text = p.read_text(encoding="utf-8", errors="replace")
-            for m in re.finditer(r"\[\[([^\]|#]+)#([^\]]+)\]\]", text):
+            for m in wikilink.finditer(text):
                 bank = resolve_bank(m.group(1), banks)
-                h = m.group(2).strip()
                 if not bank:
-                    unresolved.append((m.group(1), h, p.as_posix()))
                     continue
-                real = next((x for x in banks[bank] if x.strip() == h), None)
-                if real:
-                    hits[(bank, real)].add(p.as_posix())
-                else:
-                    # try normalize quotes/spaces
-                    real2 = next(
-                        (x for x in banks[bank] if x.strip().replace("ё", "е") == h.replace("ё", "е")),
-                        None,
-                    )
-                    if real2:
-                        hits[(bank, real2)].add(p.as_posix())
-                    else:
-                        unresolved.append((bank, h, p.as_posix()))
+                resolved = resolve_heading(bank, m.group(2), resolvers, banks)
+                if resolved:
+                    hits[resolved].add(p.as_posix())
     return hits
 
 
@@ -303,6 +436,29 @@ def _rewrite_header_only(path: Path, text: str, bank: str, denom: int) -> None:
 
 
 def main():
+    import argparse
+
+    ap = argparse.ArgumentParser(
+        description=(
+            "DANGEROUS: mass-rewrite **Частота:** in all banks from wikilinks. "
+            "Links are incomplete/legacy — this resets accumulated counters. "
+            "Prefer surgical +1 per transcript (see AGENTS.md)."
+        )
+    )
+    ap.add_argument(
+        "--i-accept-data-loss",
+        action="store_true",
+        help="Required. Confirms you accept overwriting all bank frequencies.",
+    )
+    args = ap.parse_args()
+    if not args.i_accept_data_loss:
+        raise SystemExit(
+            "Refusing mass recount. Frequencies are maintained surgically (+1 per interview).\n"
+            "Wikilinks are incomplete — global recount destroys counters.\n"
+            "If you really need it: python Заметки/_recount_corpus_freq.py --i-accept-data-loss\n"
+            "See AGENTS.md § Счётчики and Заметки/20260802-freq-reset-fix.md"
+        )
+
     sizes = {k: corpus_size(k) for k in CORPUS_DIRS}
     print("Corpus sizes:", sizes)
     assert sizes["go"] == 94
