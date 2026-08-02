@@ -1,0 +1,384 @@
+## FILE: 18. Python.md
+### GIL в Python
+### asyncio / Event loop
+### Python декораторы
+### N+1 в ORM
+### Context managers (with / contextlib)
+### FastAPI (основы)
+### raw SQL vs ORM
+### Принципы ООП
+### classmethod vs staticmethod
+### dataclass vs Pydantic
+### Dependency injection в FastAPI
+### dict / list comprehensions
+### Django (основы)
+### Python __new__ vs __init__
+### Паттерны проектирования
+### Celery / фоновые задачи
+### copy / deepcopy
+### DB connection vs session (SQLAlchemy)
+### float / Decimal для денежных сумм
+### lambda-функции
+### list.sort() vs sorted()
+### Memcached vs Redis
+### Python: `__call__`
+### Python: `len()` и `__len__`
+### Абстрактный класс и интерфейс в Python
+### Асинхронное логирование и сбор логов
+### Атрибуты класса и экземпляра
+### Встроенные типы Python
+### Метаклассы Python
+### Множественное наследование и MRO
+### Обмен значений без временной переменной
+### Парадигмы программирования
+### Паттерн Singleton
+### Позднее связывание переменных в замыканиях
+
+## FILE: 2. БД - Часто.md
+## Что такое индексы БД и зачем они нужны?
+## ACID и транзакции
+## Виды JOIN запросов: INNER vs LEFT
+## Масштабирование БД
+## Уровни изоляции транзакций / Default в PostgreSQL?
+## Нормализация / Что такое нормальные формы / Когда денормализуют?
+## Почему B-tree быстрее полного перебора?
+## SQL vs NoSQL — Чем реляционные БД отличаются от NoSQL?
+## EXPLAIN и EXPLAIN ANALYZE / Как понять, почему запрос медленный?
+## Оконные функции (Window Functions)
+## Чем отличается WHERE от HAVING?
+## Агрегатные функции SQL, для чего они нужны?
+## Репликация и read replica
+## CTE vs подзапрос (+ recursive)
+## Selectivity и cardinality индекса
+## MVCC в PostgreSQL
+## Как выбирать индексы под запросы
+## Что такое hash index? 
+## Оптимизация БД
+## ClickHouse и колоночные СУБД
+## Что такое триггер
+## B-tree и физическое хранение на диске
+## ER-модель (Entity-Relationship)
+## DELETE vs TRUNCATE
+## LIMIT и OFFSET (пагинация)
+## SELECT DISTINCT
+## SQL injection и параметризованные запросы
+## UNION vs UNION ALL
+## Связь many-to-many в реляционной модели
+## AUTO_INCREMENT / SERIAL / IDENTITY
+## FOREIGN KEY (внешний ключ)
+## PRIMARY KEY
+## БД vs СУБД
+## Грязное чтение (dirty read) и аномалии изоляции
+## Что такое БД и какие бывают
+
+## FILE: 3. HTTP - Часто.md
+## REST — принципы и best practices
+## gRPC vs HTTP?
+## HTTP vs HTTPS?
+## TCP vs UDP?
+## HTTP cookies: Set-Cookie, хранение и отправка
+## Передача данных в HTTP: body, path и query
+## Уровни стека TCP/IP
+
+## FILE: 4. Интеграции.md
+### Kafka / RabbitMQ?
+### Kafka: topic, partition, offset, consumer group
+### Семантики доставки: at-most-once / at-least-once / exactly-once
+### Что такое синхронные и асинхронные вызовы?
+### Какие виды/способы интеграции ты знаешь?
+### SOAP vs REST
+### Webhooks и Callbacks
+### OpenAPI / Swagger — проектирование API
+### SOAP — протокол обмена
+### Выбор транспорта межсервисного взаимодействия: HTTP vs gRPC vs брокер
+### Kafka producer: acks и idempotent producer
+### Dead Letter Queue (DLQ)
+### ESB — принцип работы корпоративной шины
+### JSON Schema
+### Kafka: consumer group, coordinator и rebalance
+### ZooKeeper vs KRaft
+### Очередь в БД vs message broker
+### GraphQL
+### WSDL — описание веб-сервиса
+### Очередь vs топик
+### Полнота доставки сообщения брокером
+
+## FILE: 5. Архитектура - Часто.md
+### Монолит vs микросервисы, главные компромиссы?
+### Что класть в кэш (и что не класть)
+### Saga / 2PC для двух БД?
+### Clean / hexagonal architecture?
+### Transactional outbox
+### Какие знаешь архитектурные стили?
+### Rate limit при нескольких репликах?
+### Какие виды архитектур ПО знаешь?
+### CQRS
+### Проектирование сервиса сокращения ссылок
+### API Gateway
+### Event Sourcing
+### Клиент-серверная архитектура
+
+## FILE: 6. Ops - Часто.md
+## Docker vs виртуальная машина
+## Что такое Pod в Kubernetes?
+## Как убить процесс в Linux?
+### Docker layers
+## CI/CD — обзор инструментов
+### Docker image vs container?
+## IPC между процессами в Linux
+### Kubernetes Service
+## Load average в Linux
+## Что происходит при malloc / выделение 1 KB?
+## cron / crontab — расписание задач
+### K8s liveness vs readiness
+## VIRT и RES в top; физическая vs виртуальная память
+## Нет памяти: swap, OOM killer
+## Удалил файл — df всё ещё показывает 100%
+## chmod — права и исполняемый файл
+## Docker Compose
+## Docker volumes
+## du vs df — занятое место на диске
+## epoll / select / poll — multiplexing I/O
+## find — поиск файлов в каталоге
+## Hard link vs symbolic link (symlink)
+### Ingress
+## iNode в Linux
+## Linux namespaces и cgroups
+## LVM — Logical Volume Manager
+## RAID — уровни 0 и 1
+## stdin, stdout, stderr и перенаправление
+## top / free — CPU и память
+
+## FILE: 11. БД — Реже.md
+## Covering index
+## DW (Data Warehouse) vs Data Lake
+## DWH — хранилище данных
+## Partial (частичный) индекс
+## Prepared statements / `$1`
+## Виды Constraints?
+## Виды связей между таблицами
+## Чем отличается UNION от UNION ALL?
+## Что такое процедуры и функции в БД?
+## Data skew — перекос данных
+## Deadlock в БД
+## Hadoop / HDFS / Spark — big data экосистема
+## Hash Join, Merge Join и Nested Loops
+## Heap и физическое хранение таблицы
+## OLAP vs OLTP — в чём разница?
+## Slowly Changing Dimensions (SCD) — Type 1 / Type 2
+## Движки таблиц ClickHouse (MergeTree family)
+## Задача на нормализацию таблиц базы данных.
+## Индекс есть, но план его не использует
+## Отличия процедуры от триггера
+## Представления в БД
+## CONNECT BY и LEVEL (Oracle)
+## CTE vs временная таблица
+## DDS и DM в хранилищах
+## EXISTS, NOT EXISTS и IN vs EXISTS
+## FULL OUTER JOIN — чем заменить
+## FULL TABLE SCAN vs FAST FULL SCAN
+## Index-only scan
+## LIKE: символ на заданной позиции в строке
+## NULL в предикатах: =, IN и NOT IN
+## ODS — операционное хранилище
+## PostGIS и геозапросы
+## TRUNCATE vs DELETE
+## Витрина данных
+## Даются следующие три операции SQL. Какой будет результат?
+## Индекс по текстовому полю
+## Кластерный индекс — сколько на таблицу
+## Миграция MSSQL → PostgreSQL
+## Топологии хранилищ данных
+## Что такое БД
+## Что такое поисковые пути в базах данных?
+## Что такое СУБД
+
+## FILE: 12. HTTP — Реже.md
+## Коды ответов HTTP
+## HTTP методы
+## Идемпотентность HTTP / Как сделать POST идемпотентным?
+## Из чего состоит HTTP-запрос? / Как разделяются заголовки и тело?
+## HTTP/1.1 vs HTTP/2 vs HTTP/3?
+## DNS — как работает резолвинг?
+## Graceful shutdown HTTP-сервера
+## Как подобрать timeout (p99)?
+## Чем идентификация отличается от авторизации и аутентификации?
+## OpenID Connect / OAuth2
+## WebSocket vs REST
+## Зачем timeouts в HTTP?
+## От чего защищает HTTPS (TLS)? / Что не шифруется в HTTPS?
+## CORS и cross-origin (браузер)
+## JSON-RPC vs REST
+## Что содержит HEADER в ответе REST?
+## Что такое NAT?
+## Что такое stateless и stateful сервисы?
+## Что такое XSD?
+## /etc/hosts — локальный редирект домена
+## CSRF (Cross-Site Request Forgery)
+## HATEOAS — гипермедиа как ограничение REST
+## Long polling vs polling vs WebSocket vs SSE?
+## Man-in-the-middle (MITM)
+## Path-параметры vs query-параметры
+## XSS (Cross-Site Scripting)
+## Безопасность в code review API
+## Что такое URL?
+## WebSocket vs gRPC
+
+## FILE: 13. Архитектура — Реже.md
+### SOLID — принципы проектирования
+### Паттерны микросервисной архитектуры
+### Strangler fig pattern
+### Partitioning vs sharding
+### Знаете ли вы CAP-теорему?
+## CQRS — когда уместен
+### В чем разница между монолитами и микросервисами? Какие плюсы и минусы той и другой архитектуры?
+### Достоинства и недостатки микросервисов
+### Что такое архитектурный стиль?
+### Что такое Хореография и Оркестрация?
+### Negative cache
+### Алгоритмы rate limiting: fixed window / sliding window / token bucket / leaky bucket
+### SD: latency растёт неделями, restart помогает
+### SOA vs микросервисы
+### Низкая связанность — что это?
+### Опыт с legacy: поддержка vs переписывание
+### Что означает устойчивость к отказам?
+### Что такое архитектура?
+
+## FILE: 14. Ops — Реже.md
+## Система контроля версий (Git) — основы
+### Kafka: consumer lag и мониторинг
+## Процесс vs поток в Linux
+## Blue-green deployment
+## Canary deployment
+## git rebase vs merge
+## GitFlow
+### Kafka: retention и log cleanup
+### Kafka: роли и компоненты кластера
+## Syscall — user space и kernel space
+## Журналирование ext4 (journal)
+## Загрузка Linux (boot sequence)
+## Зомби-процесс и состояния процесса (ps/top)
+## Иерархия памяти и CPU cache (L1/L2/L3)
+## Структура каталогов Linux (FHS)
+## Файловые дескрипторы и ulimit
+## Что такое fork?
+## chroot — изоляция корня файловой системы
+## Dark deploy vs A/B testing
+### DNS — порты, записи, проверка
+### grep — поиск по файлам
+### HTTP — версии и Basic Auth
+### ip_forward и sysctl
+### LD_PRELOAD
+### ldd и ldconfig
+## Linux capabilities
+### openssl и TLS-сертификаты
+## Overlay FS и copy-on-write в контейнерах
+## Page cache и buffer cache
+### Policy routing
+### Run-levels (legacy SysV)
+### SELinux
+## SLA / SLO / SLI
+### SNMP
+### TCP window scaling
+## tmpfs — файловая система в RAM
+## top: CPU больше 100% — многоядерность
+## Важно помнить
+### Восстановление после chmod 444 /bin/chmod
+### Массовое обновление ядра
+### Модули ядра Linux
+### Пакетный фильтр (L3 firewall)
+### Переменные окружения
+## Права файлов: chmod, umask, setuid, sticky bit
+### Сеть: маска /31
+## Системные каталоги
+### Критические для работы системы
+### Виртуальные файловые системы
+### Пользовательские данные
+### Временные и монтируемые каталоги
+### Специальные каталоги
+## Что такое SFTP?
+
+## FILE: 16. Опыт и soft skills.md
+### Рассказ о себе и коммерческом опыте
+### Как устроены архитектура и стек проекта
+### Как устроены команда и процессы на проекте
+### Вопросы к интервьюеру: онбординг и карьерный рост
+### Причина ухода с текущей работы
+### Инцидент на проде и дежурство on-call
+### Ожидания от роли и критерии выбора работы
+### Опыт с Kafka и брокерами сообщений
+### Роль и зона ответственности на проекте
+### Опыт с PostgreSQL по резюме
+### Хронология опыта по резюме
+### Один проект за 2–3 минуты
+### Достижения, которыми гордитесь
+### Самостоятельное тестирование кода
+### Метрики и измеримый результат задач
+### Помощь новичкам и онбординг коллег
+### Защита резюме и стека на собеседовании
+### Оценка задач: story points и часы
+### Вопросы к интервьюеру про команду
+### Вопросы к интервьюеру про продукт
+### Опыт с ClickHouse по резюме
+### Опыт с Kubernetes по резюме
+### Опыт с платёжными системами
+### Срыв дедлайна под стрессом (STAR)
+### Опыт с e-commerce по резюме
+### Почему выбрали Go
+### Инициатива вне своей зоны ответственности (пример)
+### Как даёте и принимаете обратную связь
+### Кем бы работали без профессии разработчика
+### Конфликт и несогласие в команде (STAR)
+### Обучение: источники и новое за полгода
+### От чего получаете удовольствие в работе
+### Отношение к мату на работе
+### Признаки человека, которому не нравится работа
+### Пример нетипичного решения задачи
+### Работа в мультинациональной команде
+### Реакция на неожиданные изменения на работе
+### Что делаете при незнакомом термине
+### Что изменили бы на текущем месте
+
+## FILE: 17. Data Python ML.md
+### A/B тестирование: дизайн эксперимента
+### Apache Airflow: DAG, operators, scheduling
+### AB-тест: peeking / ранняя остановка
+### AB-тест: остановка при падении метрики (ARPU)
+### AB-тест: оценка длительности
+### AB-тест: параметры расчёта (MDE, alpha, power)
+### Apache Spark: RDD/DataFrame, jobs
+### Hadoop: HDFS, YARN, экосистема
+### RAG: retrieval-augmented generation
+### Статистическая значимость
+
+## FILE: 19. QA.md
+### CI и регресс: запуск автотестов и разбор падений
+### UI- и API-автотесты
+### Автоматизация тест-кейсов и приоритизация покрытия
+### Фреймворк автотестов: устройство и развитие
+### BDD и Gherkin
+### Page Object и Page Component
+### Отчётность по автотестам и Allure
+### Путь в QA и автоматизацию
+### Тест-дизайн: техники и покрытие требований
+### Тестовые данные и параметризация
+### Flaky-тесты
+### Smoke, regression и sanity testing
+### Локаторы XPath и CSS
+### Маркеры и выборочный запуск тестов
+### Тестирование асинхронных интеграций
+### Тестовая пирамида
+### Фикстуры Pytest
+
+## FILE: 20. Теория программирования.md
+### Хэш-таблица (map / dict)
+### Гонки данных, дедлоки и синхронизация
+### Массив и динамический список (array / slice / list)
+### Память: стек, куча и GC
+### Интерфейсы и полиморфизм
+### Асимптотическая сложность (Big-O)
+### Итераторы и ленивые последовательности
+### Изменяемость и семантика копирования
+### Множество (set)
+### Конкурентность vs параллелизм
+### Равенство значений vs идентичность
