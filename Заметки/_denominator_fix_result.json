@@ -1,0 +1,242 @@
+{
+  "corpus": {
+    "go": 94,
+    "python": 61,
+    "sa": 16,
+    "qa": 6,
+    "dev": 155,
+    "all": 177
+  },
+  "results": [
+    {
+      "file": "1. GO - Часто",
+      "old_dens": [
+        92
+      ],
+      "new_d": 94,
+      "cards_updated": 13,
+      "max_n": 41,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "7. GO - Средне",
+      "old_dens": [
+        92
+      ],
+      "new_d": 94,
+      "cards_updated": 19,
+      "max_n": 17,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "8. GO - Редко 1",
+      "old_dens": [
+        92
+      ],
+      "new_d": 94,
+      "cards_updated": 20,
+      "max_n": 9,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "9. GO - Редко 2",
+      "old_dens": [
+        92
+      ],
+      "new_d": 94,
+      "cards_updated": 25,
+      "max_n": 5,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "10. GO - Редко 3",
+      "old_dens": [
+        92
+      ],
+      "new_d": 94,
+      "cards_updated": 18,
+      "max_n": 1,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "18. Python",
+      "old_dens": [
+        117
+      ],
+      "new_d": 61,
+      "cards_updated": 70,
+      "max_n": 26,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "17. Data Python ML",
+      "old_dens": [
+        117
+      ],
+      "new_d": 61,
+      "cards_updated": 33,
+      "max_n": 5,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "20. Теория программирования",
+      "old_dens": [
+        92
+      ],
+      "new_d": 155,
+      "cards_updated": 20,
+      "max_n": 55,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "2. БД - Часто",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 40,
+      "max_n": 72,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "11. БД — Реже",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 42,
+      "max_n": 3,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 7,
+      "max_n": 30,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 29,
+      "max_n": 15,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "4. Интеграции",
+      "old_dens": [
+        117
+      ],
+      "new_d": 177,
+      "cards_updated": 27,
+      "max_n": 39,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 16,
+      "max_n": 24,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "old_dens": [
+        105
+      ],
+      "new_d": 177,
+      "cards_updated": 19,
+      "max_n": 14,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "6. Ops - Часто",
+      "old_dens": [
+        117
+      ],
+      "new_d": 177,
+      "cards_updated": 34,
+      "max_n": 15,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "14. Ops — Реже",
+      "old_dens": [
+        117
+      ],
+      "new_d": 177,
+      "cards_updated": 53,
+      "max_n": 5,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "old_dens": [
+        117
+      ],
+      "new_d": 177,
+      "cards_updated": 39,
+      "max_n": 56,
+      "n_gt_d_count": 0,
+      "n_gt_d_samples": []
+    },
+    {
+      "file": "15. SA",
+      "old_dens": [
+        13
+      ],
+      "new_d": 16,
+      "cards_updated": 84,
+      "max_n": 18,
+      "n_gt_d_count": 1,
+      "n_gt_d_samples": [
+        [
+          18,
+          "**Частота:** 18/13"
+        ]
+      ]
+    },
+    {
+      "file": "19. QA",
+      "old_dens": [
+        3
+      ],
+      "new_d": 6,
+      "cards_updated": 25,
+      "max_n": 8,
+      "n_gt_d_count": 1,
+      "n_gt_d_samples": [
+        [
+          8,
+          "**Частота:** 8/3"
+        ]
+      ]
+    }
+  ]
+}

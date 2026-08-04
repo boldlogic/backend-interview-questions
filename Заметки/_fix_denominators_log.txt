@@ -1,0 +1,43 @@
+corpus {'go': 94, 'python': 61, 'sa': 16, 'qa': 6, 'dev': 155, 'all': 177}
+1. GO - Часто: [92] -> 94 cards=13 maxN=41 N>D=0
+7. GO - Средне: [92] -> 94 cards=19 maxN=17 N>D=0
+8. GO - Редко 1: [92] -> 94 cards=20 maxN=9 N>D=0
+9. GO - Редко 2: [92] -> 94 cards=25 maxN=5 N>D=0
+10. GO - Редко 3: [92] -> 94 cards=18 maxN=1 N>D=0
+18. Python: [117] -> 61 cards=70 maxN=26 N>D=0
+17. Data Python ML: [117] -> 61 cards=33 maxN=5 N>D=0
+20. Теория программирования: [92] -> 155 cards=20 maxN=55 N>D=0
+2. БД - Часто: [105] -> 177 cards=40 maxN=72 N>D=0
+11. БД — Реже: [105] -> 177 cards=42 maxN=3 N>D=0
+3. HTTP - Часто: [105] -> 177 cards=7 maxN=30 N>D=0
+12. HTTP — Реже: [105] -> 177 cards=29 maxN=15 N>D=0
+4. Интеграции: [117] -> 177 cards=27 maxN=39 N>D=0
+5. Архитектура - Часто: [105] -> 177 cards=16 maxN=24 N>D=0
+13. Архитектура — Реже: [105] -> 177 cards=19 maxN=14 N>D=0
+6. Ops - Часто: [117] -> 177 cards=34 maxN=15 N>D=0
+14. Ops — Реже: [117] -> 177 cards=53 maxN=5 N>D=0
+16. Опыт и soft skills: [117] -> 177 cards=39 maxN=56 N>D=0
+15. SA: [13] -> 16 cards=84 maxN=18 N>D=1
+19. QA: [3] -> 6 cards=25 maxN=8 N>D=1
+
+verify:
+  1. GO - Часто: dens=[94] expected=94 OK
+  7. GO - Средне: dens=[94] expected=94 OK
+  8. GO - Редко 1: dens=[94] expected=94 OK
+  9. GO - Редко 2: dens=[94] expected=94 OK
+  10. GO - Редко 3: dens=[94] expected=94 OK
+  18. Python: dens=[61] expected=61 OK
+  17. Data Python ML: dens=[61] expected=61 OK
+  20. Теория программирования: dens=[155] expected=155 OK
+  2. БД - Часто: dens=[177] expected=177 OK
+  11. БД — Реже: dens=[177] expected=177 OK
+  3. HTTP - Часто: dens=[177] expected=177 OK
+  12. HTTP — Реже: dens=[177] expected=177 OK
+  4. Интеграции: dens=[177] expected=177 OK
+  5. Архитектура - Часто: dens=[177] expected=177 OK
+  13. Архитектура — Реже: dens=[177] expected=177 OK
+  6. Ops - Часто: dens=[177] expected=177 OK
+  14. Ops — Реже: dens=[177] expected=177 OK
+  16. Опыт и soft skills: dens=[177] expected=177 OK
+  15. SA: dens=[16] expected=16 OK
+  19. QA: dens=[6] expected=6 OK
