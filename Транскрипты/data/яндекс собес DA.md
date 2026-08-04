@@ -1,6 +1,6 @@
 ---
 размечено: true
-теория: false
+теория: true
 лайвкодинг: true
 опыт: false
 ---
@@ -789,4 +789,4 @@
 |-----|-------|----------|
 | Задача | 08:49 | 🔧 majority vote + accuracy · ❌ |
 | База | 09:57 | ❌ majority vote (постановка) |
-| База | 10:53 | ❌ data quality |
+| База | 10:53 | ✅ [[17. Data Python ML#Data quality / EDA]] |

@@ -1,3 +1,10 @@
+---
+размечено: true
+теория: true
+лайвкодинг: true
+опыт: true
+---
+
 # output2 (mp3cut.net) (2)
 
 - **Файл:** `output2 (mp3cut.net) (2).mp3`
@@ -5,6 +12,12 @@
 - **Язык (детект):** ru
 - **Модель:** faster-whisper / small
 - **Распознано:** 2026-08-01 10:06 UTC
+
+
+- **Разметка:** после реплики интервьюера — одна строка:
+  - `> 📎 **База:** …` — **теория**; ссылка на банк
+  - `> 📎 **Задача:** …` — **практика** (live coding, code review)
+  - Статусы: ✅ в банке, ⚠️ частично, ❌ нет, 🔧 упражнение
 
 ## Транскрипт
 
@@ -61,6 +74,7 @@
 **[01:33]** For example, if you have any advanced projects with AI, ML, GenAI,
 
 **[01:41]** this is the best.
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Один проект за 2–3 минуты]] · GenAI/RAG опыт
 
 **[01:43]** And you can tell me what you did in this project,
 
@@ -171,6 +185,7 @@
 **[04:47]** or maybe it was your own vector store
 
 **[04:50]** from title library host somewhere.
+> 📎 **База:** ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · vector store / OpenSearch
 
 **[04:53]** Because you need to have vector store, right?
 
@@ -275,6 +290,7 @@
 **[07:11]** So basically how many nodes do you have
 
 **[07:13]** in this system?
+> 📎 **База:** ❌ LangGraph · число nodes / сложность графа
 
 **[07:16]** Во-втор-втор-во-втор
 
@@ -387,6 +403,7 @@
 **[09:09]** what do you want to keep
 
 **[09:11]** like before and after?
+> 📎 **База:** ✅ [[2. БД - Часто#ACID и транзакции]]
 
 **[09:13]** So basically
 
@@ -457,6 +474,7 @@
 **[10:22]** old-fashioned index
 
 **[10:24]** from SQL database.
+> 📎 **База:** ✅ [[2. БД - Часто#Что такое индексы БД и зачем они нужны?]] · B-tree
 
 **[10:26]** Sure.
 
@@ -513,6 +531,7 @@
 **[11:22]** of this
 
 **[11:24]** whole structure basically?
+> 📎 **База:** ✅ [[2. БД - Часто#B-tree и физическое хранение на диске]] · B+ tree leaf/internal
 
 **[11:26]** Do you know maybe, do you have idea
 
@@ -579,6 +598,7 @@
 **[12:33]** Which are not safe
 
 **[12:35]** in this code.
+> 📎 **Задача:** 🔧 Python code review · SQL injection + connection leak · ✅ [[2. БД - Часто#SQL injection и параметризованные запросы]] · ⚠️ [[18. Python#Context managers (with / contextlib)]]
 
 **[12:37]** And you just need to tell me
 
@@ -723,6 +743,7 @@
 **[18:54]** Это о генераторе.
 
 **[18:57]** И вопрос, что мы увидим, когда мы собираем эту проблему и почему?
+> 📎 **База:** ⚠️ [[20. Теория программирования#Итераторы и ленивые последовательности]] · generator / next()
 
 **[19:07]** Ок, так что, как я помню...
 
@@ -813,6 +834,7 @@
 **[22:22]** Мультипроцессор и «ЛОБАФ», мы должны использовать
 
 **[22:24]** каждые механизмы в Питоне.
+> 📎 **База:** ✅ [[18. Python#GIL в Python]] · threading vs multiprocessing vs asyncio
 
 **[22:31]** Мы имеем мультипроцессор, когда цель будет «СПО-БАУНТ».
 
@@ -833,6 +855,7 @@
 **[23:22]** Реальный «ЛОБАФ» для тех, кто хочет работать в мультипроцессор,
 
 **[23:28]** в мультитраде и в «ЛОБАФ».
+> 📎 **База:** ✅ [[18. Python#multiprocessing / gunicorn workers]] · use-cases CPU/IO/async
 
 **[23:32]** Для мультипроцессора может быть «Имейш-процессор»
 
@@ -849,6 +872,7 @@
 **[23:59]** Вы имеете опыт с «ФЛАСК» или «ФАСТ-АПИ»?
 
 **[24:06]** Вы имеете опыт с «ФЛАСК» или «ФАСТ-АПИ»?
+> 📎 **База:** ✅ [[18. Python#FastAPI (основы)]] · опыт
 
 **[24:11]** Да, я имею опыт с «ФАСТ-АПИ».
 
@@ -875,6 +899,7 @@
 **[24:54]** Это эффект стрима.
 
 **[24:57]** Вы имеете опыт с «Тайпрайдом» эффект?
+> 📎 **База:** ❌ LLM streaming / typewriter effect · нет карточки
 
 **[25:00]** Да, я работаю с стримами в «ФРАК-процессором»
 
@@ -917,6 +942,7 @@
 **[25:52]** Вы знаете, что это
 
 **[25:54]** «Семантик-чанкин»?
+> 📎 **База:** ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · semantic chunking
 
 **[25:56]** Конечно.
 
@@ -1007,6 +1033,7 @@
 **[27:29]** start product instead of
 
 **[27:31]** costing similarity?
+> 📎 **База:** ❌ cosine vs dot product · embedding similarity
 
 **[27:33]** So that product is usually used
 
@@ -1059,6 +1086,7 @@
 **[28:24]** which are
 
 **[28:26]** normalized and which are not?
+> 📎 **База:** ❌ normalized vs unnormalized embeddings · примеры моделей
 
 **[28:33]** Examples.
 
@@ -1181,6 +1209,7 @@
 **[30:39]** MCP servers.
 
 **[30:41]** Have you ever created one?
+> 📎 **База:** ❌ MCP servers · опыт
 
 **[30:43]** Yes.
 
@@ -1189,6 +1218,7 @@
 **[30:51]** No.
 
 **[30:54]** And React agents?
+> 📎 **База:** ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · ReAct agents / LangGraph
 
 **[31:00]** React agents.
 
@@ -1279,6 +1309,7 @@
 **[32:30]** Do you know what we need to do
 
 **[32:32]** in code basically?
+> 📎 **База:** ❌ LangGraph · join/barrier A∥B → C once
 
 **[32:36]** Yeah.
 
@@ -1397,6 +1428,7 @@
 **[34:54]** or LLM as a judge
 
 **[34:56]** do you have experience with this area?
+> 📎 **База:** ❌ LLM-as-judge / Langfuse / agent observability
 
 **[34:58]** Yeah.
 
@@ -1441,6 +1473,7 @@
 **[35:41]** why we are using this
 
 **[35:43]** specific KPI
+> 📎 **База:** ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · KPI: recall@k, faithfulness, latency
 
 **[35:45]** For our system
 
@@ -1489,6 +1522,7 @@
 **[36:39]** Do you have any questions
 
 **[36:41]** or maybe feedback?
+> 📎 **База:** ✅ [[16. Опыт и soft skills#Вопросы к интервьюеру про продукт]] · роль/контракт
 
 **[36:43]** Oh, I can, maybe right now I will be able to
 
@@ -1745,3 +1779,29 @@
 **[41:20]** have a nice day and see ya
 
 **[41:22]** bye
+
+## Сопоставление с базой
+
+| Тип | Время | Разметка |
+|-----|-------|----------|
+| База | 01:41 | ✅ [[16. Опыт и soft skills#Один проект за 2–3 минуты]] |
+| База | 04:50 | ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · vector store |
+| База | 07:13 | ❌ LangGraph nodes |
+| База | 09:11 | ✅ [[2. БД - Часто#ACID и транзакции]] |
+| База | 10:24 | ✅ [[2. БД - Часто#Что такое индексы БД и зачем они нужны?]] |
+| База | 11:24 | ✅ [[2. БД - Часто#B-tree и физическое хранение на диске]] |
+| Задача | 12:35 | 🔧 Python code review · SQL injection + conn · ✅/⚠️ |
+| База | 18:57 | ⚠️ [[20. Теория программирования#Итераторы и ленивые последовательности]] |
+| База | 22:24 | ✅ [[18. Python#GIL в Python]] |
+| База | 23:28 | ✅ [[18. Python#multiprocessing / gunicorn workers]] |
+| База | 24:06 | ✅ [[18. Python#FastAPI (основы)]] |
+| База | 24:57 | ❌ streaming / typewriter |
+| База | 25:54 | ⚠️ RAG · semantic chunking |
+| База | 27:31 | ❌ cosine vs dot product |
+| База | 28:26 | ❌ normalized embeddings |
+| База | 30:41 | ❌ MCP servers |
+| База | 30:54 | ⚠️ ReAct / LangGraph |
+| База | 32:32 | ❌ LangGraph join |
+| База | 34:56 | ❌ LLM-as-judge / observability |
+| База | 35:43 | ⚠️ RAG KPIs |
+| База | 36:41 | ✅ [[16. Опыт и soft skills#Вопросы к интервьюеру про продукт]] |
