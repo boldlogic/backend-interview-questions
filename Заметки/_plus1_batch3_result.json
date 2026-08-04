@@ -1,0 +1,1117 @@
+{
+  "changes": [
+    {
+      "file": "11. БД — Реже",
+      "title": "Виды связей между таблицами",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "HTTP методы",
+      "old": 13,
+      "new": 15,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "HTTP/1.1 vs HTTP/2 vs HTTP/3?",
+      "old": 8,
+      "new": 9,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Long polling vs polling vs WebSocket vs SSE?",
+      "old": 3,
+      "new": 6,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "WebSocket vs REST",
+      "old": 6,
+      "new": 8,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Зачем timeouts в HTTP?",
+      "old": 3,
+      "new": 4,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Идемпотентность HTTP / Как сделать POST идемпотентным?",
+      "old": 14,
+      "new": 15,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "Partitioning vs sharding",
+      "old": 4,
+      "new": 6,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "SOLID — принципы проектирования",
+      "old": 10,
+      "new": 14,
+      "den": 105,
+      "delta": 4
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "Алгоритмы rate limiting: fixed window / sliding window / token bucket / leaky bucket",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "grep — поиск по файлам",
+      "old": 0,
+      "new": 1,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "Процесс vs поток в Linux",
+      "old": 3,
+      "new": 5,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "Система контроля версий (Git) — основы",
+      "old": 3,
+      "new": 5,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "15. SA",
+      "title": "AS-IS и TO-BE: зачем и когда",
+      "old": 1,
+      "new": 2,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "User Story и критерии приёмки",
+      "old": 8,
+      "new": 9,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Виды требований: бизнес, пользовательские, функциональные, нефункциональные",
+      "old": 17,
+      "new": 18,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Границы системы и scope фичи",
+      "old": 4,
+      "new": 5,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Постановка интеграции: что описать",
+      "old": 0,
+      "new": 1,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Способы выявления требований",
+      "old": 12,
+      "new": 13,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Стейкхолдеры: кто это и зачем",
+      "old": 0,
+      "new": 1,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "15. SA",
+      "title": "Структура требований к API-методу",
+      "old": 2,
+      "new": 3,
+      "den": 13,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Защита резюме и стека на собеседовании",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Инцидент на проде и дежурство on-call",
+      "old": 19,
+      "new": 20,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Как устроены архитектура и стек проекта",
+      "old": 54,
+      "new": 56,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Как устроены команда и процессы на проекте",
+      "old": 54,
+      "new": 56,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Обучение: источники и новое за полгода",
+      "old": 0,
+      "new": 1,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Один проект за 2–3 минуты",
+      "old": 13,
+      "new": 14,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Опыт с Kafka и брокерами сообщений",
+      "old": 16,
+      "new": 17,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "От чего получаете удовольствие в работе",
+      "old": 0,
+      "new": 1,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Оценка задач: story points и часы",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Рассказ о себе и коммерческом опыте",
+      "old": 54,
+      "new": 56,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Роль и зона ответственности на проекте",
+      "old": 14,
+      "new": 15,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Самостоятельное тестирование кода",
+      "old": 7,
+      "new": 8,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "A/B тестирование: дизайн эксперимента",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "AB-тест: параметры расчёта (MDE, alpha, power)",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "ROC-AUC vs PR-AUC",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Медиана, мода, матожидание",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Метрики при дисбалансе (PR-AUC)",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Нормальное распределение и σ",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Статистическая значимость",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Context managers (with / contextlib)",
+      "old": 8,
+      "new": 13,
+      "den": 117,
+      "delta": 5
+    },
+    {
+      "file": "18. Python",
+      "title": "Dependency injection в FastAPI",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Django (основы)",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "FastAPI lifespan",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "GIL в Python",
+      "old": 15,
+      "new": 21,
+      "den": 117,
+      "delta": 6
+    },
+    {
+      "file": "18. Python",
+      "title": "Hash protocol: `__hash__` / `__eq__`",
+      "old": 1,
+      "new": 4,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "Memcached vs Redis",
+      "old": 2,
+      "new": 5,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "Mixins в Python",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "N+1 в ORM",
+      "old": 8,
+      "new": 10,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Python `__slots__`",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Python декораторы",
+      "old": 12,
+      "new": 20,
+      "den": 117,
+      "delta": 8
+    },
+    {
+      "file": "18. Python",
+      "title": "asyncio / Event loop",
+      "old": 18,
+      "new": 26,
+      "den": 117,
+      "delta": 8
+    },
+    {
+      "file": "18. Python",
+      "title": "classmethod vs staticmethod",
+      "old": 2,
+      "new": 5,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "copy / deepcopy",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "float / Decimal для денежных сумм",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "lambda-функции",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "logging: f-string vs %-format",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "mock vs stub",
+      "old": 2,
+      "new": 5,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "multiprocessing / gunicorn workers",
+      "old": 1,
+      "new": 5,
+      "den": 117,
+      "delta": 4
+    },
+    {
+      "file": "18. Python",
+      "title": "raw SQL vs ORM",
+      "old": 6,
+      "new": 8,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Абстрактный класс и интерфейс в Python",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Встроенные типы Python",
+      "old": 3,
+      "new": 11,
+      "den": 117,
+      "delta": 8
+    },
+    {
+      "file": "18. Python",
+      "title": "Исключения Python (try/except, иерархия)",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Метаклассы Python",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Множественное наследование и MRO",
+      "old": 3,
+      "new": 5,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Парадигмы программирования",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Паттерн Singleton",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Паттерны проектирования",
+      "old": 4,
+      "new": 6,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Принципы ООП",
+      "old": 6,
+      "new": 8,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Black-box vs white-box тестирование",
+      "old": 1,
+      "new": 2,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "CI и регресс: запуск автотестов и разбор падений",
+      "old": 3,
+      "new": 6,
+      "den": 3,
+      "delta": 3
+    },
+    {
+      "file": "19. QA",
+      "title": "Flaky-тесты",
+      "old": 1,
+      "new": 3,
+      "den": 3,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Page Object и Page Component",
+      "old": 3,
+      "new": 4,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Smoke, regression и sanity testing",
+      "old": 1,
+      "new": 2,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "UI- и API-автотесты",
+      "old": 3,
+      "new": 6,
+      "den": 3,
+      "delta": 3
+    },
+    {
+      "file": "19. QA",
+      "title": "Автоматизация тест-кейсов и приоритизация покрытия",
+      "old": 3,
+      "new": 6,
+      "den": 3,
+      "delta": 3
+    },
+    {
+      "file": "19. QA",
+      "title": "Локаторы XPath и CSS",
+      "old": 1,
+      "new": 2,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Отчётность по автотестам и Allure",
+      "old": 2,
+      "new": 4,
+      "den": 3,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Тест-дизайн: техники и покрытие требований",
+      "old": 4,
+      "new": 6,
+      "den": 3,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Тестовая пирамида",
+      "old": 4,
+      "new": 5,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Тестовые данные и параметризация",
+      "old": 3,
+      "new": 4,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Фикстуры Pytest",
+      "old": 4,
+      "new": 8,
+      "den": 3,
+      "delta": 4
+    },
+    {
+      "file": "19. QA",
+      "title": "Фреймворк автотестов: устройство и развитие",
+      "old": 3,
+      "new": 4,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "ACID и транзакции",
+      "old": 54,
+      "new": 59,
+      "den": 105,
+      "delta": 5
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "ClickHouse и колоночные СУБД",
+      "old": 6,
+      "new": 7,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "DELETE vs TRUNCATE",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "ER-модель (Entity-Relationship)",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "EXPLAIN и EXPLAIN ANALYZE / Как понять, почему запрос медленный?",
+      "old": 26,
+      "new": 32,
+      "den": 105,
+      "delta": 6
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "FOREIGN KEY (внешний ключ)",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "LIMIT и OFFSET (пагинация)",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "PRIMARY KEY",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "SQL vs NoSQL — Чем реляционные БД отличаются от NoSQL?",
+      "old": 24,
+      "new": 26,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Selectivity и cardinality индекса",
+      "old": 9,
+      "new": 10,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Агрегатные функции SQL, для чего они нужны?",
+      "old": 13,
+      "new": 16,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "БД vs СУБД",
+      "old": 0,
+      "new": 1,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Виды JOIN запросов: INNER vs LEFT",
+      "old": 46,
+      "new": 48,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Грязное чтение (dirty read) и аномалии изоляции",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Как выбирать индексы под запросы",
+      "old": 9,
+      "new": 10,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Масштабирование БД",
+      "old": 39,
+      "new": 41,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Нормализация / Что такое нормальные формы / Когда денормализуют?",
+      "old": 32,
+      "new": 34,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Оконные функции (Window Functions)",
+      "old": 19,
+      "new": 22,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Оптимизация БД",
+      "old": 7,
+      "new": 9,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Почему B-tree быстрее полного перебора?",
+      "old": 24,
+      "new": 25,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Репликация и read replica",
+      "old": 11,
+      "new": 14,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Уровни изоляции транзакций / Default в PostgreSQL?",
+      "old": 38,
+      "new": 41,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Чем отличается WHERE от HAVING?",
+      "old": 16,
+      "new": 18,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Что такое индексы БД и зачем они нужны?",
+      "old": 66,
+      "new": 72,
+      "den": 105,
+      "delta": 6
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "k closest elements",
+      "old": 1,
+      "new": 3,
+      "den": 92,
+      "delta": 2
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Асимптотическая сложность (Big-O)",
+      "old": 13,
+      "new": 20,
+      "den": 92,
+      "delta": 7
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Гонки данных, дедлоки и синхронизация",
+      "old": 32,
+      "new": 35,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Изменяемость и семантика копирования",
+      "old": 15,
+      "new": 23,
+      "den": 92,
+      "delta": 8
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Итераторы и ленивые последовательности",
+      "old": 15,
+      "new": 23,
+      "den": 92,
+      "delta": 8
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Конкурентность vs параллелизм",
+      "old": 17,
+      "new": 23,
+      "den": 92,
+      "delta": 6
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Массив и динамический список (array / slice / list)",
+      "old": 31,
+      "new": 40,
+      "den": 92,
+      "delta": 9
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Множество (set)",
+      "old": 9,
+      "new": 14,
+      "den": 92,
+      "delta": 5
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Память: стек, куча и GC",
+      "old": 17,
+      "new": 20,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Равенство значений vs идентичность",
+      "old": 5,
+      "new": 8,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Симметрия точек относительно прямой",
+      "old": 1,
+      "new": 2,
+      "den": 92,
+      "delta": 1
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Хэш-таблица (map / dict)",
+      "old": 45,
+      "new": 55,
+      "den": 92,
+      "delta": 10
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "gRPC vs HTTP?",
+      "old": 14,
+      "new": 15,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Kafka / RabbitMQ?",
+      "old": 31,
+      "new": 39,
+      "den": 117,
+      "delta": 8
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Kafka: topic, partition, offset, consumer group",
+      "old": 18,
+      "new": 19,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "OpenAPI / Swagger — проектирование API",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Redis Pub/Sub",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Выбор транспорта межсервисного взаимодействия: HTTP vs gRPC vs брокер",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Какие виды/способы интеграции ты знаешь?",
+      "old": 9,
+      "new": 10,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Очередь vs топик",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Семантики доставки: at-most-once / at-least-once / exactly-once",
+      "old": 12,
+      "new": 14,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "API Gateway",
+      "old": 0,
+      "new": 1,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Clean / hexagonal architecture?",
+      "old": 11,
+      "new": 12,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Монолит vs микросервисы, главные компромиссы?",
+      "old": 22,
+      "new": 24,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Проектирование сервиса сокращения ссылок",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Что класть в кэш (и что не класть)",
+      "old": 16,
+      "new": 17,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "CI/CD — обзор инструментов",
+      "old": 4,
+      "new": 5,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Docker vs виртуальная машина",
+      "old": 14,
+      "new": 15,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Dockerfile: FROM, COPY, WORKDIR, CMD",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Linux namespaces и cgroups",
+      "old": 2,
+      "new": 3,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "chmod — права и исполняемый файл",
+      "old": 2,
+      "new": 3,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Что такое Pod в Kubernetes?",
+      "old": 11,
+      "new": 12,
+      "den": 117,
+      "delta": 1
+    }
+  ],
+  "not_found": []
+}

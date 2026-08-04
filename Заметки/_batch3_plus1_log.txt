@@ -1,0 +1,5 @@
+transcripts: 25
+backed up banks: 20
+unique cards: 139
+updated 139, not_found 0
+gap strings: 71

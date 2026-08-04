@@ -1,0 +1,359 @@
+[
+  {
+    "bank": "18. Python",
+    "title": "*args / **kwargs",
+    "n": 2,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "ASGI / WSGI",
+    "n": 2,
+    "den": 117,
+    "tags": "#python #web"
+  },
+  {
+    "bank": "18. Python",
+    "title": ".pyc / bytecode",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "concurrent.futures / Future",
+    "n": 1,
+    "den": 117,
+    "tags": "#python #concurrency"
+  },
+  {
+    "bank": "18. Python",
+    "title": "dict vs JSON",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Truthiness и `__bool__`",
+    "n": 2,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "functools.wraps",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "type() vs isinstance",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Динамическая vs статическая типизация Python",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Запуск Python: интерпретатор и `__main__`",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "PYTHONPATH и переменные окружения",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Флаги интерпретатора Python (-O и др.)",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Сигнатура функции",
+    "n": 1,
+    "den": 117,
+    "tags": "#python"
+  },
+  {
+    "bank": "18. Python",
+    "title": "Линтеры / форматеры / pytest vs unittest",
+    "n": 1,
+    "den": 117,
+    "tags": "#python #testing"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "F1 / F-beta score",
+    "n": 1,
+    "den": 117,
+    "tags": "#ml #metrics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "micro/macro average (precision/recall)",
+    "n": 1,
+    "den": 117,
+    "tags": "#ml #metrics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "One-vs-one / one-vs-rest (мультикласс)",
+    "n": 1,
+    "den": 117,
+    "tags": "#ml"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Градиент / градиентный спуск",
+    "n": 1,
+    "den": 117,
+    "tags": "#ml"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Типы ML-задач / loss vs metric",
+    "n": 1,
+    "den": 117,
+    "tags": "#ml"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "ЦПТ и закон больших чисел",
+    "n": 3,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Ошибки I и II рода",
+    "n": 2,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Параметрические vs непараметрические тесты",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Условия применимости t-теста",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Равномерное распределение",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Дисперсия и среднее",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics #statistics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Когортный / RFM-анализ",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics"
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Data quality / EDA",
+    "n": 1,
+    "den": 117,
+    "tags": "#analytics #ml"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Playwright: assertions и auto-waits",
+    "n": 2,
+    "den": 3,
+    "tags": "#qa #playwright"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Playwright: parallel / browser contexts",
+    "n": 1,
+    "den": 3,
+    "tags": "#qa #playwright"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Soft assertions",
+    "n": 2,
+    "den": 3,
+    "tags": "#qa #testing"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Appium / мобильные автотесты",
+    "n": 2,
+    "den": 3,
+    "tags": "#qa #mobile"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Виды нагрузочного тестирования",
+    "n": 1,
+    "den": 3,
+    "tags": "#qa #performance"
+  },
+  {
+    "bank": "19. QA",
+    "title": "Принципы тестирования",
+    "n": 1,
+    "den": 3,
+    "tags": "#qa"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Стек (LIFO)",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #data-structures"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Бинарный поиск",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #algorithms"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Бинарное дерево / обходы",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #data-structures"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Красно-чёрные деревья",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #data-structures"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Поиск пути в графе",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #algorithms"
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "RLE / run-length encoding",
+    "n": 1,
+    "den": 92,
+    "tags": "#theory #algorithms"
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "VACUUM / автовакуум PostgreSQL",
+    "n": 1,
+    "den": 105,
+    "tags": "#database #postgres"
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "Порядок выполнения операторов SQL",
+    "n": 1,
+    "den": 105,
+    "tags": "#database #sql"
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "COUNT(col) vs COUNT(*)",
+    "n": 1,
+    "den": 105,
+    "tags": "#database #sql"
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "TimescaleDB / time-series",
+    "n": 1,
+    "den": 105,
+    "tags": "#database"
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Retries / Circuit Breaker",
+    "n": 1,
+    "den": 117,
+    "tags": "#reliability #patterns"
+  },
+  {
+    "bank": "5. Архитектура - Часто",
+    "title": "Domain-Driven Design (DDD)",
+    "n": 1,
+    "den": 105,
+    "tags": "#architecture"
+  },
+  {
+    "bank": "5. Архитектура - Часто",
+    "title": "KISS / DRY",
+    "n": 1,
+    "den": 105,
+    "tags": "#architecture"
+  },
+  {
+    "bank": "13. Архитектура — Реже",
+    "title": "Глубина абстракций / over-engineering",
+    "n": 1,
+    "den": 105,
+    "tags": "#architecture"
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "Docker multi-stage build",
+    "n": 1,
+    "den": 117,
+    "tags": "#docker"
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "bash vs zsh",
+    "n": 1,
+    "den": 117,
+    "tags": "#linux #shell"
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "/etc/passwd",
+    "n": 1,
+    "den": 117,
+    "tags": "#linux"
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "Правила commit messages",
+    "n": 1,
+    "den": 117,
+    "tags": "#git"
+  }
+]

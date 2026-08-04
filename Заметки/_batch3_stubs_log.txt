@@ -1,0 +1,11 @@
+added 51, skipped existing 1
+  skip Рекурсия
+sorted 15 banks
+relinked 61 markers in 18 files
+  align Truthiness и `__bool__`: 2 -> 1/117
+  align Запуск Python: интерпретатор и `__main__`: 1 -> 2/117
+  align ЦПТ и закон больших чисел: 3 -> 2/117
+  align Playwright: assertions и auto-waits: 2 -> 1/3
+  align Appium / мобильные автотесты: 2 -> 1/3
+  align RLE / run-length encoding: 1 -> 2/92
+done

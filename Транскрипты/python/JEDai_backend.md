@@ -1700,7 +1700,7 @@
 **[33:26]** Domain Drive Design
 
 **[33:28]** или что-нибудь подобное.
-> 📎 **База:** ❌ Domain-Driven Design (DDD)
+> 📎 **База:** ✅ [[5. Архитектура - Часто#Domain-Driven Design (DDD)]]
 
 **[33:30]** Domain Drive Design?
 
