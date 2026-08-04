@@ -1,0 +1,476 @@
+{
+  "2. БД - Часто#Виды JOIN запросов: INNER vs LEFT": [
+    "Транскрипты/python/2025_07_15_Лаборатория_Современных_Цифровых_Решений.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md",
+    "Транскрипты/python/озон.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md",
+    "Транскрипты/qa/emex (mp3cut.net).md"
+  ],
+  "11. БД — Реже#FULL OUTER JOIN — чем заменить": [
+    "Транскрипты/python/озон.md"
+  ],
+  "2. БД - Часто#Оконные функции (Window Functions)": [
+    "Транскрипты/_unsorted/Data Analyst (MagnitTech).md",
+    "Транскрипты/python/озон.md"
+  ],
+  "17. Data Python ML#A/B тестирование: дизайн эксперимента": [
+    "Транскрипты/python/озон.md"
+  ],
+  "17. Data Python ML#Статистическая значимость": [
+    "Транскрипты/python/озон.md"
+  ],
+  "17. Data Python ML#AB-тест: параметры расчёта (MDE, alpha, power)": [
+    "Транскрипты/python/озон.md"
+  ],
+  "17. Data Python ML#AB-тест: оценка длительности": [
+    "Транскрипты/python/озон.md"
+  ],
+  "17. Data Python ML#AB-тест: peeking / ранняя остановка": [
+    "Транскрипты/python/озон.md"
+  ],
+  "18. Python#GIL в Python": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "20. Теория программирования#Конкурентность vs параллелизм": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md",
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "18. Python#asyncio / Event loop": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md",
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "20. Теория программирования#Итераторы и ленивые последовательности": [
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "18. Python#Python декораторы": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/Фабрика решений.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "18. Python#Метаклассы Python": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "18. Python#Context managers (with / contextlib)": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/Фабрика решений.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "18. Python#FastAPI (основы)": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "18. Python#Django (основы)": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "5. Архитектура - Часто#Монолит vs микросервисы, главные компромиссы?": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "2. БД - Часто#SQL vs NoSQL — Чем реляционные БД отличаются от NoSQL?": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE / Как понять, почему запрос медленный?": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2025_07_15_Лаборатория_Современных_Цифровых_Решений.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "2. БД - Часто#SQL injection и параметризованные запросы": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/python.md"
+  ],
+  "2. БД - Часто#Оптимизация БД": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2025_07_15_Лаборатория_Современных_Цифровых_Решений.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "2. БД - Часто#Что такое индексы БД и зачем они нужны?": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/Фабрика решений.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "2. БД - Часто#Selectivity и cardinality индекса": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/python.md"
+  ],
+  "2. БД - Часто#Как выбирать индексы под запросы": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "2. БД - Часто#Масштабирование БД": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "17. Data Python ML#Apache Airflow: DAG, operators, scheduling": [
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "4. Интеграции#Kafka / RabbitMQ?": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "4. Интеграции#Dead Letter Queue (DLQ)": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "19. QA#Тестовая пирамида": [
+    "Транскрипты/python/2025_07_15_Лаборатория_Современных_Цифровых_Решений.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md"
+  ],
+  "19. QA#Фикстуры Pytest": [
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/praktikaai_python.md"
+  ],
+  "6. Ops - Часто#CI/CD — обзор инструментов": [
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "6. Ops - Часто#Docker vs виртуальная машина": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "12. HTTP — Реже#Long polling vs polling vs WebSocket vs SSE?": [
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/python.md"
+  ],
+  "12. HTTP — Реже#WebSocket vs REST": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/lexica_teh.md",
+    "Транскрипты/python/python.md"
+  ],
+  "12. HTTP — Реже#HTTP/1.1 vs HTTP/2 vs HTTP/3?": [
+    "Транскрипты/_unsorted/java_собес_в_московскии_метрополитен.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "3. HTTP - Часто#gRPC vs HTTP?": [
+    "Транскрипты/_unsorted/java_собес_в_московскии_метрополитен.md",
+    "Транскрипты/python/lexica_teh.md"
+  ],
+  "18. Python#Встроенные типы Python": [
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "20. Теория программирования#Изменяемость и семантика копирования": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md",
+    "Транскрипты/python/Фабрика решений.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "20. Теория программирования#Равенство значений vs идентичность": [
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "20. Теория программирования#Хэш-таблица (map / dict)": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/Yadro.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "18. Python#Паттерны проектирования": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Yadro.md"
+  ],
+  "18. Python#Паттерн Singleton": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Yadro.md"
+  ],
+  "19. QA#Page Object и Page Component": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "19. QA#Маркеры и выборочный запуск тестов": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "18. Python#Множественное наследование и MRO": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Yadro.md"
+  ],
+  "6. Ops - Часто#top / free — CPU и память": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "14. Ops — Реже#Структура каталогов Linux (FHS)": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "6. Ops - Часто#Как убить процесс в Linux?": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "14. Ops — Реже#Права файлов: chmod, umask, setuid, sticky bit": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "6. Ops - Часто#chmod — права и исполняемый файл": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "3. HTTP - Часто#Уровни стека TCP/IP": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Yadro.md"
+  ],
+  "12. HTTP — Реже#DNS — как работает резолвинг?": [
+    "Транскрипты/python/Yadro.md"
+  ],
+  "18. Python#lambda-функции": [
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "20. Теория программирования#Интерфейсы и полиморфизм": [
+    "Транскрипты/_unsorted/java_собес_в_московскии_метрополитен.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "12. HTTP — Реже#Из чего состоит HTTP-запрос? / Как разделяются заголовки и тело?": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "3. HTTP - Часто#REST — принципы и best practices": [
+    "Транскрипты/_unsorted/java_собес_в_московскии_метрополитен.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "12. HTTP — Реже#Коды ответов HTTP": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "12. HTTP — Реже#CORS и cross-origin (браузер)": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "2. БД - Часто#ACID и транзакции": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/praktikaai_python.md",
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/Фабрика решений.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "2. БД - Часто#Уровни изоляции транзакций / Default в PostgreSQL?": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "4. Интеграции#Семантики доставки: at-most-once / at-least-once / exactly-once": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "14. Ops — Реже#GitFlow": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "14. Ops — Реже#git rebase vs merge": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "6. Ops - Часто#Docker volumes": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "6. Ops - Часто#Docker Compose": [
+    "Транскрипты/python/Фабрика решений.md"
+  ],
+  "18. Python#Принципы ООП": [
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md"
+  ],
+  "13. Архитектура — Реже#SOLID — принципы проектирования": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/IRLIX(тех собес).md"
+  ],
+  "20. Теория программирования#Массив и динамический список (array / slice / list)": [
+    "Транскрипты/python/IRLIX(тех собес).md",
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "18. Python#list.sort() vs sorted()": [
+    "Транскрипты/python/IRLIX(тех собес).md"
+  ],
+  "2. БД - Часто#DELETE vs TRUNCATE": [
+    "Транскрипты/python/IRLIX(тех собес).md"
+  ],
+  "2. БД - Часто#Нормализация / Что такое нормальные формы / Когда денормализуют?": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/IRLIX(тех собес).md"
+  ],
+  "6. Ops - Часто#Что такое Pod в Kubernetes?": [
+    "Транскрипты/python/2025-01-16 14-59-37_water.md"
+  ],
+  "18. Python#raw SQL vs ORM": [
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "5. Архитектура - Часто#Clean / hexagonal architecture?": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/python.md"
+  ],
+  "18. Python#Dependency injection в FastAPI": [
+    "Транскрипты/python/2025-01-16 14-59-37_water.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "18. Python#DB connection vs session (SQLAlchemy)": [
+    "Транскрипты/python/2025-01-16 14-59-37_water.md"
+  ],
+  "5. Архитектура - Часто#Saga / 2PC для двух БД?": [
+    "Транскрипты/python/2025-01-16 14-59-37_water.md"
+  ],
+  "18. Python#Парадигмы программирования": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "3. HTTP - Часто#TCP vs UDP?": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "12. HTTP — Реже#Идемпотентность HTTP / Как сделать POST идемпотентным?": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "3. HTTP - Часто#Передача данных в HTTP: body, path и query": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "14. Ops — Реже#Процесс vs поток в Linux": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "20. Теория программирования#Память: стек, куча и GC": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/python.md"
+  ],
+  "18. Python#N+1 в ORM": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "2. БД - Часто#ClickHouse и колоночные СУБД": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "18. Python#Memcached vs Redis": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "2. БД - Часто#Почему B-tree быстрее полного перебора?": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "2. БД - Часто#Что такое hash index?": [
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "18. Python#Celery / фоновые задачи": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/GRI-Тех.md"
+  ],
+  "2. БД - Часто#FOREIGN KEY (внешний ключ)": [
+    "Транскрипты/python/2024-12-27 14-58-44_water.md",
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "20. Теория программирования#Асимптотическая сложность (Big-O)": [
+    "Транскрипты/python/python.md",
+    "Транскрипты/python/Яндекс, алгособес 720.md",
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "4. Интеграции#Kafka: topic, partition, offset, consumer group": [
+    "Транскрипты/_unsorted/java_собес_в_московскии_метрополитен.md"
+  ],
+  "2. БД - Часто#Агрегатные функции SQL, для чего они нужны?": [
+    "Транскрипты/_unsorted/Data Analyst (MagnitTech).md"
+  ],
+  "2. БД - Часто#Чем отличается WHERE от HAVING?": [
+    "Транскрипты/_unsorted/Data Analyst (MagnitTech).md"
+  ],
+  "2. БД - Часто#Репликация и read replica": [
+    "Транскрипты/python/язык т-банк python middle+ измененное.md"
+  ],
+  "13. Архитектура — Реже#Знаете ли вы CAP-теорему?": [
+    "Транскрипты/python/praktikaai_python.md"
+  ],
+  "19. QA#Тест-дизайн: техники и покрытие требований": [
+    "Транскрипты/python/2025_07_15_Лаборатория_Современных_Цифровых_Решений.md",
+    "Транскрипты/qa/emex (mp3cut.net).md"
+  ],
+  "19. QA#Тестовые данные и параметризация": [
+    "Транскрипты/qa/emex (mp3cut.net).md"
+  ],
+  "12. HTTP — Реже#Безопасность в code review API": [
+    "Транскрипты/python/python.md"
+  ],
+  "5. Архитектура - Часто#Что класть в кэш (и что не класть)": [
+    "Транскрипты/python/python.md"
+  ],
+  "11. БД — Реже#Partial (частичный) индекс": [
+    "Транскрипты/python/python.md"
+  ],
+  "4. Интеграции#Что такое синхронные и асинхронные вызовы?": [
+    "Транскрипты/python/python.md"
+  ],
+  "5. Архитектура - Часто#Transactional outbox": [
+    "Транскрипты/python/python.md"
+  ],
+  "2. БД - Часто#Грязное чтение (dirty read) и аномалии изоляции": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md"
+  ],
+  "13. Архитектура — Реже#Partitioning vs sharding": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md"
+  ],
+  "4. Интеграции#Очередь vs топик": [
+    "Транскрипты/python/2024-10-09 17-07-42 (online-audio-converter.com).md"
+  ],
+  "16. Опыт и soft skills#Как устроены команда и процессы на проекте": [
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "2. БД - Часто#PRIMARY KEY": [
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "11. БД — Реже#Виды Constraints?": [
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "18. Python#copy / deepcopy": [
+    "Транскрипты/python/ЛигаЦифровойЭкономики.md"
+  ],
+  "16. Опыт и soft skills#Как устроены архитектура и стек проекта": [
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md"
+  ],
+  "16. Опыт и soft skills#Один проект за 2–3 минуты": [
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md"
+  ],
+  "6. Ops - Часто#Linux namespaces и cgroups": [
+    "Транскрипты/python/СБЕР девайсы 1 й этап.md"
+  ]
+}

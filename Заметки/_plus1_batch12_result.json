@@ -1,0 +1,917 @@
+{
+  "changes": [
+    {
+      "file": "11. БД — Реже",
+      "title": "FULL OUTER JOIN — чем заменить",
+      "old": 0,
+      "new": 1,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "11. БД — Реже",
+      "title": "Partial (частичный) индекс",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "11. БД — Реже",
+      "title": "Виды Constraints?",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "CORS и cross-origin (браузер)",
+      "old": 2,
+      "new": 3,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "DNS — как работает резолвинг?",
+      "old": 4,
+      "new": 5,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "HTTP/1.1 vs HTTP/2 vs HTTP/3?",
+      "old": 6,
+      "new": 8,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Long polling vs polling vs WebSocket vs SSE?",
+      "old": 1,
+      "new": 3,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "WebSocket vs REST",
+      "old": 3,
+      "new": 6,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Безопасность в code review API",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Идемпотентность HTTP / Как сделать POST идемпотентным?",
+      "old": 13,
+      "new": 14,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Из чего состоит HTTP-запрос? / Как разделяются заголовки и тело?",
+      "old": 8,
+      "new": 9,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "12. HTTP — Реже",
+      "title": "Коды ответов HTTP",
+      "old": 14,
+      "new": 15,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "Partitioning vs sharding",
+      "old": 3,
+      "new": 4,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "SOLID — принципы проектирования",
+      "old": 7,
+      "new": 10,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "13. Архитектура — Реже",
+      "title": "Знаете ли вы CAP-теорему?",
+      "old": 3,
+      "new": 4,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "GitFlow",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "git rebase vs merge",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "Права файлов: chmod, umask, setuid, sticky bit",
+      "old": 0,
+      "new": 1,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "Процесс vs поток в Linux",
+      "old": 2,
+      "new": 3,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "14. Ops — Реже",
+      "title": "Структура каталогов Linux (FHS)",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Как устроены архитектура и стек проекта",
+      "old": 53,
+      "new": 54,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Как устроены команда и процессы на проекте",
+      "old": 53,
+      "new": 54,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "16. Опыт и soft skills",
+      "title": "Один проект за 2–3 минуты",
+      "old": 12,
+      "new": 13,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "A/B тестирование: дизайн эксперимента",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "AB-тест: peeking / ранняя остановка",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "AB-тест: оценка длительности",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "AB-тест: параметры расчёта (MDE, alpha, power)",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Apache Airflow: DAG, operators, scheduling",
+      "old": 2,
+      "new": 3,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "17. Data Python ML",
+      "title": "Статистическая значимость",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Celery / фоновые задачи",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Context managers (with / contextlib)",
+      "old": 4,
+      "new": 8,
+      "den": 117,
+      "delta": 4
+    },
+    {
+      "file": "18. Python",
+      "title": "DB connection vs session (SQLAlchemy)",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "Dependency injection в FastAPI",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Django (основы)",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "FastAPI (основы)",
+      "old": 4,
+      "new": 7,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "GIL в Python",
+      "old": 9,
+      "new": 15,
+      "den": 117,
+      "delta": 6
+    },
+    {
+      "file": "18. Python",
+      "title": "Memcached vs Redis",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "N+1 в ORM",
+      "old": 5,
+      "new": 8,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "Python декораторы",
+      "old": 6,
+      "new": 12,
+      "den": 117,
+      "delta": 6
+    },
+    {
+      "file": "18. Python",
+      "title": "asyncio / Event loop",
+      "old": 8,
+      "new": 18,
+      "den": 117,
+      "delta": 10
+    },
+    {
+      "file": "18. Python",
+      "title": "copy / deepcopy",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "lambda-функции",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "list.sort() vs sorted()",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "18. Python",
+      "title": "raw SQL vs ORM",
+      "old": 4,
+      "new": 6,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Встроенные типы Python",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Метаклассы Python",
+      "old": 1,
+      "new": 4,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "18. Python",
+      "title": "Множественное наследование и MRO",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Парадигмы программирования",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Паттерн Singleton",
+      "old": 1,
+      "new": 3,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Паттерны проектирования",
+      "old": 2,
+      "new": 4,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "18. Python",
+      "title": "Принципы ООП",
+      "old": 4,
+      "new": 6,
+      "den": 117,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Page Object и Page Component",
+      "old": 2,
+      "new": 3,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Маркеры и выборочный запуск тестов",
+      "old": 1,
+      "new": 2,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Тест-дизайн: техники и покрытие требований",
+      "old": 2,
+      "new": 4,
+      "den": 3,
+      "delta": 2
+    },
+    {
+      "file": "19. QA",
+      "title": "Тестовая пирамида",
+      "old": 1,
+      "new": 4,
+      "den": 3,
+      "delta": 3
+    },
+    {
+      "file": "19. QA",
+      "title": "Тестовые данные и параметризация",
+      "old": 2,
+      "new": 3,
+      "den": 3,
+      "delta": 1
+    },
+    {
+      "file": "19. QA",
+      "title": "Фикстуры Pytest",
+      "old": 1,
+      "new": 4,
+      "den": 3,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "ACID и транзакции",
+      "old": 48,
+      "new": 54,
+      "den": 105,
+      "delta": 6
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "ClickHouse и колоночные СУБД",
+      "old": 3,
+      "new": 6,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "DELETE vs TRUNCATE",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "EXPLAIN и EXPLAIN ANALYZE / Как понять, почему запрос медленный?",
+      "old": 19,
+      "new": 26,
+      "den": 105,
+      "delta": 7
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "FOREIGN KEY (внешний ключ)",
+      "old": 0,
+      "new": 2,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "PRIMARY KEY",
+      "old": 0,
+      "new": 1,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "SQL injection и параметризованные запросы",
+      "old": 1,
+      "new": 3,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "SQL vs NoSQL — Чем реляционные БД отличаются от NoSQL?",
+      "old": 21,
+      "new": 24,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Selectivity и cardinality индекса",
+      "old": 6,
+      "new": 9,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Агрегатные функции SQL, для чего они нужны?",
+      "old": 12,
+      "new": 13,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Виды JOIN запросов: INNER vs LEFT",
+      "old": 39,
+      "new": 46,
+      "den": 105,
+      "delta": 7
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Грязное чтение (dirty read) и аномалии изоляции",
+      "old": 0,
+      "new": 1,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Как выбирать индексы под запросы",
+      "old": 5,
+      "new": 9,
+      "den": 105,
+      "delta": 4
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Масштабирование БД",
+      "old": 37,
+      "new": 39,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Нормализация / Что такое нормальные формы / Когда денормализуют?",
+      "old": 30,
+      "new": 32,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Оконные функции (Window Functions)",
+      "old": 17,
+      "new": 19,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Оптимизация БД",
+      "old": 4,
+      "new": 7,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Почему B-tree быстрее полного перебора?",
+      "old": 23,
+      "new": 24,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Репликация и read replica",
+      "old": 10,
+      "new": 11,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Уровни изоляции транзакций / Default в PostgreSQL?",
+      "old": 35,
+      "new": 38,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Чем отличается WHERE от HAVING?",
+      "old": 15,
+      "new": 16,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Что такое hash index?",
+      "old": 5,
+      "new": 6,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "2. БД - Часто",
+      "title": "Что такое индексы БД и зачем они нужны?",
+      "old": 60,
+      "new": 66,
+      "den": 105,
+      "delta": 6
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Асимптотическая сложность (Big-O)",
+      "old": 10,
+      "new": 13,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Изменяемость и семантика копирования",
+      "old": 9,
+      "new": 15,
+      "den": 92,
+      "delta": 6
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Интерфейсы и полиморфизм",
+      "old": 11,
+      "new": 13,
+      "den": 92,
+      "delta": 2
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Итераторы и ленивые последовательности",
+      "old": 10,
+      "new": 15,
+      "den": 92,
+      "delta": 5
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Конкурентность vs параллелизм",
+      "old": 8,
+      "new": 17,
+      "den": 92,
+      "delta": 9
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Массив и динамический список (array / slice / list)",
+      "old": 28,
+      "new": 31,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Память: стек, куча и GC",
+      "old": 14,
+      "new": 17,
+      "den": 92,
+      "delta": 3
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Равенство значений vs идентичность",
+      "old": 3,
+      "new": 5,
+      "den": 92,
+      "delta": 2
+    },
+    {
+      "file": "20. Теория программирования",
+      "title": "Хэш-таблица (map / dict)",
+      "old": 41,
+      "new": 45,
+      "den": 92,
+      "delta": 4
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "REST — принципы и best practices",
+      "old": 27,
+      "new": 30,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "TCP vs UDP?",
+      "old": 11,
+      "new": 12,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "gRPC vs HTTP?",
+      "old": 12,
+      "new": 14,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "Передача данных в HTTP: body, path и query",
+      "old": 1,
+      "new": 2,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "3. HTTP - Часто",
+      "title": "Уровни стека TCP/IP",
+      "old": 1,
+      "new": 3,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Dead Letter Queue (DLQ)",
+      "old": 1,
+      "new": 4,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Kafka / RabbitMQ?",
+      "old": 27,
+      "new": 31,
+      "den": 117,
+      "delta": 4
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Kafka: topic, partition, offset, consumer group",
+      "old": 17,
+      "new": 18,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Очередь vs топик",
+      "old": 0,
+      "new": 1,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Семантики доставки: at-most-once / at-least-once / exactly-once",
+      "old": 11,
+      "new": 12,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "4. Интеграции",
+      "title": "Что такое синхронные и асинхронные вызовы?",
+      "old": 11,
+      "new": 12,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Clean / hexagonal architecture?",
+      "old": 8,
+      "new": 11,
+      "den": 105,
+      "delta": 3
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Saga / 2PC для двух БД?",
+      "old": 14,
+      "new": 15,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Transactional outbox",
+      "old": 8,
+      "new": 9,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Монолит vs микросервисы, главные компромиссы?",
+      "old": 20,
+      "new": 22,
+      "den": 105,
+      "delta": 2
+    },
+    {
+      "file": "5. Архитектура - Часто",
+      "title": "Что класть в кэш (и что не класть)",
+      "old": 15,
+      "new": 16,
+      "den": 105,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "CI/CD — обзор инструментов",
+      "old": 3,
+      "new": 4,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Docker Compose",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Docker volumes",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Docker vs виртуальная машина",
+      "old": 11,
+      "new": 14,
+      "den": 117,
+      "delta": 3
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Linux namespaces и cgroups",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "chmod — права и исполняемый файл",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "top / free — CPU и память",
+      "old": 1,
+      "new": 2,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Как убить процесс в Linux?",
+      "old": 7,
+      "new": 8,
+      "den": 117,
+      "delta": 1
+    },
+    {
+      "file": "6. Ops - Часто",
+      "title": "Что такое Pod в Kubernetes?",
+      "old": 10,
+      "new": 11,
+      "den": 117,
+      "delta": 1
+    }
+  ],
+  "not_found": []
+}

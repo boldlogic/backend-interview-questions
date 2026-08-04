@@ -1,0 +1,308 @@
+[
+  {
+    "bank": "18. Python",
+    "title": "Исключения Python (try/except, иерархия)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Текстовый vs бинарный режим файлов",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "mock vs stub",
+    "n": 2,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Alembic / Django migrations",
+    "n": 2,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Python `__slots__`",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Mixins в Python",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Default arguments (mutable default)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Django middleware",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Django signals",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "DRF Serializer",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "DRF ListAPIView vs APIView",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Free-threading / no-GIL (Python 3.13+)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "multiprocessing / gunicorn workers",
+    "n": 2,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "logging: f-string vs %-format",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Hash protocol: `__hash__` / `__eq__`",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Порядок ключей dict (3.7+)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "FastAPI lifespan",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Функция vs метод",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "SQLAlchemy relationship / cascade",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Рекурсия и sys.getrecursionlimit",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "global / состояние модуля",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "18. Python",
+    "title": "Профилирование Python (cProfile / memory)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "L1 vs L2 регуляризация",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Bagging vs boosting / bias-variance",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Метрики при дисбалансе (PR-AUC)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "ROC-AUC vs PR-AUC",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Корреляция деревьев в bagging",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Экстраполяция ML-моделей (linear / tree / KNN)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Поправка Бонферрони",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "CUPED / снижение дисперсии",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Медиана, мода, матожидание",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Нормальное распределение и σ",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Рекурсия",
+    "n": 1,
+    "den": 92
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "k closest elements",
+    "n": 1,
+    "den": 92
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Симметрия точек относительно прямой",
+    "n": 1,
+    "den": 92
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "RabbitMQ: типы exchange",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "NATS vs Kafka",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Redis Pub/Sub",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Keycloak vs custom auth",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Fan-out / Fan-in",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "PostgreSQL WAL",
+    "n": 1,
+    "den": 105
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "Dockerfile: FROM, COPY, WORKDIR, CMD",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "docker run: -p -v -d --name",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "docker exec",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "Docker registry vs Docker Hub",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "IP-адрес и маска подсети (/24)",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "DHCP",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "git cherry-pick",
+    "n": 1,
+    "den": 117
+  },
+  {
+    "bank": "19. QA",
+    "title": "Black-box vs white-box тестирование",
+    "n": 1,
+    "den": 3
+  },
+  {
+    "bank": "19. QA",
+    "title": "Комбинаторика SQL-тестов",
+    "n": 1,
+    "den": 3
+  },
+  {
+    "bank": "5. Архитектура - Часто",
+    "title": "Twelve-Factor: телеметрия не влияет на app",
+    "n": 1,
+    "den": 105
+  }
+]

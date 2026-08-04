@@ -1509,7 +1509,7 @@
 
 **[34:57]** функция соответственно не срабатывает.
 
-> 📎 **Задача:** 🔧 функция greeting(name, company=default) · ❌ нет карточки (default args)
+> 📎 **Задача:** 🔧 функция greeting(name, company=default) · ✅ [[18. Python#Default arguments (mutable default)]]
 
 
 **[34:59]** У нас есть значение

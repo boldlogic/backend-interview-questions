@@ -1,0 +1,308 @@
+[
+  {
+    "bank": "18. Python",
+    "title": "Исключения Python (try/except, иерархия)",
+    "tags": "#python #exceptions",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Текстовый vs бинарный режим файлов",
+    "tags": "#python #io",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "mock vs stub",
+    "tags": "#python #testing",
+    "n": 2
+  },
+  {
+    "bank": "18. Python",
+    "title": "Alembic / Django migrations",
+    "tags": "#python #django #orm",
+    "n": 2
+  },
+  {
+    "bank": "18. Python",
+    "title": "Python `__slots__`",
+    "tags": "#python #memory",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Mixins в Python",
+    "tags": "#python #oop",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Default arguments (mutable default)",
+    "tags": "#python",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Django middleware",
+    "tags": "#python #django",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Django signals",
+    "tags": "#python #django",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "DRF Serializer",
+    "tags": "#python #django #drf",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "DRF ListAPIView vs APIView",
+    "tags": "#python #django #drf",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Free-threading / no-GIL (Python 3.13+)",
+    "tags": "#python #gil #concurrency",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "multiprocessing / gunicorn workers",
+    "tags": "#python #concurrency",
+    "n": 2
+  },
+  {
+    "bank": "18. Python",
+    "title": "logging: f-string vs %-format",
+    "tags": "#python #logging",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Hash protocol: `__hash__` / `__eq__`",
+    "tags": "#python",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Порядок ключей dict (3.7+)",
+    "tags": "#python",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "FastAPI lifespan",
+    "tags": "#python #fastapi",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Функция vs метод",
+    "tags": "#python #oop",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "SQLAlchemy relationship / cascade",
+    "tags": "#python #orm",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Рекурсия и sys.getrecursionlimit",
+    "tags": "#python",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "global / состояние модуля",
+    "tags": "#python",
+    "n": 1
+  },
+  {
+    "bank": "18. Python",
+    "title": "Профилирование Python (cProfile / memory)",
+    "tags": "#python #perf",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "L1 vs L2 регуляризация",
+    "tags": "#ml #regularization",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Bagging vs boosting / bias-variance",
+    "tags": "#ml #ensemble",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Метрики при дисбалансе (PR-AUC)",
+    "tags": "#ml #metrics",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "ROC-AUC vs PR-AUC",
+    "tags": "#ml #metrics",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Корреляция деревьев в bagging",
+    "tags": "#ml #ensemble",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Экстраполяция ML-моделей (linear / tree / KNN)",
+    "tags": "#ml",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Поправка Бонферрони",
+    "tags": "#analytics #statistics",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "CUPED / снижение дисперсии",
+    "tags": "#analytics #ab-test",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Медиана, мода, матожидание",
+    "tags": "#analytics #statistics",
+    "n": 1
+  },
+  {
+    "bank": "17. Data Python ML",
+    "title": "Нормальное распределение и σ",
+    "tags": "#analytics #statistics",
+    "n": 1
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Рекурсия",
+    "tags": "#theory #algorithms",
+    "n": 1
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "k closest elements",
+    "tags": "#theory #algorithms",
+    "n": 1
+  },
+  {
+    "bank": "20. Теория программирования",
+    "title": "Симметрия точек относительно прямой",
+    "tags": "#theory #algorithms",
+    "n": 1
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "RabbitMQ: типы exchange",
+    "tags": "#messaging #rabbitmq",
+    "n": 1
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "NATS vs Kafka",
+    "tags": "#messaging",
+    "n": 1
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Redis Pub/Sub",
+    "tags": "#redis #messaging",
+    "n": 1
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Keycloak vs custom auth",
+    "tags": "#auth #security",
+    "n": 1
+  },
+  {
+    "bank": "4. Интеграции",
+    "title": "Fan-out / Fan-in",
+    "tags": "#messaging #patterns",
+    "n": 1
+  },
+  {
+    "bank": "2. БД - Часто",
+    "title": "PostgreSQL WAL",
+    "tags": "#database #postgres",
+    "n": 1
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "Dockerfile: FROM, COPY, WORKDIR, CMD",
+    "tags": "#docker",
+    "n": 1
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "docker run: -p -v -d --name",
+    "tags": "#docker",
+    "n": 1
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "docker exec",
+    "tags": "#docker",
+    "n": 1
+  },
+  {
+    "bank": "6. Ops - Часто",
+    "title": "Docker registry vs Docker Hub",
+    "tags": "#docker",
+    "n": 1
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "IP-адрес и маска подсети (/24)",
+    "tags": "#network",
+    "n": 1
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "DHCP",
+    "tags": "#network",
+    "n": 1
+  },
+  {
+    "bank": "14. Ops — Реже",
+    "title": "git cherry-pick",
+    "tags": "#git",
+    "n": 1
+  },
+  {
+    "bank": "19. QA",
+    "title": "Black-box vs white-box тестирование",
+    "tags": "#qa #test-design",
+    "n": 1
+  },
+  {
+    "bank": "19. QA",
+    "title": "Комбинаторика SQL-тестов",
+    "tags": "#qa #sql",
+    "n": 1
+  },
+  {
+    "bank": "5. Архитектура - Часто",
+    "title": "Twelve-Factor: телеметрия не влияет на app",
+    "tags": "#architecture #ops",
+    "n": 1
+  }
+]
