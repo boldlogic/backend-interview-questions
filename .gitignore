@@ -27,12 +27,11 @@ go.work.sum
 # env file
 .env
 
-# Editor/IDE
-# .idea/
-# .vscode/
-.cursor/*
-!.cursor/rules/
-!.cursor/rules/**
+# Editor/IDE и локальные настройки — не в репозитории
+.cursor/
+.kilo/
+.obsidian/
+.vscode/
 
 # Скрипты — по умолчанию локальные; в git только guard и безопасные утилиты банка
 scripts/*
@@ -49,5 +48,4 @@ scripts/*
 # AGENTS.md — инструкции для агентов (коммитить)
 # (строка /AGENTS.md удалена — файл в репозитории)
 /GO - индекс.md
-.obsidian
 workspace.json
