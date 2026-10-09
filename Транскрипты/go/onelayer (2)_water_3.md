@@ -70,7 +70,7 @@
 **[01:10]** About your experience, about some flag project that you did,
 
 **[01:17]** That you can display and see your skills.
-> 📎 **База:** ✅ [[6. Ops - Часто#Как убить процесс в Linux?]]
+> 📎 **База:** ✅ [[06. Ops - Часто#Как убить процесс в Linux?]]
 
 **[01:20]** And afterward, it will be my turn to present a little bit about one layer,
 
@@ -103,7 +103,7 @@
 **[02:11]** Mostly I develop microservices using different interaction formats,
 
 **[02:18]** Like GCP, REST, and some asynchronous message brokers and so on.
-> 📎 **База:** ✅ [[3. HTTP - Часто#REST — принципы и best practices]]
+> 📎 **База:** ✅ [[03. HTTP - Часто#REST — принципы и best practices]]
 
 **[02:25]** Well, most of my experience, the majority of my experience is in FinTech.
 
@@ -164,7 +164,7 @@
 **[04:44]** If we are talking about the different technologists,
 
 **[04:47]** Like Docker and Kubernetes, I also use all of them.
-> 📎 **База:** ✅ [[6. Ops - Часто#Docker vs виртуальная машина]]
+> 📎 **База:** ✅ [[06. Ops - Часто#Docker vs виртуальная машина]]
 
 **[04:53]** What else, I've been working with clouds for around,
 
@@ -1037,7 +1037,7 @@
 **[24:41]** and microservice architecture,
 
 **[24:45]** usually using Kafka or Nuts,
-> 📎 **База:** ✅ [[4. Интеграции#Kafka / RabbitMQ?]]
+> 📎 **База:** ✅ [[04. Интеграции#Kafka / RabbitMQ?]]
 
 **[24:47]** if you're familiar,
 
@@ -1875,7 +1875,7 @@
 **[43:56]** in different tabs and share the screen, please,
 
 **[43:58]** so I can explain a little bit more.
-> 📎 **База:** ✅ [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]]
+> 📎 **База:** ✅ [[02. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]]
 
 **[44:01]** Sure, wait.
 
@@ -2256,7 +2256,7 @@
 **[54:39]** might
 
 **[54:41]** write, you know, select
-> 📎 **База:** ✅ [[1. GO - Часто#Зачем нужен select]]
+> 📎 **База:** ✅ [[01. GO - Часто#Зачем нужен select]]
 
 **[54:43]** and context done
 
@@ -2699,7 +2699,7 @@
 
 | Время | Вопрос (кратко) | Статус | Пункт |
 |-------|-----------------|--------|-------|
-| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[2. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[6. Ops - Часто#Как убить процесс в Linux?]] · [[3. HTTP - Часто#REST — принципы и best practices]] · [[4. Интеграции#Kafka / RabbitMQ?]] · [[2. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] |
+| — | JOIN, context, kill process, REST, docker, Kafka, EXPLAIN, select | ✅ | [[02. БД - Часто#Виды JOIN запросов: INNER vs LEFT]] · [[06. Ops - Часто#Как убить процесс в Linux?]] · [[03. HTTP - Часто#REST — принципы и best practices]] · [[04. Интеграции#Kafka / RabbitMQ?]] · [[02. БД - Часто#EXPLAIN и EXPLAIN ANALYZE]] |
 
 
 ### Опыт / behavioral

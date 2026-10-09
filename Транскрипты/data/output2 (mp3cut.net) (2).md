@@ -403,7 +403,7 @@
 **[09:09]** what do you want to keep
 
 **[09:11]** like before and after?
-> 📎 **База:** ✅ [[2. БД - Часто#ACID и транзакции]]
+> 📎 **База:** ✅ [[02. БД - Часто#ACID и транзакции]]
 
 **[09:13]** So basically
 
@@ -474,7 +474,7 @@
 **[10:22]** old-fashioned index
 
 **[10:24]** from SQL database.
-> 📎 **База:** ✅ [[2. БД - Часто#Что такое индексы БД и зачем они нужны?]] · B-tree
+> 📎 **База:** ✅ [[02. БД - Часто#Что такое индексы БД и зачем они нужны?]] · B-tree
 
 **[10:26]** Sure.
 
@@ -531,7 +531,7 @@
 **[11:22]** of this
 
 **[11:24]** whole structure basically?
-> 📎 **База:** ✅ [[2. БД - Часто#B-tree и физическое хранение на диске]] · B+ tree leaf/internal
+> 📎 **База:** ✅ [[02. БД - Часто#B-tree и физическое хранение на диске]] · B+ tree leaf/internal
 
 **[11:26]** Do you know maybe, do you have idea
 
@@ -598,7 +598,7 @@
 **[12:33]** Which are not safe
 
 **[12:35]** in this code.
-> 📎 **Задача:** 🔧 Python code review · SQL injection + connection leak · ✅ [[2. БД - Часто#SQL injection и параметризованные запросы]] · ⚠️ [[18. Python#Context managers (with / contextlib)]]
+> 📎 **Задача:** 🔧 Python code review · SQL injection + connection leak · ✅ [[02. БД - Часто#SQL injection и параметризованные запросы]] · ⚠️ [[18. Python#Context managers (with / contextlib)]]
 
 **[12:37]** And you just need to tell me
 
@@ -1787,9 +1787,9 @@
 | База | 01:41 | ✅ [[16. Опыт и soft skills#Один проект за 2–3 минуты]] |
 | База | 04:50 | ⚠️ [[17. Data Python ML#RAG: retrieval-augmented generation]] · vector store |
 | База | 07:13 | ❌ LangGraph nodes |
-| База | 09:11 | ✅ [[2. БД - Часто#ACID и транзакции]] |
-| База | 10:24 | ✅ [[2. БД - Часто#Что такое индексы БД и зачем они нужны?]] |
-| База | 11:24 | ✅ [[2. БД - Часто#B-tree и физическое хранение на диске]] |
+| База | 09:11 | ✅ [[02. БД - Часто#ACID и транзакции]] |
+| База | 10:24 | ✅ [[02. БД - Часто#Что такое индексы БД и зачем они нужны?]] |
+| База | 11:24 | ✅ [[02. БД - Часто#B-tree и физическое хранение на диске]] |
 | Задача | 12:35 | 🔧 Python code review · SQL injection + conn · ✅/⚠️ |
 | База | 18:57 | ⚠️ [[20. Теория программирования#Итераторы и ленивые последовательности]] |
 | База | 22:24 | ✅ [[18. Python#GIL в Python]] |
